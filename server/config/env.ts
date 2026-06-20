@@ -16,7 +16,9 @@ export const env = {
   nodeEnv,
   clientUrl: process.env.CLIENT_URL || '',
   appUrl: getOptionalEnv('APP_URL', 'http://localhost:3000'),
-  mongoUri: (!process.env.MONGO_URI || process.env.MONGO_URI === 'TO_BE_ADDED') ? 'mongodb://127.0.0.1:27017/poise' : process.env.MONGO_URI,
+  mongoUri: process.env.MONGO_URI && process.env.MONGO_URI !== 'TO_BE_ADDED' 
+    ? process.env.MONGO_URI 
+    : (nodeEnv === 'development' ? 'mongodb://127.0.0.1:27017/poise' : ''),
   jwtAccessSecret: process.env.JWT_ACCESS_SECRET || '',
   jwtRefreshSecret: process.env.JWT_REFRESH_SECRET || '',
   jwtAccessExpiresIn: process.env.JWT_ACCESS_EXPIRES_IN || '',
