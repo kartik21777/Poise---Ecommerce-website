@@ -10,10 +10,10 @@ import { Order } from '../models/Order.js';
 export const runAutoSeeding = async () => {
   try {
     console.log('[System] Verifying database seeding status...');
-    
+
     const categoryCount = await Category.countDocuments();
     const userCount = await User.countDocuments();
-    
+
     // Seed initial product catalog and categories if empty
     if (categoryCount === 0) {
       console.log('[System] Blank database detected. Auto-seeding 15 categories and 100 products...');

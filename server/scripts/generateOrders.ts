@@ -43,10 +43,9 @@ const getRandomDate = (start: Date, end: Date) => {
 
 export async function seedOrders(shouldExit = false) {
   try {
-    // Ensure database is seeded with users and products in the same context
     // We check if CategoryCount is 0 or userCount is minimal inside runAutoSeeding
     console.log('[Order Seed] Verifying prerequisites...');
-    await runAutoSeeding();
+    // await runAutoSeeding(); // REMOVED TO PREVENT INFINITE LOOP
 
     const users = await User.find({ role: 'customer' });
     const products = await Product.find({ status: 'active' });
