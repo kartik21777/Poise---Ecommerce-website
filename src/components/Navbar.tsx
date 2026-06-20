@@ -107,9 +107,14 @@ export const Navbar: React.FC = () => {
                       className="absolute right-0 w-48 py-2 mt-1 bg-white rounded-md shadow-xl border border-gray-100 origin-top-right z-50 focus:outline-none"
                     >
                       <div className="px-4 py-2 border-b border-gray-100">
-                        <p className="text-sm font-medium text-gray-900 truncate">{user?.firstName} {user?.lastName}</p>
+                        <p className="text-sm font-medium text-gray-900 truncate">{user?.name}</p>
                         <p className="text-xs text-gray-500 truncate">{user?.email}</p>
                       </div>
+                      {user && ['admin', 'super_admin'].includes(user.role) && (
+                        <Link onClick={() => setIsUserMenuOpen(false)} to="/admin" className="block px-4 py-2 text-sm font-semibold text-indigo-600 hover:bg-gray-50">
+                          Admin Dashboard
+                        </Link>
+                      )}
                       <Link onClick={() => setIsUserMenuOpen(false)} to="/account" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Account</Link>
                       <Link onClick={() => setIsUserMenuOpen(false)} to="/wallet" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 font-medium text-indigo-600">My Wallet</Link>
                       <button onClick={() => { setIsUserMenuOpen(false); logout(); }} className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Logout</button>
@@ -226,11 +231,16 @@ export const Navbar: React.FC = () => {
                         <User className="h-6 w-6 text-gray-500" />
                       </div>
                       <div className="ml-4">
-                        <div className="text-base font-medium text-gray-900">{user?.firstName} {user?.lastName}</div>
+                        <div className="text-base font-medium text-gray-900">{user?.name}</div>
                         <div className="text-sm text-gray-500">{user?.email}</div>
                       </div>
                     </div>
                     <div className="pt-4 space-y-2">
+                      {user && ['admin', 'super_admin'].includes(user.role) && (
+                        <Link onClick={() => setIsMobileMenuOpen(false)} to="/admin" className="block px-3 py-2 rounded-md text-base font-semibold text-indigo-600 hover:bg-indigo-100">
+                          Admin Dashboard
+                        </Link>
+                      )}
                       <Link onClick={() => setIsMobileMenuOpen(false)} to="/account" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-200">Account Settings</Link>
                       <Link onClick={() => setIsMobileMenuOpen(false)} to="/wallet" className="block px-3 py-2 rounded-md text-base font-medium text-indigo-700 hover:bg-indigo-100">My Wallet</Link>
                       <button onClick={() => { setIsMobileMenuOpen(false); logout(); }} className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-200">Sign Out</button>

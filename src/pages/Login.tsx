@@ -33,7 +33,15 @@ export const Login: React.FC = () => {
       }
       
       login(res.user);
-      navigate('/');
+      
+      const adminRoles = ['admin', 'super_admin'];
+      if (adminRoles.includes(res.user.role)) {
+        navigate('/admin');
+      } else if (res.user.role === 'vendor') {
+        navigate('/vendor');
+      } else {
+        navigate('/');
+      }
     } catch (err: any) {
       setError(err.response?.data?.message || 'Failed to login.');
     } finally {

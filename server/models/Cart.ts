@@ -32,6 +32,5 @@ const cartSchema = new Schema<ICart>(
 );
 
 cartSchema.index({ updatedAt: 1 });
-cartSchema.index({ user: 1 }); // User is already unique, but doing this explicit if we needed.
 
 export const Cart = mongoose.model<ICart>('Cart', cartSchema);
