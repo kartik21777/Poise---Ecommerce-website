@@ -34,7 +34,13 @@ export const connectDB = async () => {
       }
     }
 
-    const conn = await mongoose.connect(env.mongoUri);
+    const conn = await mongoose.connect(env.mongoUri, {
+      maxPoolSize: 50,
+      minPoolSize: 10,
+      socketTimeoutMS: 45000,
+      serverSelectionTimeoutMS: 5000,
+      heartbeatFrequencyMS: 10000,
+    });
     console.log(`MongoDB Connected: ${conn.connection.host}`);
   } catch (error: any) {
     console.error(`Error connecting to MongoDB: ${error.message}`);

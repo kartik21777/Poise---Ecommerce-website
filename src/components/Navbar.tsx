@@ -1,6 +1,7 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { ShoppingBag, User, Search, Menu, X, Heart } from 'lucide-react';
+import { motion, AnimatePresence } from 'motion/react';
 import { useAuth } from '../providers/AuthProvider.js';
 import { useCart } from '../hooks/useCart.js';
 
@@ -9,7 +10,30 @@ export const Navbar: React.FC = () => {
   const { cart, guestCartItems } = useCart();
   const navigate = useNavigate();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        setIsMobileMenuOpen(false);
+        setIsUserMenuOpen(false);
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, []);
+
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isMobileMenuOpen]);
 
   const cartItemCount = useMemo(() => {
     if (isAuthenticated && cart) {
@@ -59,19 +83,38 @@ export const Navbar: React.FC = () => {
             </form>
 
             {isAuthenticated ? (
-              <div className="group relative">
-                <button className="p-2 text-gray-400 hover:text-gray-500">
+              <div 
+                className="relative"
+                onMouseEnter={() => setIsUserMenuOpen(true)}
+                onMouseLeave={() => setIsUserMenuOpen(false)}
+              >
+                <button 
+                  className="p-2 text-gray-400 hover:text-gray-500"
+                  aria-expanded={isUserMenuOpen}
+                  aria-haspopup="menu"
+                  onClick={() => setIsUserMenuOpen(!isUserMenuOpen)}
+                >
                   <User className="h-6 w-6" />
                 </button>
-                <div className="hidden group-hover:block absolute right-0 w-48 py-2 mt-1 bg-white rounded-md shadow-xl border border-gray-100">
-                  <div className="px-4 py-2 border-b border-gray-100">
-                    <p className="text-sm font-medium text-gray-900 truncate">{user?.firstName} {user?.lastName}</p>
-                    <p className="text-xs text-gray-500 truncate">{user?.email}</p>
-                  </div>
-                  <Link to="/account" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Account</Link>
-                  <Link to="/wallet" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 font-medium text-indigo-600">My Wallet</Link>
-                  <button onClick={logout} className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Logout</button>
-                </div>
+                <AnimatePresence>
+                  {isUserMenuOpen && (
+                    <motion.div 
+                      initial={{ opacity: 0, scale: 0.95, y: -10 }}
+                      animate={{ opacity: 1, scale: 1, y: 0 }}
+                      exit={{ opacity: 0, scale: 0.95, y: -10 }}
+                      transition={{ duration: 0.25, ease: "easeOut" }}
+                      className="absolute right-0 w-48 py-2 mt-1 bg-white rounded-md shadow-xl border border-gray-100 origin-top-right z-50 focus:outline-none"
+                    >
+                      <div className="px-4 py-2 border-b border-gray-100">
+                        <p className="text-sm font-medium text-gray-900 truncate">{user?.firstName} {user?.lastName}</p>
+                        <p className="text-xs text-gray-500 truncate">{user?.email}</p>
+                      </div>
+                      <Link onClick={() => setIsUserMenuOpen(false)} to="/account" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Account</Link>
+                      <Link onClick={() => setIsUserMenuOpen(false)} to="/wallet" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 font-medium text-indigo-600">My Wallet</Link>
+                      <button onClick={() => { setIsUserMenuOpen(false); logout(); }} className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Logout</button>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </div>
             ) : (
               <Link to="/login" className="text-sm font-medium text-gray-700 hover:text-gray-900">
@@ -108,57 +151,102 @@ export const Navbar: React.FC = () => {
             </Link>
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500"
+              aria-expanded={isMobileMenuOpen}
+              aria-label="Toggle mobile menu"
+              className="p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 relative z-[70] lg:hidden"
             >
-              {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              <Menu className="h-6 w-6" />
             </button>
           </div>
         </div>
       </div>
 
-      {/* Mobile menu */}
-      {isMobileMenuOpen && (
-        <div className="lg:hidden border-t border-gray-200">
-          <div className="px-2 pt-2 pb-3 space-y-1">
-            <form onSubmit={handleSearch} className="p-2">
-              <input
-                type="text"
-                placeholder="Search products..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-4 pr-4 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-1 focus:ring-gray-900"
-              />
-            </form>
-            <Link to="/products" className="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">Shop</Link>
-            <Link to="/categories/new" className="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">New</Link>
-            <Link to="/categories/sale" className="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">Sale</Link>
-          </div>
-          <div className="pt-4 pb-3 border-t border-gray-200">
-            {isAuthenticated ? (
-              <div className="px-5 space-y-3">
-                <div className="flex items-center">
-                  <div className="ml-3">
-                    <div className="text-base font-medium text-gray-800">{user?.firstName} {user?.lastName}</div>
-                    <div className="text-sm font-medium text-gray-500">{user?.email}</div>
+      {/* Mobile menu wrapper */}
+      <AnimatePresence>
+        {isMobileMenuOpen && (
+          <div className="lg:hidden">
+            {/* Backdrop */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.3 }}
+              className="fixed inset-0 bg-black/60 z-[60]"
+              onClick={() => setIsMobileMenuOpen(false)}
+            />
+            
+            {/* Drawer */}
+            <motion.div
+              initial={{ x: '100%' }}
+              animate={{ x: 0 }}
+              exit={{ x: '100%' }}
+              transition={{ duration: 0.35, ease: [0.25, 0.1, 0.25, 1.0] }} // smooth ease-out
+              className="fixed top-0 right-0 w-[85%] max-w-sm h-full bg-white z-[65] shadow-2xl flex flex-col overflow-y-auto"
+            >
+              <div className="flex items-center justify-between p-4 border-b border-gray-200">
+                <span className="text-xl font-bold font-serif text-gray-900">POISE</span>
+                <button
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="p-2 -mr-2 text-gray-400 hover:text-gray-500"
+                >
+                  <X className="h-6 w-6" />
+                </button>
+              </div>
+
+              <div className="px-4 pt-6 pb-6 space-y-6 flex-1">
+                <form onSubmit={handleSearch}>
+                  <div className="relative">
+                    <input
+                      type="text"
+                      placeholder="Search products..."
+                      value={searchQuery}
+                      onChange={(e) => setSearchQuery(e.target.value)}
+                      className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-md text-base focus:outline-none focus:ring-1 focus:ring-gray-900"
+                    />
+                    <Search className="h-5 w-5 text-gray-400 absolute left-3 top-1/2 transform -translate-y-1/2" />
                   </div>
+                </form>
+                
+                <div className="space-y-1 mt-6">
+                  <Link onClick={() => setIsMobileMenuOpen(false)} to="/products" className="block py-3 text-lg font-medium text-gray-900 border-b border-gray-100">Shop All</Link>
+                  <Link onClick={() => setIsMobileMenuOpen(false)} to="/categories/new" className="block py-3 text-lg font-medium text-gray-900 border-b border-gray-100">New Arrivals</Link>
+                  <Link onClick={() => setIsMobileMenuOpen(false)} to="/categories/sale" className="block py-3 text-lg font-medium text-gray-900 border-b border-gray-100">Sale</Link>
                 </div>
-                <Link to="/account" className="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">Account</Link>
-                <Link to="/wallet" className="block px-3 py-2 rounded-md text-base font-medium text-indigo-650 hover:bg-gray-50">My Wallet</Link>
-                <button onClick={logout} className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">Logout</button>
               </div>
-            ) : (
-              <div className="px-5">
-                <Link to="/login" className="block w-full text-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-gray-900 hover:bg-gray-800">
-                  Log in
-                </Link>
-                <p className="mt-4 text-center text-sm font-medium text-gray-500">
-                  Don't have an account? <Link to="/register" className="text-gray-900 hover:text-gray-700">Sign up</Link>
-                </p>
+
+              <div className="px-4 py-8 border-t border-gray-200 bg-gray-50">
+                {isAuthenticated ? (
+                  <div className="space-y-4">
+                    <div className="flex items-center">
+                      <div className="h-12 w-12 rounded-full bg-gray-200 flex items-center justify-center">
+                        <User className="h-6 w-6 text-gray-500" />
+                      </div>
+                      <div className="ml-4">
+                        <div className="text-base font-medium text-gray-900">{user?.firstName} {user?.lastName}</div>
+                        <div className="text-sm text-gray-500">{user?.email}</div>
+                      </div>
+                    </div>
+                    <div className="pt-4 space-y-2">
+                      <Link onClick={() => setIsMobileMenuOpen(false)} to="/account" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-200">Account Settings</Link>
+                      <Link onClick={() => setIsMobileMenuOpen(false)} to="/wallet" className="block px-3 py-2 rounded-md text-base font-medium text-indigo-700 hover:bg-indigo-100">My Wallet</Link>
+                      <button onClick={() => { setIsMobileMenuOpen(false); logout(); }} className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-200">Sign Out</button>
+                    </div>
+                  </div>
+                ) : (
+                  <div>
+                    <Link onClick={() => setIsMobileMenuOpen(false)} to="/login" className="block w-full text-center px-4 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-gray-900 hover:bg-gray-800">
+                      Sign in
+                    </Link>
+                    <p className="mt-4 text-center text-sm text-gray-500">
+                      New to Poise? <Link onClick={() => setIsMobileMenuOpen(false)} to="/register" className="font-medium text-gray-900 hover:underline">Create an account</Link>
+                    </p>
+                  </div>
+                )}
               </div>
-            )}
+            </motion.div>
           </div>
-        </div>
-      )}
+        )}
+      </AnimatePresence>
     </nav>
   );
 };

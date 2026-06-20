@@ -58,14 +58,46 @@ async function startApp() {
   // Trust proxy for secure cookies behind reverse proxies (Render, Railway, Nginx, etc.)
   app.set('trust proxy', 1);
 
+  // Global Rate Limiter
   const globalLimiter = rateLimit({ 
     windowMs: 15 * 60 * 1000, 
-    max: 100,
-    message: 'Too many requests from this IP, please try again after 15 minutes', 
+    max: 1000, // Increased for e-commerce browsing
+    message: { error: 'Too many requests from this IP, please try again after 15 minutes' }, 
   });
   
+  // Strict Auth Limiter
+  const authLimiter = rateLimit({
+    windowMs: 15 * 60 * 1000,
+    max: 20, // Strict limit for auth/login attempts
+    message: { error: 'Too many authentication attempts, please try again later' },
+  });
+
+  // strict webhook limiter protecting against DDoS
+  const webhookLimiter = rateLimit({
+    windowMs: 1 * 60 * 1000,
+    max: 50, 
+    message: { error: 'Webhook rate limit exceeded' },
+  });
+
   app.use('/api', globalLimiter);
-  app.use(helmet({ contentSecurityPolicy: false, crossOriginEmbedderPolicy: false }));
+  app.use('/api/auth', authLimiter);
+  app.use('/api/v1/auth', authLimiter);
+  app.use('/api/webhooks', webhookLimiter);
+  app.use('/api/v1/webhooks', webhookLimiter);
+  
+  app.use(helmet({ 
+    contentSecurityPolicy: env.nodeEnv === 'production' ? {
+      directives: {
+        defaultSrc: ["'self'"],
+        scriptSrc: ["'self'", "'unsafe-inline'", "https://js.stripe.com", "https://checkout.razorpay.com"],
+        frameSrc: ["'self'", "https://js.stripe.com"],
+        connectSrc: ["'self'", "https://api.stripe.com"],
+        imgSrc: ["'self'", "data:", "https://res.cloudinary.com", "https://images.unsplash.com"],
+        styleSrc: ["'self'", "'unsafe-inline'"],
+      }
+    } : false,
+    crossOriginEmbedderPolicy: false 
+  }));
   
   app.use(cors({ 
     origin: env.clientUrl || '*', 
