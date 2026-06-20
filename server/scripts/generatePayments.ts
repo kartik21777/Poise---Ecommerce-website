@@ -66,7 +66,6 @@ export async function seedPayments(shouldExit = false) {
     // Output JSON for transparency
     const outputPath = path.join(process.cwd(), 'payments_payload.json');
     fs.writeFileSync(outputPath, JSON.stringify(transactions, null, 2));
-    console.log(`[Payment Seed] JSON payload saved to ${outputPath}`);
 
     // Output MongoDB script
     const scriptPath = path.join(process.cwd(), 'seed_payments.js');
@@ -82,7 +81,6 @@ db.paymenttransactions.insertMany(payments.map(p => ({
 console.log('Seeded 500 payment transactions successfully');
 `;
     fs.writeFileSync(scriptPath, mongoScript);
-    console.log(`[Payment Seed] MongoDB script saved to ${scriptPath}`);
 
     // Seed into DB
     const result = await PaymentTransaction.insertMany(transactions);

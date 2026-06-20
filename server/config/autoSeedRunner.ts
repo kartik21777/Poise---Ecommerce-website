@@ -4,8 +4,10 @@ import { seedAdmin } from '../scripts/seedAdmin.js';
 import { seedProducts } from '../scripts/seedProducts.js';
 import { seedUsers } from '../scripts/seedUsers.js';
 import { seedOrders } from '../scripts/generateOrders.js';
+import { seedPayments } from '../scripts/generatePayments.js';
 import { env } from './env.js';
 import { Order } from '../models/Order.js';
+import { PaymentTransaction } from '../models/PaymentTransaction.js';
 
 export const runAutoSeeding = async () => {
   try {
@@ -29,6 +31,13 @@ export const runAutoSeeding = async () => {
     if (env.enableDemoData && orderCount === 0) {
       console.log('[System] ENABLE_DEMO_DATA is true. Generating 500 realistic orders...');
       await seedOrders(false);
+    }
+
+    // Seed Demo Payments if enabled and database has no transactions
+    const paymentCount = await PaymentTransaction.countDocuments();
+    if (env.enableDemoData && paymentCount === 0) {
+      console.log('[System] ENABLE_DEMO_DATA is true. Generating 500 realistic payment transactions...');
+      await seedPayments(false);
     }
 
     console.log('[System] Database auto-bootstrapping checks successfully completed!');

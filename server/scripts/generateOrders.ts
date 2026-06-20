@@ -14,7 +14,7 @@ const STATUS_DISTRIBUTION = {
   REFUNDED: 0.05
 };
 
-import { runAutoSeeding } from '../config/autoSeedRunner.js';
+// import { runAutoSeeding } from '../config/autoSeedRunner.js'; // REMOVED TO PREVENT CIRCULAR DEPENDENCY
 
 const getRandomStatus = (): OrderStatus => {
   const rand = Math.random();
@@ -43,9 +43,8 @@ const getRandomDate = (start: Date, end: Date) => {
 
 export async function seedOrders(shouldExit = false) {
   try {
-    // We check if CategoryCount is 0 or userCount is minimal inside runAutoSeeding
-    console.log('[Order Seed] Verifying prerequisites...');
-    // await runAutoSeeding(); // REMOVED TO PREVENT INFINITE LOOP
+    // We proceed assuming users and products exist (ensured by runAutoSeeding)
+    console.log('[Order Seed] Starting generation...');
 
     const users = await User.find({ role: 'customer' });
     const products = await Product.find({ status: 'active' });
