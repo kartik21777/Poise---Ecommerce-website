@@ -1,6 +1,5 @@
 import mongoose from 'mongoose';
 import { env } from './env.js';
-import { MongoMemoryServer } from 'mongodb-memory-server';
 
 let mongod: any = null;
 
@@ -11,25 +10,42 @@ export const connectDB = async () => {
       return;
     }
 
-    // Spin up an in-memory database on port 27017 if targeting localhost in local dev mode
+    // Start in-memory MongoDB only for local development
     if (
       env.nodeEnv !== 'production' &&
       env.nodeEnv !== 'staging' &&
-      (env.mongoUri.includes('127.0.0.1:27017') || env.mongoUri.includes('localhost:27017'))
+      (env.mongoUri.includes('127.0.0.1:27017') ||
+        env.mongoUri.includes('localhost:27017'))
     ) {
       try {
+        const { MongoMemoryServer } = await import('mongodb-memory-server');
+
         mongod = await MongoMemoryServer.create({
           instance: {
             port: 27017,
-            dbName: 'poise'
-          }
+            dbName: 'poise',
+          },
         });
-        console.log(`[Database] In-memory MongoDB server runs on: ${mongod.getUri()}`);
-      } catch (err: any) {
-        if (err.message && (err.message.includes('EADDRINUSE') || err.message.includes('already in use'))) {
-          console.log('[Database] MongoDB port 27017 in use. Connecting to existing process.');
+
+        console.log(
+          `[Database] In-memory MongoDB server runs on: ${mongod.getUri()}`
+        );
+      } catch (err: unknown) {
+        const errorMessage =
+          err instanceof Error ? err.message : String(err);
+
+        if (
+          errorMessage.includes('EADDRINUSE') ||
+          errorMessage.includes('already in use')
+        ) {
+          console.log(
+            '[Database] MongoDB port 27017 in use. Connecting to existing process.'
+          );
         } else {
-          console.warn('[Database] Optional in-memory server startup notice:', err.message || err);
+          console.warn(
+            '[Database] Optional in-memory server startup notice:',
+            errorMessage
+          );
         }
       }
     }
@@ -41,9 +57,31 @@ export const connectDB = async () => {
       serverSelectionTimeoutMS: 5000,
       heartbeatFrequencyMS: 10000,
     });
+
     console.log(`MongoDB Connected: ${conn.connection.host}`);
-  } catch (error: any) {
-    console.error(`Error connecting to MongoDB: ${error.message}`);
+  } catch (error: unknown) {
+    const errorMessage =
+      error instanceof Error ? error.message : String(error);
+
+    console.error(`Error connecting to MongoDB: ${errorMessage}`);
     process.exit(1);
+  }
+};
+
+export const disconnectDB = async () => {
+  try {
+    await mongoose.disconnect();
+
+    if (mongod) {
+      await mongod.stop();
+      mongod = null;
+    }
+
+    console.log('MongoDB disconnected');
+  } catch (error: unknown) {
+    const errorMessage =
+      error instanceof Error ? error.message : String(error);
+
+    console.error(`Error disconnecting MongoDB: ${errorMessage}`);
   }
 };
