@@ -3,6 +3,9 @@ import { User } from '../models/User.js';
 import { seedAdmin } from '../scripts/seedAdmin.js';
 import { seedProducts } from '../scripts/seedProducts.js';
 import { seedUsers } from '../scripts/seedUsers.js';
+import { seedOrders } from '../scripts/generateOrders.js';
+import { env } from './env.js';
+import { Order } from '../models/Order.js';
 
 export const runAutoSeeding = async () => {
   try {
@@ -17,10 +20,15 @@ export const runAutoSeeding = async () => {
       await seedProducts(false);
     }
 
-    // Seed 1 Admin + 50 Customer profiles if user base is empty or minimal (e.g., less than 5 users)
     if (userCount < 5) {
       console.log('[System] Minimal user base detected. Auto-seeding 1 Admin and 50 rich Customer profiles...');
       await seedUsers(false);
+    }
+    // Seed Demo Orders if enabled and database has no orders
+    const orderCount = await Order.countDocuments();
+    if (env.enableDemoData && orderCount === 0) {
+      console.log('[System] ENABLE_DEMO_DATA is true. Generating 500 realistic orders...');
+      await seedOrders(false);
     }
 
     console.log('[System] Database auto-bootstrapping checks successfully completed!');

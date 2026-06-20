@@ -25,6 +25,7 @@ export const env = {
   jwtRefreshExpiresIn: process.env.JWT_REFRESH_EXPIRES_IN || '',
   emailVerificationExpiresIn: process.env.EMAIL_VERIFICATION_EXPIRES_IN || '',
   passwordResetExpiresIn: process.env.PASSWORD_RESET_EXPIRES_IN || '',
+  enableDemoData: getOptionalEnv('ENABLE_DEMO_DATA', 'false') === 'true',
   cloudinary: {
     cloudName: process.env.CLOUDINARY_CLOUD_NAME || '',
     apiKey: process.env.CLOUDINARY_API_KEY || '',

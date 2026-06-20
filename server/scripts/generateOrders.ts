@@ -41,20 +41,20 @@ const getRandomDate = (start: Date, end: Date) => {
   return new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
 };
 
-async function generateOrders() {
+export async function seedOrders(shouldExit = false) {
   try {
-    await connectDB();
-    
     // Ensure database is seeded with users and products in the same context
-    console.log('[Generation] Running auto-seeding to ensure context consistency...');
+    // We check if CategoryCount is 0 or userCount is minimal inside runAutoSeeding
+    console.log('[Order Seed] Verifying prerequisites...');
     await runAutoSeeding();
 
     const users = await User.find({ role: 'customer' });
     const products = await Product.find({ status: 'active' });
 
     if (users.length === 0 || products.length === 0) {
-      console.error('No users or products found. Please seed them first.');
-      process.exit(1);
+      console.error('No users or products found. Skipping order seeding.');
+      if (shouldExit) process.exit(1);
+      return;
     }
 
     const orders = [];
@@ -127,12 +127,11 @@ async function generateOrders() {
       });
     }
 
-    // Output JSON
+    // Output JSON for transparency
     const outputPath = path.join(process.cwd(), 'orders_payload.json');
     fs.writeFileSync(outputPath, JSON.stringify(orders, null, 2));
-    console.log(`JSON payload saved to ${outputPath}`);
-
-    // Output MongoDB script
+    
+    // Output MongoDB script for transparency
     const scriptPath = path.join(process.cwd(), 'seed_orders.js');
     const mongoScript = `
 const orders = ${JSON.stringify(orders, null, 2)};
@@ -146,17 +145,24 @@ db.orders.insertMany(orders.map(o => ({
 console.log('Seeded 500 orders successfully');
 `;
     fs.writeFileSync(scriptPath, mongoScript);
-    console.log(`MongoDB script saved to ${scriptPath}`);
 
     // Seed into DB
     const result = await Order.insertMany(orders);
-    console.log(`Successfully seeded ${result.length} orders into the database.`);
+    console.log(`[Order Seed] Successfully seeded ${result.length} realistic orders.`);
 
-    process.exit(0);
+    if (shouldExit) process.exit(0);
   } catch (err) {
-    console.error(err);
-    process.exit(1);
+    console.error('[Order Seed] Error:', err);
+    if (shouldExit) process.exit(1);
   }
 }
 
-generateOrders();
+// Only run immediately if this script is executed directly
+const isDirectRun = process.argv[1] && (
+  process.argv[1].endsWith('generateOrders.ts') || 
+  process.argv[1].endsWith('generateOrders.js')
+);
+
+if (isDirectRun) {
+  connectDB().then(() => seedOrders(true));
+}
