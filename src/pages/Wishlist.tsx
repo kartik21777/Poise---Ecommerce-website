@@ -26,9 +26,9 @@ export const WishlistPage: React.FC = () => {
     return (
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
         <SEO title="Your Wishlist" />
-        <h2 className="text-3xl font-bold text-gray-900 mb-4">Your wishlist is empty</h2>
-        <p className="text-gray-500 mb-8">Save items you like to your wishlist to find them easily later.</p>
-        <Link to="/products" className="inline-block bg-gray-900 text-white px-8 py-3 rounded-md font-medium hover:bg-gray-800">
+        <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Your wishlist is empty</h2>
+        <p className="text-gray-500 dark:text-gray-400 mb-8">Save items you like to your wishlist to find them easily later.</p>
+        <Link to="/products" className="inline-block bg-gray-900 dark:bg-white text-white dark:text-gray-900 px-8 py-3 rounded-md font-medium hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors">
           Continue Shopping
         </Link>
       </div>
@@ -36,9 +36,9 @@ export const WishlistPage: React.FC = () => {
   }
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 transition-colors">
       <SEO title="Your Wishlist" />
-      <h1 className="text-3xl font-bold tracking-tight text-gray-900 mb-8">Your Wishlist</h1>
+      <h1 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white mb-8">Your Wishlist</h1>
       
       <div className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
         {items.map((product: any) => {
@@ -46,32 +46,32 @@ export const WishlistPage: React.FC = () => {
           const imageUrl = product.images?.[0]?.url || 'https://via.placeholder.com/300';
           return (
             <div key={product.id} className="group relative">
-              <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                <img src={imageUrl} alt={product.name} className="w-full h-full object-center object-cover group-hover:opacity-75" />
+              <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 dark:bg-gray-800 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+                <img src={imageUrl} alt={product.name} className="w-full h-full object-center object-cover group-hover:opacity-75 transition-opacity" />
               </div>
               <div className="mt-4 flex justify-between">
                 <div>
-                  <h3 className="text-sm text-gray-700">
+                  <h3 className="text-sm text-gray-700 dark:text-gray-300">
                     <Link to={`/products/${product.slug}`}>
                       <span aria-hidden="true" className="absolute inset-0" />
                       {product.name}
                     </Link>
                   </h3>
-                  <p className="mt-1 text-sm text-gray-500">{product.brand}</p>
+                  <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">{product.brand}</p>
                 </div>
-                <p className="text-sm font-medium text-gray-900">${product.price}</p>
+                <p className="text-sm font-medium text-gray-900 dark:text-white">${product.price}</p>
               </div>
               
               <div className="mt-4 flex space-x-2 z-10 relative">
                 <button
                   onClick={() => handleMoveToCart(product)}
-                  className="flex-1 bg-gray-900 text-white px-3 py-2 text-sm rounded hover:bg-gray-800 flex justify-center items-center"
+                  className="flex-1 bg-gray-900 dark:bg-white text-white dark:text-gray-900 px-3 py-2 text-sm rounded hover:bg-gray-800 dark:hover:bg-gray-100 flex justify-center items-center transition-colors"
                 >
                   <ShoppingCart className="w-4 h-4 mr-2" /> Cart
                 </button>
                 <button
                   onClick={() => toggleItem({ productId: product.id, isAdding: false })}
-                  className="px-3 py-2 border border-gray-300 text-gray-700 rounded hover:bg-gray-50"
+                  className="px-3 py-2 border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 rounded hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
                   aria-label="Remove from wishlist"
                 >
                   <Trash2 className="w-4 h-4 text-red-500" />

@@ -44,10 +44,10 @@ export const Login: React.FC = () => {
   return (
     <>
       <SEO title="Log In" />
-      <h2 className="text-2xl font-bold tracking-tight text-gray-900">Log in to your account</h2>
-      <p className="mt-2 text-sm text-gray-500">
+      <h2 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Log in to your account</h2>
+      <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
         Don't have an account?{' '}
-        <Link to="/register" className="font-medium text-gray-900 hover:text-gray-700">
+        <Link to="/register" className="font-medium text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-300">
           Sign up
         </Link>
       </p>
@@ -55,13 +55,13 @@ export const Login: React.FC = () => {
       <div className="mt-8">
         <form onSubmit={handleSubmit} className="space-y-6">
           {error && (
-            <div className="bg-red-50 p-4 rounded-md">
-              <p className="text-sm text-red-700">{error}</p>
+            <div className="bg-red-50 dark:bg-red-900/20 p-4 rounded-md">
+              <p className="text-sm text-red-700 dark:text-red-400">{error}</p>
             </div>
           )}
 
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email address</label>
+            <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300">Email address</label>
             <div className="mt-1">
               <input
                 id="email"
@@ -71,13 +71,13 @@ export const Login: React.FC = () => {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:text-sm"
+                className="appearance-none block w-full px-3 py-2 border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-gray-900 dark:text-white rounded-md shadow-sm placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-gray-900 dark:focus:ring-white focus:border-gray-900 dark:focus:border-white sm:text-sm transition-colors"
               />
             </div>
           </div>
 
           <div>
-            <label htmlFor="password" className="block text-sm font-medium text-gray-700">Password</label>
+            <label htmlFor="password" className="block text-sm font-medium text-gray-700 dark:text-gray-300">Password</label>
             <div className="mt-1">
               <input
                 id="password"
@@ -87,18 +87,18 @@ export const Login: React.FC = () => {
                 required
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:text-sm"
+                className="appearance-none block w-full px-3 py-2 border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-gray-900 dark:text-white rounded-md shadow-sm placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-gray-900 dark:focus:ring-white focus:border-gray-900 dark:focus:border-white sm:text-sm transition-colors"
               />
             </div>
           </div>
 
           <div className="flex items-center justify-between">
             <div className="flex items-center">
-              <input id="remember-me" name="remember-me" type="checkbox" className="h-4 w-4 text-gray-900 focus:ring-gray-900 border-gray-300 rounded" />
-              <label htmlFor="remember-me" className="ml-2 block text-sm text-gray-900">Remember me</label>
+              <input id="remember-me" name="remember-me" type="checkbox" className="h-4 w-4 text-gray-900 dark:bg-gray-900 dark:border-gray-700 focus:ring-gray-900 dark:focus:ring-white border-gray-300 rounded" />
+              <label htmlFor="remember-me" className="ml-2 block text-sm text-gray-900 dark:text-gray-300">Remember me</label>
             </div>
             <div className="text-sm">
-              <Link to="/forgot-password" className="font-medium text-gray-900 hover:text-gray-700">Forgot password?</Link>
+              <Link to="/forgot-password" className="font-medium text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-300">Forgot password?</Link>
             </div>
           </div>
 
@@ -106,7 +106,7 @@ export const Login: React.FC = () => {
             <button
               type="submit"
               disabled={isLoading}
-              className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-gray-900 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 disabled:opacity-50"
+              className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white dark:text-gray-900 bg-gray-900 dark:bg-white hover:bg-gray-800 dark:hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 dark:focus:ring-offset-gray-950 focus:ring-gray-900 dark:focus:ring-white disabled:opacity-50 transition-colors"
             >
               {isLoading ? 'Signing in...' : 'Sign in'}
             </button>

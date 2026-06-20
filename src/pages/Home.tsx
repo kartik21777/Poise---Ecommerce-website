@@ -18,7 +18,7 @@ export const Home: React.FC = () => {
   const categories = Array.isArray(categoriesRaw) ? categoriesRaw : [];
 
   return (
-    <div className="bg-white">
+    <div className="bg-white dark:bg-gray-950 transition-colors">
       <SEO />
       
       {/* Hero Section */}
@@ -52,12 +52,12 @@ export const Home: React.FC = () => {
         
         {/* Categories */}
         <section aria-labelledby="collections-heading" className="mb-24">
-          <h2 id="collections-heading" className="text-2xl font-bold tracking-tight text-gray-900 mb-8">
+          <h2 id="collections-heading" className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white mb-8">
             Shop by Category
           </h2>
           {loadingCategories ? (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[1,2,3].map(i => <div key={i} className="animate-pulse bg-gray-200 aspect-[3/2] rounded-lg" />)}
+              {[1,2,3].map(i => <div key={i} className="animate-pulse bg-gray-200 dark:bg-gray-800 aspect-[3/2] rounded-lg" />)}
             </div>
           ) : (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -81,8 +81,8 @@ export const Home: React.FC = () => {
         {/* Featured Products */}
         <section className="mb-24">
           <div className="flex items-center justify-between mb-8">
-            <h2 className="text-2xl font-bold tracking-tight text-gray-900">Featured</h2>
-            <Link to="/products?sort=featured" className="text-sm font-semibold text-gray-900 hover:text-gray-700">
+            <h2 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Featured</h2>
+            <Link to="/products?sort=featured" className="text-sm font-semibold text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-300">
               View all <span aria-hidden="true">&rarr;</span>
             </Link>
           </div>
@@ -92,8 +92,8 @@ export const Home: React.FC = () => {
         {/* New Arrivals */}
         <section className="mb-24">
           <div className="flex items-center justify-between mb-8">
-            <h2 className="text-2xl font-bold tracking-tight text-gray-900">New Arrivals</h2>
-            <Link to="/products?sort=newest" className="text-sm font-semibold text-gray-900 hover:text-gray-700">
+            <h2 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">New Arrivals</h2>
+            <Link to="/products?sort=newest" className="text-sm font-semibold text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-300">
               View all <span aria-hidden="true">&rarr;</span>
             </Link>
           </div>
@@ -103,8 +103,8 @@ export const Home: React.FC = () => {
         {/* Best Sellers */}
         <section className="mb-24">
           <div className="flex items-center justify-between mb-8">
-            <h2 className="text-2xl font-bold tracking-tight text-gray-900">Best Sellers</h2>
-            <Link to="/products?sort=best-sellers" className="text-sm font-semibold text-gray-900 hover:text-gray-700">
+            <h2 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Best Sellers</h2>
+            <Link to="/products?sort=best-sellers" className="text-sm font-semibold text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-300">
               View all <span aria-hidden="true">&rarr;</span>
             </Link>
           </div>

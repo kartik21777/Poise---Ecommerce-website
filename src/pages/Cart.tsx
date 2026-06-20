@@ -20,9 +20,9 @@ export const Cart: React.FC = () => {
     return (
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
         <SEO title="Your Cart" />
-        <h2 className="text-3xl font-bold text-gray-900 mb-4">Your cart is empty</h2>
-        <p className="text-gray-500 mb-8">Looks like you haven't added anything to your cart yet.</p>
-        <Link to="/products" className="inline-block bg-gray-900 text-white px-8 py-3 rounded-md font-medium hover:bg-gray-800">
+        <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Your cart is empty</h2>
+        <p className="text-gray-500 dark:text-gray-400 mb-8">Looks like you haven't added anything to your cart yet.</p>
+        <Link to="/products" className="inline-block bg-gray-900 dark:bg-white text-white dark:text-gray-900 px-8 py-3 rounded-md font-medium hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors">
           Continue Shopping
         </Link>
       </div>
@@ -30,13 +30,13 @@ export const Cart: React.FC = () => {
   }
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 transition-colors">
       <SEO title="Your Cart" />
-      <h1 className="text-3xl font-bold tracking-tight text-gray-900 mb-8">Shopping Cart</h1>
+      <h1 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white mb-8">Shopping Cart</h1>
       
       <div className="lg:grid lg:grid-cols-12 lg:gap-x-12 lg:items-start">
         <div className="lg:col-span-7">
-          <ul role="list" className="border-t border-b border-gray-200 divide-y divide-gray-200">
+          <ul role="list" className="border-t border-b border-gray-200 dark:border-gray-800 divide-y divide-gray-200 dark:divide-gray-800">
             {items.map((item: any, idx: number) => {
               const product = typeof item.product === 'string' ? { name: 'Unknown Product', price: item.unitPrice } : item.product || {};
               const imageUrl = product.images?.[0]?.url || 'https://via.placeholder.com/150';
@@ -51,29 +51,29 @@ export const Cart: React.FC = () => {
                       <div>
                         <div className="flex justify-between">
                           <h3 className="text-sm">
-                            <Link to={`/products/${product.slug || ''}`} className="font-medium text-gray-700 hover:text-gray-800">
+                            <Link to={`/products/${product.slug || ''}`} className="font-medium text-gray-700 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white">
                               {product.name || 'Product'}
                             </Link>
                           </h3>
                         </div>
-                        <p className="mt-1 text-sm text-gray-500">SKU: {item.variantSku}</p>
-                        <p className="mt-1 text-sm font-medium text-gray-900">${(item.unitPrice || 0).toFixed(2)}</p>
+                        <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">SKU: {item.variantSku}</p>
+                        <p className="mt-1 text-sm font-medium text-gray-900 dark:text-white">${(item.unitPrice || 0).toFixed(2)}</p>
                       </div>
                       
                       <div className="mt-4 sm:mt-0 sm:pr-9">
-                        <div className="flex items-center border border-gray-300 rounded-md w-max">
+                        <div className="flex items-center border border-gray-300 dark:border-gray-700 rounded-md w-max">
                           <button
                             type="button"
                             onClick={() => updateItem({ variantSku: item.variantSku, quantity: Math.max(1, item.quantity - 1) })}
-                            className="p-2 text-gray-400 hover:text-gray-500"
+                            className="p-2 text-gray-400 hover:text-gray-500 dark:text-gray-500 dark:hover:text-gray-400"
                           >
                             <Minus className="h-4 w-4" />
                           </button>
-                          <span className="px-4 py-2 text-gray-900 text-sm font-medium">{item.quantity}</span>
+                          <span className="px-4 py-2 text-gray-900 dark:text-white text-sm font-medium">{item.quantity}</span>
                           <button
                             type="button"
                             onClick={() => updateItem({ variantSku: item.variantSku, quantity: Math.min(99, item.quantity + 1) })}
-                            className="p-2 text-gray-400 hover:text-gray-500"
+                            className="p-2 text-gray-400 hover:text-gray-500 dark:text-gray-500 dark:hover:text-gray-400"
                           >
                             <Plus className="h-4 w-4" />
                           </button>
@@ -83,7 +83,7 @@ export const Cart: React.FC = () => {
                           <button
                             type="button"
                             onClick={() => removeItem(item.variantSku)}
-                            className="-m-2 p-2 inline-flex text-gray-400 hover:text-gray-500"
+                            className="-m-2 p-2 inline-flex text-gray-400 hover:text-gray-500 dark:text-gray-500 dark:hover:text-gray-400"
                           >
                             <span className="sr-only">Remove</span>
                             <Trash2 className="h-5 w-5" />
@@ -98,18 +98,18 @@ export const Cart: React.FC = () => {
           </ul>
         </div>
         
-        <div className="mt-16 bg-gray-50 rounded-lg px-4 py-6 sm:p-6 lg:p-8 lg:mt-0 lg:col-span-5">
-          <h2 className="text-lg font-medium text-gray-900">Order summary</h2>
+        <div className="mt-16 bg-gray-50 dark:bg-gray-900 rounded-lg px-4 py-6 sm:p-6 lg:p-8 lg:mt-0 lg:col-span-5 transition-colors">
+          <h2 className="text-lg font-medium text-gray-900 dark:text-white">Order summary</h2>
           <dl className="mt-6 space-y-4">
-            <div className="flex items-center justify-between border-t border-gray-200 pt-4">
-              <dt className="text-base font-medium text-gray-900">Order total</dt>
-              <dd className="text-base font-medium text-gray-900">${(totalPrice || 0).toFixed(2)}</dd>
+            <div className="flex items-center justify-between border-t border-gray-200 dark:border-gray-800 pt-4">
+              <dt className="text-base font-medium text-gray-900 dark:text-white">Order total</dt>
+              <dd className="text-base font-medium text-gray-900 dark:text-white">${(totalPrice || 0).toFixed(2)}</dd>
             </div>
           </dl>
           <div className="mt-6">
             <button
               onClick={() => navigate('/checkout')}
-              className="w-full bg-gray-900 border border-transparent rounded-md shadow-sm py-3 px-4 text-base font-medium text-white hover:bg-gray-800"
+              className="w-full bg-gray-900 dark:bg-white border border-transparent rounded-md shadow-sm py-3 px-4 text-base font-medium text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors"
             >
               Proceed to Checkout
             </button>

@@ -14,7 +14,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
 
   return (
     <Link to={`/products/${product.slug}`} className="group block">
-      <div className="relative w-full aspect-[4/5] bg-gray-100 rounded-lg overflow-hidden mb-4">
+      <div className="relative w-full aspect-[4/5] bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden mb-4">
         <img
           src={primaryImage}
           alt={product.name}
@@ -35,18 +35,18 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           </div>
         )}
         {product.isFeatured && !hasDiscount && (
-          <div className="absolute top-2 left-2 bg-gray-900 text-white text-xs font-bold px-2 py-1 rounded">
+          <div className="absolute top-2 left-2 bg-gray-900 dark:bg-white text-white dark:text-gray-900 text-xs font-bold px-2 py-1 rounded">
             Featured
           </div>
         )}
       </div>
       <div>
-        <h3 className="text-sm font-medium text-gray-900 truncate">{product.name}</h3>
-        <p className="mt-1 text-sm text-gray-500 truncate">{product.shortDescription || product.brand}</p>
+        <h3 className="text-sm font-medium text-gray-900 dark:text-white truncate">{product.name}</h3>
+        <p className="mt-1 text-sm text-gray-500 dark:text-gray-400 truncate">{product.shortDescription || product.brand}</p>
         <div className="mt-2 flex items-center space-x-2">
-          <span className="text-sm font-semibold text-gray-900">${product.price.toFixed(2)}</span>
+          <span className="text-sm font-semibold text-gray-900 dark:text-white">${product.price.toFixed(2)}</span>
           {hasDiscount && (
-            <span className="text-sm text-gray-500 line-through">${product.compareAtPrice?.toFixed(2)}</span>
+            <span className="text-sm text-gray-500 dark:text-gray-400 line-through">${product.compareAtPrice?.toFixed(2)}</span>
           )}
         </div>
       </div>

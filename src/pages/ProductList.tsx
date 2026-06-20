@@ -45,11 +45,11 @@ export const ProductList: React.FC = () => {
   }
 
   return (
-    <div className="bg-white">
+    <div className="bg-white dark:bg-gray-950 transition-colors">
       <SEO title={q ? `Search results for "${q}"` : 'All Products'} />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="flex items-baseline justify-between border-b border-gray-200 pb-6 mb-8">
-          <h1 className="text-3xl font-extrabold tracking-tight text-gray-900 font-serif">
+        <div className="flex items-baseline justify-between border-b border-gray-200 dark:border-gray-800 pb-6 mb-8">
+          <h1 className="text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white font-serif">
             {q ? `Search: ${q}` : 'All Products'}
           </h1>
 
@@ -57,7 +57,7 @@ export const ProductList: React.FC = () => {
             <select
               value={sort}
               onChange={handleSortChange}
-              className="pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-gray-900 focus:border-gray-900 sm:text-sm rounded-md"
+              className="pl-3 pr-10 py-2 text-base border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-gray-900 dark:text-white focus:outline-none focus:ring-gray-900 dark:focus:ring-white focus:border-gray-900 dark:focus:border-white sm:text-sm rounded-md transition-colors"
             >
               <option value="newest">Newest</option>
               <option value="oldest">Price: Low to High</option>
@@ -81,29 +81,29 @@ export const ProductList: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-x-8 gap-y-10">
             {/* Desktop Filters */}
             <div className={`hidden lg:block ${isFilterOpen ? 'block' : 'hidden lg:block'}`}>
-              <form className="space-y-10 divide-y divide-gray-200">
+              <form className="space-y-10 divide-y divide-gray-200 dark:divide-gray-800">
                 {/* Placeholder for real category/brand filters */}
                 <div>
                   <fieldset>
-                    <legend className="block text-sm font-medium text-gray-900">Categories</legend>
+                    <legend className="block text-sm font-medium text-gray-900 dark:text-white">Categories</legend>
                     <div className="pt-4 space-y-3">
                       <div className="flex items-center">
-                        <input id="cat-all" type="radio" name="category" className="h-4 w-4 border-gray-300 text-gray-900 focus:ring-gray-900" 
+                        <input id="cat-all" type="radio" name="category" className="h-4 w-4 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 focus:ring-gray-900 dark:focus:ring-white transition-colors" 
                           checked={!category}
                           onChange={() => {
                             setSearchParams(prev => { prev.delete('category'); prev.set('page', '1'); return prev; });
                           }}
                         />
-                        <label htmlFor="cat-all" className="ml-3 text-sm text-gray-600">All Categories</label>
+                        <label htmlFor="cat-all" className="ml-3 text-sm text-gray-600 dark:text-gray-400">All Categories</label>
                       </div>
                       <div className="flex items-center">
-                        <input id="cat-placeholder" type="radio" name="category" className="h-4 w-4 border-gray-300 text-gray-900 focus:ring-gray-900" 
+                        <input id="cat-placeholder" type="radio" name="category" className="h-4 w-4 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 focus:ring-gray-900 dark:focus:ring-white transition-colors" 
                           checked={category === 'placeholder'}
                           onChange={() => {
                             // Phase 5: Fetch categories and render
                           }}
                         />
-                        <label htmlFor="cat-placeholder" className="ml-3 text-sm text-gray-600">Apparel (coming soon)</label>
+                        <label htmlFor="cat-placeholder" className="ml-3 text-sm text-gray-600 dark:text-gray-400">Apparel (coming soon)</label>
                       </div>
                     </div>
                   </fieldset>
