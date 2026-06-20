@@ -1,6 +1,5 @@
 import mongoose from 'mongoose';
 import { env } from './env.js';
-import { MongoMemoryServer } from 'mongodb-memory-server';
 
 let mongod: any = null;
 
@@ -18,6 +17,7 @@ export const connectDB = async () => {
       (env.mongoUri.includes('127.0.0.1:27017') || env.mongoUri.includes('localhost:27017'))
     ) {
       try {
+        const { MongoMemoryServer } = await import('mongodb-memory-server');
         mongod = await MongoMemoryServer.create({
           instance: {
             port: 27017,
