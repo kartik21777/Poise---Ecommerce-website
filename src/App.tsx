@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { HelmetProvider } from 'react-helmet-async';
 import { AuthProvider } from './providers/AuthProvider';
+import { ThemeProvider } from './providers/ThemeProvider';
 import { ErrorBoundary } from './components/ErrorBoundary';
 import { MainLayout } from './layouts/MainLayout';
 import { AuthLayout } from './layouts/AuthLayout';
@@ -63,9 +64,10 @@ export default function App() {
     <ErrorBoundary>
       <HelmetProvider>
         <QueryClientProvider client={queryClient}>
-          <AuthProvider>
-            <BrowserRouter>
-              <Suspense fallback={<Loader />}>
+          <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
+            <AuthProvider>
+              <BrowserRouter>
+                <Suspense fallback={<Loader />}>
                 <Routes>
                   {/* Auth Routes (Guest Only) */}
                   <Route element={<GuestRoute />}>
@@ -132,8 +134,9 @@ export default function App() {
               </Suspense>
             </BrowserRouter>
           </AuthProvider>
-        </QueryClientProvider>
-      </HelmetProvider>
+        </ThemeProvider>
+      </QueryClientProvider>
+    </HelmetProvider>
     </ErrorBoundary>
   );
 }

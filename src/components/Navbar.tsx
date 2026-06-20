@@ -4,6 +4,7 @@ import { ShoppingBag, User, Search, Menu, X, Heart } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { useAuth } from '../providers/AuthProvider.js';
 import { useCart } from '../hooks/useCart.js';
+import { ThemeToggle } from './ThemeToggle';
 
 export const Navbar: React.FC = () => {
   const { isAuthenticated, user, logout } = useAuth();
@@ -52,21 +53,21 @@ export const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="bg-white border-b border-gray-200 sticky top-0 z-50">
+    <nav className="bg-white dark:bg-gray-950 border-b border-gray-200 dark:border-gray-800 sticky top-0 z-50 transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex px-2 lg:px-0 flex-1 justify-between lg:justify-start">
             <div className="flex-shrink-0 flex items-center">
-              <Link to="/" className="text-2xl font-bold font-serif tracking-tight text-gray-900">
+              <Link to="/" className="text-2xl font-bold font-serif tracking-tight text-gray-900 dark:text-white">
                 POISE
               </Link>
             </div>
             
             {/* Desktop Navigation */}
             <div className="hidden lg:ml-10 lg:flex lg:space-x-8 lg:items-center">
-              <Link to="/products" className="text-sm font-medium text-gray-700 hover:text-gray-900">Shop</Link>
-              <Link to="/categories/new" className="text-sm font-medium text-gray-700 hover:text-gray-900">New</Link>
-              <Link to="/categories/sale" className="text-sm font-medium text-gray-700 hover:text-gray-900">Sale</Link>
+              <Link to="/products" className="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">Shop</Link>
+              <Link to="/categories/new" className="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">New</Link>
+              <Link to="/categories/sale" className="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">Sale</Link>
             </div>
           </div>
 
@@ -77,7 +78,7 @@ export const Navbar: React.FC = () => {
                 placeholder="Search products..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-64 pl-10 pr-4 py-2 border border-gray-300 rounded-full text-sm focus:outline-none focus:ring-1 focus:ring-gray-900 focus:border-gray-900"
+                className="w-64 pl-10 pr-4 py-2 border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 rounded-full text-sm focus:outline-none focus:ring-1 focus:ring-gray-900 dark:focus:ring-white focus:border-gray-900 dark:focus:border-white transition-colors"
               />
               <Search className="h-4 w-4 text-gray-400 absolute left-4 top-1/2 transform -translate-y-1/2" />
             </form>
@@ -122,29 +123,32 @@ export const Navbar: React.FC = () => {
               </Link>
             )}
 
-            <Link to="/wishlist" className="p-2 text-gray-400 hover:text-gray-500 relative">
+            <Link to="/wishlist" className="p-2 text-gray-400 hover:text-gray-500 dark:hover:text-gray-300 relative transition-colors">
               <Heart className="h-6 w-6" />
             </Link>
 
-            <Link to="/cart" className="p-2 text-gray-400 hover:text-gray-500 relative">
+            <Link to="/cart" className="p-2 text-gray-400 hover:text-gray-500 dark:hover:text-gray-300 relative transition-colors">
               <ShoppingBag className="h-6 w-6" />
               {cartItemCount > 0 && (
-                <span className="absolute top-1 right-1 h-4 w-4 rounded-full bg-gray-900 text-white text-xs flex items-center justify-center">
+                <span className="absolute top-1 right-1 h-4 w-4 rounded-full bg-gray-900 dark:bg-white text-white dark:text-gray-900 text-xs flex items-center justify-center transition-colors">
                   {cartItemCount > 99 ? '99+' : cartItemCount}
                 </span>
               )}
             </Link>
+            
+            <ThemeToggle />
           </div>
 
           {/* Mobile menu button */}
           <div className="flex items-center lg:hidden space-x-4">
-            <Link to="/wishlist" className="p-2 text-gray-400 hover:text-gray-500 relative">
+            <ThemeToggle />
+            <Link to="/wishlist" className="p-2 text-gray-400 hover:text-gray-500 dark:hover:text-gray-300 relative transition-colors">
               <Heart className="h-6 w-6" />
             </Link>
-            <Link to="/cart" className="p-2 text-gray-400 hover:text-gray-500 relative">
+            <Link to="/cart" className="p-2 text-gray-400 hover:text-gray-500 dark:hover:text-gray-300 relative transition-colors">
               <ShoppingBag className="h-6 w-6" />
               {cartItemCount > 0 && (
-                <span className="absolute top-1 right-1 h-4 w-4 rounded-full bg-gray-900 text-white text-xs flex items-center justify-center">
+                <span className="absolute top-1 right-1 h-4 w-4 rounded-full bg-gray-900 dark:bg-white text-white dark:text-gray-900 text-xs flex items-center justify-center transition-colors">
                   {cartItemCount > 99 ? '99+' : cartItemCount}
                 </span>
               )}
@@ -153,7 +157,7 @@ export const Navbar: React.FC = () => {
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               aria-expanded={isMobileMenuOpen}
               aria-label="Toggle mobile menu"
-              className="p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 relative z-[70] lg:hidden"
+              className="p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 dark:text-gray-500 dark:hover:text-gray-400 relative z-[70] lg:hidden transition-colors"
             >
               <Menu className="h-6 w-6" />
             </button>
@@ -181,13 +185,13 @@ export const Navbar: React.FC = () => {
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
               transition={{ duration: 0.35, ease: [0.25, 0.1, 0.25, 1.0] }} // smooth ease-out
-              className="fixed top-0 right-0 w-[85%] max-w-sm h-full bg-white z-[65] shadow-2xl flex flex-col overflow-y-auto"
+              className="fixed top-0 right-0 w-[85%] max-w-sm h-full bg-white dark:bg-gray-950 z-[65] shadow-2xl flex flex-col overflow-y-auto"
             >
-              <div className="flex items-center justify-between p-4 border-b border-gray-200">
-                <span className="text-xl font-bold font-serif text-gray-900">POISE</span>
+              <div className="flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-800">
+                <span className="text-xl font-bold font-serif text-gray-900 dark:text-white">POISE</span>
                 <button
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="p-2 -mr-2 text-gray-400 hover:text-gray-500"
+                  className="p-2 -mr-2 text-gray-400 hover:text-gray-500 dark:text-gray-500 dark:hover:text-gray-400"
                 >
                   <X className="h-6 w-6" />
                 </button>
@@ -201,20 +205,20 @@ export const Navbar: React.FC = () => {
                       placeholder="Search products..."
                       value={searchQuery}
                       onChange={(e) => setSearchQuery(e.target.value)}
-                      className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-md text-base focus:outline-none focus:ring-1 focus:ring-gray-900"
+                      className="w-full pl-10 pr-4 py-3 border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 rounded-md text-base focus:outline-none focus:ring-1 focus:ring-gray-900 dark:focus:ring-white"
                     />
                     <Search className="h-5 w-5 text-gray-400 absolute left-3 top-1/2 transform -translate-y-1/2" />
                   </div>
                 </form>
                 
                 <div className="space-y-1 mt-6">
-                  <Link onClick={() => setIsMobileMenuOpen(false)} to="/products" className="block py-3 text-lg font-medium text-gray-900 border-b border-gray-100">Shop All</Link>
-                  <Link onClick={() => setIsMobileMenuOpen(false)} to="/categories/new" className="block py-3 text-lg font-medium text-gray-900 border-b border-gray-100">New Arrivals</Link>
-                  <Link onClick={() => setIsMobileMenuOpen(false)} to="/categories/sale" className="block py-3 text-lg font-medium text-gray-900 border-b border-gray-100">Sale</Link>
+                  <Link onClick={() => setIsMobileMenuOpen(false)} to="/products" className="block py-3 text-lg font-medium text-gray-900 dark:text-white border-b border-gray-100 dark:border-gray-800">Shop All</Link>
+                  <Link onClick={() => setIsMobileMenuOpen(false)} to="/categories/new" className="block py-3 text-lg font-medium text-gray-900 dark:text-white border-b border-gray-100 dark:border-gray-800">New Arrivals</Link>
+                  <Link onClick={() => setIsMobileMenuOpen(false)} to="/categories/sale" className="block py-3 text-lg font-medium text-gray-900 dark:text-white border-b border-gray-100 dark:border-gray-800">Sale</Link>
                 </div>
               </div>
 
-              <div className="px-4 py-8 border-t border-gray-200 bg-gray-50">
+              <div className="px-4 py-8 border-t border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900">
                 {isAuthenticated ? (
                   <div className="space-y-4">
                     <div className="flex items-center">

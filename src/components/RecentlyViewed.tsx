@@ -23,7 +23,7 @@ export const RecentlyViewed: React.FC = () => {
 
   return (
     <section aria-labelledby="recently-viewed-heading" className="mt-24">
-      <h2 id="recently-viewed-heading" className="text-2xl font-bold tracking-tight text-gray-900 mb-8 border-t border-gray-200 pt-16">
+      <h2 id="recently-viewed-heading" className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white mb-8 border-t border-gray-200 dark:border-gray-800 pt-16 transition-colors">
         Recently viewed
       </h2>
       <ProductGrid products={products} />

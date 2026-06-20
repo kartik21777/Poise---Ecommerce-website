@@ -77,7 +77,7 @@ export const ProductDetail: React.FC = () => {
   const hasDiscount = product.compareAtPrice && product.compareAtPrice > product.price;
 
   return (
-    <div className="bg-white">
+    <div className="bg-white dark:bg-gray-950 transition-colors">
       <SEO 
         title={product.metaTitle || product.name} 
         description={product.metaDescription || product.shortDescription || product.description} 
@@ -93,19 +93,19 @@ export const ProductDetail: React.FC = () => {
                 {product.images?.map((image, index) => (
                   <button
                     key={index}
-                    className="relative h-24 bg-white rounded-md flex items-center justify-center text-sm font-medium uppercase text-gray-900 cursor-pointer hover:bg-gray-50 focus:outline-none focus:ring focus:ring-opacity-50 focus:ring-offset-4"
+                    className="relative h-24 bg-white dark:bg-gray-900 rounded-md flex items-center justify-center text-sm font-medium uppercase text-gray-900 dark:text-white cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-800 focus:outline-none focus:ring focus:ring-opacity-50 focus:ring-offset-4 dark:focus:ring-offset-gray-950 transition-colors"
                     onClick={() => setSelectedImage(image.url)}
                   >
                     <span className="absolute inset-0 rounded-md overflow-hidden">
                       <img src={image.url} alt="" className="w-full h-full object-center object-cover" />
                     </span>
-                    <span className={`absolute inset-0 rounded-md ring-2 ring-offset-2 pointer-events-none ${displayImage === image.url ? 'ring-gray-900' : 'ring-transparent'}`} aria-hidden="true" />
+                    <span className={`absolute inset-0 rounded-md ring-2 ring-offset-2 pointer-events-none transition-colors ${displayImage === image.url ? 'ring-gray-900 dark:ring-white' : 'ring-transparent'}`} aria-hidden="true" />
                   </button>
                 ))}
               </div>
             </div>
 
-            <div className="w-full aspect-square relative rounded-lg overflow-hidden bg-gray-100">
+            <div className="w-full aspect-square relative rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800 transition-colors">
               <img
                 src={displayImage}
                 alt={product.name}
@@ -116,25 +116,25 @@ export const ProductDetail: React.FC = () => {
 
           {/* Product Info */}
           <div className="mt-10 px-4 sm:px-0 lg:mt-0">
-            <h1 className="text-3xl font-extrabold tracking-tight text-gray-900 font-serif">{product.name}</h1>
+            <h1 className="text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white font-serif">{product.name}</h1>
             
             <div className="mt-3 flex items-center">
-              <p className="text-3xl text-gray-900 font-medium">${product.price.toFixed(2)}</p>
+              <p className="text-3xl text-gray-900 dark:text-white font-medium">${product.price.toFixed(2)}</p>
               {hasDiscount && (
-                <p className="ml-4 text-xl text-gray-500 line-through">${product.compareAtPrice?.toFixed(2)}</p>
+                <p className="ml-4 text-xl text-gray-500 dark:text-gray-400 line-through">${product.compareAtPrice?.toFixed(2)}</p>
               )}
             </div>
 
             <div className="mt-6">
               <h3 className="sr-only">Description</h3>
-              <div className="text-base text-gray-700 space-y-6" dangerouslySetInnerHTML={{ __html: product.description }} />
+              <div className="text-base text-gray-700 dark:text-gray-300 space-y-6" dangerouslySetInnerHTML={{ __html: product.description }} />
             </div>
 
             <div className="mt-10 flex space-x-4">
               <button
                 type="button"
                 onClick={handleAddToCart}
-                className="flex-1 bg-gray-900 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                className="flex-1 bg-gray-900 dark:bg-white border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 dark:focus:ring-offset-gray-950 focus:ring-gray-900 dark:focus:ring-white transition-colors"
               >
                 Add to Cart
               </button>
@@ -143,8 +143,8 @@ export const ProductDetail: React.FC = () => {
                 onClick={handleWishlist}
                 className={`p-3 rounded-md border flex items-center justify-center transition-colors ${
                   product && isInWishlist(product.id)
-                    ? 'border-red-500 text-red-500 bg-red-50'
-                    : 'border-gray-300 text-gray-400 hover:text-gray-500 hover:bg-gray-50'
+                    ? 'border-red-500 text-red-500 bg-red-50 dark:bg-red-900/20'
+                    : 'border-gray-300 dark:border-gray-700 text-gray-400 dark:text-gray-500 hover:text-gray-500 hover:bg-gray-50 dark:hover:text-gray-300 dark:hover:bg-gray-800'
                 }`}
                 aria-label="Add to wishlist"
               >
@@ -157,7 +157,7 @@ export const ProductDetail: React.FC = () => {
         {/* Related Products */}
         {related.length > 0 && (
           <section aria-labelledby="related-heading" className="mt-24">
-            <h2 id="related-heading" className="text-2xl font-bold tracking-tight text-gray-900 mb-8 border-t border-gray-200 pt-16">
+            <h2 id="related-heading" className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white mb-8 border-t border-gray-200 dark:border-gray-800 pt-16 transition-colors">
               You may also like
             </h2>
             <ProductGrid products={related} />
