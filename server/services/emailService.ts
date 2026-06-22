@@ -22,7 +22,11 @@ export const sendVerificationEmail = async (to: string, token: string) => {
       <a href="${verifyLink}">${verifyLink}</a>
     `,
   };
-  await transporter.sendMail(mailOptions);
+  try {
+    await transporter.sendMail(mailOptions);
+  } catch (error) {
+    console.error('Failed to send verification email. Ensure SMTP is configured. Verification Link:', verifyLink);
+  }
 };
 
 export const sendPasswordResetEmail = async (to: string, token: string) => {
@@ -37,5 +41,9 @@ export const sendPasswordResetEmail = async (to: string, token: string) => {
       <a href="${resetLink}">${resetLink}</a>
     `,
   };
-  await transporter.sendMail(mailOptions);
+  try {
+    await transporter.sendMail(mailOptions);
+  } catch (error) {
+    console.error('Failed to send password reset email. Ensure SMTP is configured. Reset Link:', resetLink);
+  }
 };
