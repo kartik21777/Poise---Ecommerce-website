@@ -96,9 +96,17 @@ export function CurrencyManagement() {
         apiClient.get('/admin/products?limit=100')
       ]);
 
-      setCurrencies(currRes.data);
+      setCurrencies(currRes.data.map((currency: any) => ({
+        ...currency,
+        isActive: currency.isActive ?? currency.isEnabled,
+      })));
       setRateHistory(ratesRes.data);
-      setRegionalOverrides(overridesRes.data);
+      setRegionalOverrides(overridesRes.data.map((override: any) => ({
+        ...override,
+        productId: override.productId ?? override.product,
+        priceOverride: override.priceOverride ?? override.price,
+        compareAtPriceOverride: override.compareAtPriceOverride ?? override.compareAtPrice,
+      })));
       setProducts(prodsRes.data?.products || prodsRes.data || []);
     } catch (err: any) {
       console.error(err);

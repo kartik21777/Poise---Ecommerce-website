@@ -5,9 +5,15 @@ import { seedProducts } from '../scripts/seedProducts.js';
 import { seedUsers } from '../scripts/seedUsers.js';
 import { seedOrders } from '../scripts/generateOrders.js';
 import { seedPayments } from '../scripts/generatePayments.js';
+import { seedGiftCards } from '../scripts/generateGiftCards.js';
+import { seedStoreCredit } from '../scripts/generateStoreCredit.js';
+import { seedLoyalty } from '../scripts/generateLoyalty.js';
 import { env } from './env.js';
 import { Order } from '../models/Order.js';
 import { PaymentTransaction } from '../models/PaymentTransaction.js';
+import { GiftCard } from '../models/GiftCard.js';
+import { StoreCreditAccount } from '../models/StoreCreditAccount.js';
+import { LoyaltyAccount } from '../models/LoyaltyAccount.js';
 
 export const runAutoSeeding = async () => {
   try {
@@ -38,6 +44,24 @@ export const runAutoSeeding = async () => {
     if (env.enableDemoData && paymentCount === 0) {
       console.log('[System] ENABLE_DEMO_DATA is true. Generating 500 realistic payment transactions...');
       await seedPayments(false);
+    }
+
+    const giftCardCount = await GiftCard.countDocuments();
+    if (env.enableDemoData && giftCardCount === 0) {
+      console.log('[System] ENABLE_DEMO_DATA is true. Generating realistic gift cards...');
+      await seedGiftCards(false);
+    }
+
+    const storeCreditCount = await StoreCreditAccount.countDocuments();
+    if (env.enableDemoData && storeCreditCount === 0) {
+      console.log('[System] ENABLE_DEMO_DATA is true. Generating store-credit accounts and transactions...');
+      await seedStoreCredit(false);
+    }
+
+    const loyaltyAccountCount = await LoyaltyAccount.countDocuments();
+    if (env.enableDemoData && loyaltyAccountCount === 0) {
+      console.log('[System] ENABLE_DEMO_DATA is true. Generating loyalty accounts and transactions...');
+      await seedLoyalty(false);
     }
 
     console.log('[System] Database auto-bootstrapping checks successfully completed!');

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import { apiClient } from '../../services/apiClient.js';
 import {
   CreditCard,
   Search,
@@ -158,7 +158,7 @@ export const AdminPayments: React.FC = () => {
     setLoading(true);
     setError('');
     try {
-      const { data } = await axios.get('/api/admin/payments', { withCredentials: true });
+      const { data } = await apiClient.get('/admin/payments');
       setPayments(data);
     } catch (err: any) {
       console.error(err);
@@ -172,7 +172,7 @@ export const AdminPayments: React.FC = () => {
     setLoading(true);
     setError('');
     try {
-      const { data } = await axios.get('/api/admin/payments/refunds', { withCredentials: true });
+      const { data } = await apiClient.get('/admin/payments/refunds');
       setRefunds(data);
     } catch (err: any) {
       console.error(err);
@@ -186,7 +186,7 @@ export const AdminPayments: React.FC = () => {
     setLoading(true);
     setError('');
     try {
-      const { data } = await axios.get('/api/admin/payments/reconciliation?days=30', { withCredentials: true });
+      const { data } = await apiClient.get('/admin/payments/reconciliation?days=30');
       setReconciliation(data);
     } catch (err: any) {
       console.error(err);
@@ -200,7 +200,7 @@ export const AdminPayments: React.FC = () => {
     setLoading(true);
     setError('');
     try {
-      const { data } = await axios.get('/api/admin/payments/exceptions', { withCredentials: true });
+      const { data } = await apiClient.get('/admin/payments/exceptions');
       setExceptions(data);
     } catch (err: any) {
       console.error(err);
@@ -214,7 +214,7 @@ export const AdminPayments: React.FC = () => {
     setLoading(true);
     setError('');
     try {
-      const { data } = await axios.get('/api/admin/payments/disputes', { withCredentials: true });
+      const { data } = await apiClient.get('/admin/payments/disputes');
       setDisputes(data);
     } catch (err: any) {
       console.error(err);
@@ -248,15 +248,14 @@ export const AdminPayments: React.FC = () => {
     setSuccess('');
 
     try {
-      const { data } = await axios.post(
-        '/api/admin/payments/refund',
+      const { data } = await apiClient.post(
+        '/admin/payments/refund',
         {
           paymentTransactionId: refundTargetTx._id,
           amount: parseFloat(refundAmount),
           reason: refundReason,
           idempotencyKey: refundCustomIdemp || undefined,
-        },
-        { withCredentials: true }
+        }
       );
 
       if (data.success) {
@@ -281,7 +280,7 @@ export const AdminPayments: React.FC = () => {
     setError('');
     setSuccess('');
     try {
-      const { data } = await axios.post(`/api/admin/payments/refunds/${refundId}/retry`, {}, { withCredentials: true });
+      const { data } = await apiClient.post(`/admin/payments/refunds/${refundId}/retry`, {});
       if (data.success) {
         setSuccess('Refund successfully retried and processed!');
         fetchRefunds();
@@ -301,11 +300,7 @@ export const AdminPayments: React.FC = () => {
     setError('');
     setSuccess('');
     try {
-      const { data } = await axios.post(
-        '/api/admin/payments/webhooks/reprocess',
-        { eventId },
-        { withCredentials: true }
-      );
+      const { data } = await apiClient.post('/admin/payments/webhooks/reprocess', { eventId });
 
       if (data.success) {
         setSuccess(`Webhook Event reprocessed successfully! Message: ${data.message}`);
@@ -338,7 +333,7 @@ export const AdminPayments: React.FC = () => {
         evidenceDetails: disputeEvidence,
       };
 
-      await axios.post('/api/admin/payments/disputes', payload, { withCredentials: true });
+      await apiClient.post('/admin/payments/disputes', payload);
       setSuccess(updatingDisputeId ? 'Dispute record successfully updated.' : 'Dispute claim successfully logged.');
       setDisputeModalOpen(false);
       setUpdatingDisputeId(null);

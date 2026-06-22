@@ -12,6 +12,7 @@ export const Navbar: React.FC = () => {
   const navigate = useNavigate();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
+  const [showWishlistPrompt, setShowWishlistPrompt] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => {
@@ -19,6 +20,7 @@ export const Navbar: React.FC = () => {
       if (e.key === 'Escape') {
         setIsMobileMenuOpen(false);
         setIsUserMenuOpen(false);
+        setShowWishlistPrompt(false);
       }
     };
     window.addEventListener('keydown', handleKeyDown);
@@ -50,6 +52,21 @@ export const Navbar: React.FC = () => {
       setSearchQuery('');
       setIsMobileMenuOpen(false);
     }
+  };
+
+  const handleWishlistClick = () => {
+    if (isAuthenticated) {
+      navigate('/wishlist');
+      return;
+    }
+
+    setIsMobileMenuOpen(false);
+    setShowWishlistPrompt(true);
+  };
+
+  const handleWishlistSignIn = () => {
+    setShowWishlistPrompt(false);
+    navigate('/login', { state: { from: { pathname: '/wishlist' } } });
   };
 
   return (
@@ -128,9 +145,14 @@ export const Navbar: React.FC = () => {
               </Link>
             )}
 
-            <Link to="/wishlist" className="p-2 text-gray-400 hover:text-gray-500 dark:hover:text-gray-300 relative transition-colors">
+            <button
+              type="button"
+              onClick={handleWishlistClick}
+              aria-label="View wishlist"
+              className="p-2 text-gray-400 hover:text-gray-500 dark:hover:text-gray-300 relative transition-colors"
+            >
               <Heart className="h-6 w-6" />
-            </Link>
+            </button>
 
             <Link to="/cart" className="p-2 text-gray-400 hover:text-gray-500 dark:hover:text-gray-300 relative transition-colors">
               <ShoppingBag className="h-6 w-6" />
@@ -147,9 +169,14 @@ export const Navbar: React.FC = () => {
           {/* Mobile menu button */}
           <div className="flex items-center lg:hidden space-x-4">
             <ThemeToggle />
-            <Link to="/wishlist" className="p-2 text-gray-400 hover:text-gray-500 dark:hover:text-gray-300 relative transition-colors">
+            <button
+              type="button"
+              onClick={handleWishlistClick}
+              aria-label="View wishlist"
+              className="p-2 text-gray-400 hover:text-gray-500 dark:hover:text-gray-300 relative transition-colors"
+            >
               <Heart className="h-6 w-6" />
-            </Link>
+            </button>
             <Link to="/cart" className="p-2 text-gray-400 hover:text-gray-500 dark:hover:text-gray-300 relative transition-colors">
               <ShoppingBag className="h-6 w-6" />
               {cartItemCount > 0 && (
@@ -259,6 +286,60 @@ export const Navbar: React.FC = () => {
               </div>
             </motion.div>
           </div>
+        )}
+      </AnimatePresence>
+
+      <AnimatePresence>
+        {showWishlistPrompt && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 px-4"
+            onClick={() => setShowWishlistPrompt(false)}
+          >
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95, y: 12 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.95, y: 12 }}
+              role="dialog"
+              aria-modal="true"
+              aria-labelledby="wishlist-sign-in-title"
+              className="w-full max-w-md rounded-xl bg-white p-6 shadow-2xl dark:bg-gray-900"
+              onClick={(event) => event.stopPropagation()}
+            >
+              <div className="flex items-start gap-4">
+                <div className="rounded-full bg-gray-100 p-3 dark:bg-gray-800">
+                  <Heart className="h-6 w-6 text-gray-700 dark:text-gray-200" />
+                </div>
+                <div>
+                  <h2 id="wishlist-sign-in-title" className="text-lg font-semibold text-gray-900 dark:text-white">
+                    Please sign in to view your wishlist
+                  </h2>
+                  <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
+                    Would you like to go to the sign-in page now?
+                  </p>
+                </div>
+              </div>
+              <div className="mt-6 flex justify-end gap-3">
+                <button
+                  type="button"
+                  onClick={() => setShowWishlistPrompt(false)}
+                  className="rounded-md border border-gray-300 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-300 dark:hover:bg-gray-800"
+                >
+                  Not now
+                </button>
+                <button
+                  type="button"
+                  onClick={handleWishlistSignIn}
+                  autoFocus
+                  className="rounded-md bg-gray-900 px-4 py-2 text-sm font-medium text-white hover:bg-gray-800 dark:bg-white dark:text-gray-900 dark:hover:bg-gray-100"
+                >
+                  Sign in
+                </button>
+              </div>
+            </motion.div>
+          </motion.div>
         )}
       </AnimatePresence>
     </nav>

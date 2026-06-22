@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import { apiClient } from '../../services/apiClient.js';
 import {
   Sliders,
   Server,
@@ -78,11 +78,11 @@ export const GatewayAdminPanel: React.FC = () => {
     setLoading(true);
     try {
       // 1. Fetch live configs list
-      const configRes = await axios.get('/api/admin/payments/gateways/config', { withCredentials: true });
+      const configRes = await apiClient.get('/admin/payments/gateways/config');
       setConfigs(configRes.data);
 
       // 2. Fetch live global health reports
-      const healthRes = await axios.get('/api/admin/payments/gateways/health', { withCredentials: true });
+      const healthRes = await apiClient.get('/admin/payments/gateways/health');
       const healthMap: Record<string, GatewayHealth> = {};
       healthRes.data.gateways.forEach((h: any) => {
         healthMap[h.gateway] = h;
@@ -107,11 +107,11 @@ export const GatewayAdminPanel: React.FC = () => {
   const fetchGatewayTelemetry = async (gatewayName: string) => {
     try {
       // 1. Fetch SLOs
-      const sloRes = await axios.get(`/api/admin/payments/gateways/slo/${gatewayName}?timeframe=30`, { withCredentials: true });
+      const sloRes = await apiClient.get(`/admin/payments/gateways/slo/${gatewayName}?timeframe=30`);
       setSloMetrics(sloRes.data.slos || []);
 
       // 2. Fetch History Timeline
-      const historyRes = await axios.get(`/api/admin/payments/gateways/health/history/${gatewayName}?timeframe=30`, { withCredentials: true });
+      const historyRes = await apiClient.get(`/admin/payments/gateways/health/history/${gatewayName}?timeframe=30`);
       setHistory(historyRes.data.history || []);
     } catch (err: any) {
       console.error(err);
@@ -131,13 +131,12 @@ export const GatewayAdminPanel: React.FC = () => {
   const handleToggleState = async (cfg: GatewayConfig) => {
     try {
       const targetState = !cfg.enabled;
-      await axios.post(
-        '/api/admin/payments/gateways/config',
+      await apiClient.post(
+        '/admin/payments/gateways/config',
         {
           gateway: cfg.gateway,
           enabled: targetState,
-        },
-        { withCredentials: true }
+        }
       );
       setSuccessMsg(`Smart Router has updated state of ${cfg.gateway} to ${targetState ? 'ENABLED' : 'DISABLED'}`);
       fetchConfigsAndHealth();
@@ -152,11 +151,7 @@ export const GatewayAdminPanel: React.FC = () => {
     setErrorInput('');
     setSuccessMsg('');
     try {
-      const res = await axios.post(
-        '/api/admin/payments/gateways/health/check',
-        { gateway: gatewayName },
-        { withCredentials: true }
-      );
+      const res = await apiClient.post('/admin/payments/gateways/health/check', { gateway: gatewayName });
       setSuccessMsg(`${gatewayName} diagnostics completed! Latency: ${res.data.latencyMs}ms. Health: ${res.data.status}`);
       fetchConfigsAndHealth();
       if (activeGateway === gatewayName) {
@@ -198,8 +193,8 @@ export const GatewayAdminPanel: React.FC = () => {
         .map((c) => c.trim().toUpperCase())
         .filter((c) => c.length > 0);
 
-      await axios.post(
-        '/api/admin/payments/gateways/config',
+      await apiClient.post(
+        '/admin/payments/gateways/config',
         {
           gateway: editingGateway,
           name: editName,
@@ -207,8 +202,7 @@ export const GatewayAdminPanel: React.FC = () => {
           failoverPriority: Number(editFailoverPriority),
           supportedCurrencies: formattedCurrencies,
           supportedCountries: formattedCountries,
-        },
-        { withCredentials: true }
+        }
       );
 
       setSuccessMsg(`Custom routing values for ${editingGateway} persistent in Database.`);

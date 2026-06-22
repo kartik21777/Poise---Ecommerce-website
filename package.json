@@ -14,7 +14,12 @@
     "seed:categories": "tsx server/scripts/seedCategories.ts",
     "seed:catalog": "tsx server/scripts/seedCatalog.ts",
     "seed:products": "tsx server/scripts/seedProducts.ts",
-    "seed:users": "tsx server/scripts/seedUsers.ts"
+    "seed:users": "tsx server/scripts/seedUsers.ts",
+    "seed:giftcards": "tsx server/scripts/generateGiftCards.ts",
+    "seed:store-credit": "tsx server/scripts/generateStoreCredit.ts",
+    "seed:loyalty": "tsx server/scripts/generateLoyalty.ts",
+    "seed:orders": "tsx server/scripts/generateOrders.ts",
+    "seed:payments": "tsx server/scripts/generatePayments.ts"
   },
   "dependencies": {
     "@google/genai": "^2.4.0",

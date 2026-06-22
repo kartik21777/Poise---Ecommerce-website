@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Gift, CreditCard, Filter, Download, Plus, AlertCircle, Trash2, Shield, ArrowDownUp, RefreshCw, Layers } from 'lucide-react';
+import { apiClient } from '../../services/apiClient.js';
 
 export const GiftCardManagement: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'cards' | 'storeCredit' | 'transactions' | 'liability' | 'loyaltyPlatform'>('liability');
@@ -55,8 +56,7 @@ export const GiftCardManagement: React.FC = () => {
   const fetchLiabilityReport = async () => {
     setLoading(true);
     try {
-      const res = await fetch('/api/admin/giftcards/liability-report');
-      const data = await res.json();
+      const { data } = await apiClient.get('/admin/giftcards/liability-report');
       if (data.success) {
         setLiabilityData(data.data);
       } else {
@@ -72,15 +72,14 @@ export const GiftCardManagement: React.FC = () => {
   const fetchGiftCards = async () => {
     setLoading(true);
     try {
-      let url = '/api/admin/giftcards/cards';
+      let url = '/admin/giftcards/cards';
       const params = new URLSearchParams();
       if (cardStatusFilter) params.append('status', cardStatusFilter);
       if (cardSearch) params.append('search', cardSearch);
       if (params.toString()) {
         url += `?${params.toString()}`;
       }
-      const res = await fetch(url);
-      const data = await res.json();
+      const { data } = await apiClient.get(url);
       if (data.success) {
         setGiftCards(data.data);
       }
@@ -94,8 +93,7 @@ export const GiftCardManagement: React.FC = () => {
   const fetchStoreCreditAccounts = async () => {
     setLoading(true);
     try {
-      const res = await fetch('/api/admin/giftcards/store-credit');
-      const data = await res.json();
+      const { data } = await apiClient.get('/admin/giftcards/store-credit');
       if (data.success) {
         setStoreCreditAccounts(data.data);
       }
@@ -109,14 +107,12 @@ export const GiftCardManagement: React.FC = () => {
   const fetchTransactionsLedgers = async () => {
     setLoading(true);
     try {
-      const resCard = await fetch('/api/admin/giftcards/cards/transactions');
-      const cardData = await resCard.json();
+      const { data: cardData } = await apiClient.get('/admin/giftcards/cards/transactions');
       if (cardData.success) {
         setGiftCardTxs(cardData.data);
       }
 
-      const resCredit = await fetch('/api/admin/giftcards/store-credit/transactions');
-      const creditData = await resCredit.json();
+      const { data: creditData } = await apiClient.get('/admin/giftcards/store-credit/transactions');
       if (creditData.success) {
         setStoreCreditTxs(creditData.data);
       }
@@ -131,8 +127,7 @@ export const GiftCardManagement: React.FC = () => {
     setLoading(true);
     setError(null);
     try {
-      const res = await fetch('/api/loyalty/admin/users');
-      const data = await res.json();
+      const { data } = await apiClient.get('/loyalty/admin/users');
       if (data.success) {
         setLoyaltyUsers(data.data);
       } else {
@@ -147,8 +142,7 @@ export const GiftCardManagement: React.FC = () => {
 
   const fetchLoyaltyAdminAnalytics = async () => {
     try {
-      const res = await fetch('/api/loyalty/admin/analytics');
-      const data = await res.json();
+      const { data } = await apiClient.get('/loyalty/admin/analytics');
       if (data.success) {
         setLoyaltyAnalytics(data.data);
       }
@@ -161,8 +155,7 @@ export const GiftCardManagement: React.FC = () => {
     setReconcilingLoyalty(true);
     setLoyaltyReconResult(null);
     try {
-      const res = await fetch('/api/loyalty/admin/reconciliation');
-      const data = await res.json();
+      const { data } = await apiClient.get('/loyalty/admin/reconciliation');
       if (data.success) {
         setLoyaltyReconResult(data.data);
       } else {
@@ -181,16 +174,11 @@ export const GiftCardManagement: React.FC = () => {
     setLoadingPoints(true);
     setError(null);
     try {
-      const res = await fetch('/api/loyalty/admin/load', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
+      const { data } = await apiClient.post('/loyalty/admin/load', {
           email: loyaltyAdjustUserEmail.trim(),
           points: Number(loyaltyAdjustAmount),
           note: loyaltyAdjustNote,
-        }),
       });
-      const data = await res.json();
       if (data.success) {
         alert(`Successfully loaded ${loyaltyAdjustAmount} points to user ${loyaltyAdjustUserEmail}!`);
         setLoyaltyAdjustUserEmail('');
@@ -229,18 +217,13 @@ export const GiftCardManagement: React.FC = () => {
     e.preventDefault();
     setError(null);
     try {
-      const res = await fetch('/api/admin/giftcards/cards', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
+      const { data } = await apiClient.post('/admin/giftcards/cards', {
           originalValue: Number(singleValue),
           currency: singleCurrency,
           expirationDate: singleExpiry || undefined,
           issuedTo: singleUser || undefined,
           note: singleNote,
-        }),
       });
-      const data = await res.json();
       if (data.success) {
         alert(`Successfully generated gift card code: ${data.data.code}`);
         setSingleValue('100');
@@ -260,18 +243,13 @@ export const GiftCardManagement: React.FC = () => {
     e.preventDefault();
     setError(null);
     try {
-      const res = await fetch('/api/admin/giftcards/cards/bulk-create', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
+      const { data } = await apiClient.post('/admin/giftcards/cards/bulk-create', {
           count: Number(bulkCount),
           originalValue: Number(bulkValue),
           currency: bulkCurrency,
           expirationDate: bulkExpiry || undefined,
           note: bulkNote,
-        }),
       });
-      const data = await res.json();
       if (data.success) {
         alert(`Successfully batch generated ${data.count} secure non-sequential gift cards!`);
         setBulkCount('10');
@@ -291,18 +269,13 @@ export const GiftCardManagement: React.FC = () => {
     e.preventDefault();
     setError(null);
     try {
-      const res = await fetch('/api/admin/giftcards/store-credit/credit', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
+      const { data } = await apiClient.post('/admin/giftcards/store-credit/credit', {
           userId: creditUserId,
           amount: Number(creditAmount),
           currency: creditCurrency,
           notes: creditNote,
           expirationDays: creditExpiryDays ? Number(creditExpiryDays) : undefined,
-        }),
       });
-      const data = await res.json();
       if (data.success) {
         alert(`Successfully credited user wallet balance with ${creditCurrency} ${creditAmount}!`);
         setCreditUserId('');
@@ -323,12 +296,9 @@ export const GiftCardManagement: React.FC = () => {
     }
     setError(null);
     try {
-      const res = await fetch(`/api/admin/giftcards/cards/${id}/disable`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ reason: 'Manual administration disable command override.' }),
+      const { data } = await apiClient.post(`/admin/giftcards/cards/${id}/disable`, {
+        reason: 'Manual administration disable command override.',
       });
-      const data = await res.json();
       if (data.success) {
         alert('Gift card disabled successfully.');
         fetchGiftCards();
@@ -341,8 +311,18 @@ export const GiftCardManagement: React.FC = () => {
   };
 
   // CSV downloads
-  const handleExportCSV = () => {
-    window.open('/api/admin/giftcards/cards/csv-export', '_blank');
+  const handleExportCSV = async () => {
+    try {
+      const { data } = await apiClient.get('/admin/giftcards/cards/csv-export', { responseType: 'blob' });
+      const url = URL.createObjectURL(data);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = 'gift-cards.csv';
+      link.click();
+      URL.revokeObjectURL(url);
+    } catch (err: any) {
+      setError(err.response?.data?.message || 'Failed exporting gift card records.');
+    }
   };
 
   return (
