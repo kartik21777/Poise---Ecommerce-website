@@ -1,0 +1,5216 @@
+{
+  "accounts": [
+    {
+      "user": "6a36a5a582648fc60e6d4f81",
+      "currency": "INR",
+      "balance": 992.29,
+      "isEnabled": true,
+      "_id": "6a38d8c919a714b27dfd6e5a"
+    },
+    {
+      "user": "6a36a5a582648fc60e6d4f9e",
+      "currency": "INR",
+      "balance": 6297.53,
+      "isEnabled": true,
+      "_id": "6a38d8c919a714b27dfd6e5b"
+    },
+    {
+      "user": "6a36a5a582648fc60e6d4fa3",
+      "currency": "INR",
+      "balance": 6458.66,
+      "isEnabled": true,
+      "_id": "6a38d8c919a714b27dfd6e5c"
+    },
+    {
+      "user": "6a36a5a582648fc60e6d4f8a",
+      "currency": "INR",
+      "balance": 249.39,
+      "isEnabled": true,
+      "_id": "6a38d8c919a714b27dfd6e5d"
+    },
+    {
+      "user": "6a36a5a582648fc60e6d4f82",
+      "currency": "INR",
+      "balance": 2558.74,
+      "isEnabled": true,
+      "_id": "6a38d8c919a714b27dfd6e5e"
+    },
+    {
+      "user": "6a36a5a582648fc60e6d4f87",
+      "currency": "INR",
+      "balance": 1300.17,
+      "isEnabled": true,
+      "_id": "6a38d8c919a714b27dfd6e5f"
+    },
+    {
+      "user": "6a36a5a582648fc60e6d4fa1",
+      "currency": "INR",
+      "balance": 7645.05,
+      "isEnabled": true,
+      "_id": "6a38d8c919a714b27dfd6e60"
+    },
+    {
+      "user": "6a36a5a582648fc60e6d4f8e",
+      "currency": "INR",
+      "balance": 3772.5,
+      "isEnabled": true,
+      "_id": "6a38d8c919a714b27dfd6e61"
+    },
+    {
+      "user": "6a36a5a582648fc60e6d4f94",
+      "currency": "INR",
+      "balance": 15525.47,
+      "isEnabled": true,
+      "_id": "6a38d8c919a714b27dfd6e62"
+    },
+    {
+      "user": "6a36a5a582648fc60e6d4faa",
+      "currency": "INR",
+      "balance": 16664.05,
+      "isEnabled": true,
+      "_id": "6a38d8c919a714b27dfd6e63"
+    },
+    {
+      "user": "6a36a5a582648fc60e6d4f95",
+      "currency": "INR",
+      "balance": 8943.81,
+      "isEnabled": true,
+      "_id": "6a38d8c919a714b27dfd6e64"
+    },
+    {
+      "user": "6a36a5a582648fc60e6d4f80",
+      "currency": "INR",
+      "balance": 10818.86,
+      "isEnabled": true,
+      "_id": "6a38d8c919a714b27dfd6e65"
+    },
+    {
+      "user": "6a36a5a582648fc60e6d4f8f",
+      "currency": "INR",
+      "balance": 13302.8,
+      "isEnabled": true,
+      "_id": "6a38d8c919a714b27dfd6e66"
+    },
+    {
+      "user": "6a36a5a582648fc60e6d4fa6",
+      "currency": "INR",
+      "balance": 9708.66,
+      "isEnabled": true,
+      "_id": "6a38d8c919a714b27dfd6e67"
+    },
+    {
+      "user": "6a36a5a582648fc60e6d4f93",
+      "currency": "INR",
+      "balance": 11531.39,
+      "isEnabled": true,
+      "_id": "6a38d8c919a714b27dfd6e68"
+    },
+    {
+      "user": "6a36a5a582648fc60e6d4fb0",
+      "currency": "INR",
+      "balance": 21149.44,
+      "isEnabled": true,
+      "_id": "6a38d8c919a714b27dfd6e69"
+    },
+    {
+      "user": "6a36a5a582648fc60e6d4f9b",
+      "currency": "INR",
+      "balance": 1575.43,
+      "isEnabled": true,
+      "_id": "6a38d8c919a714b27dfd6e6a"
+    },
+    {
+      "user": "6a36a5a582648fc60e6d4f8b",
+      "currency": "INR",
+      "balance": 10086.79,
+      "isEnabled": true,
+      "_id": "6a38d8c919a714b27dfd6e6b"
+    },
+    {
+      "user": "6a36a5a582648fc60e6d4f92",
+      "currency": "INR",
+      "balance": 5292.14,
+      "isEnabled": true,
+      "_id": "6a38d8c919a714b27dfd6e6c"
+    },
+    {
+      "user": "6a36a5a582648fc60e6d4f8d",
+      "currency": "INR",
+      "balance": 32427.99,
+      "isEnabled": true,
+      "_id": "6a38d8c919a714b27dfd6e6d"
+    },
+    {
+      "user": "6a36a5a582648fc60e6d4f90",
+      "currency": "INR",
+      "balance": 7848.87,
+      "isEnabled": true,
+      "_id": "6a38d8c919a714b27dfd6e6e"
+    },
+    {
+      "user": "6a36a5a582648fc60e6d4fa5",
+      "currency": "INR",
+      "balance": 20536.5,
+      "isEnabled": true,
+      "_id": "6a38d8c919a714b27dfd6e6f"
+    },
+    {
+      "user": "6a36a5a582648fc60e6d4f88",
+      "currency": "INR",
+      "balance": 9139.12,
+      "isEnabled": true,
+      "_id": "6a38d8c919a714b27dfd6e70"
+    },
+    {
+      "user": "6a36a5a582648fc60e6d4f97",
+      "currency": "INR",
+      "balance": 14760.26,
+      "isEnabled": true,
+      "_id": "6a38d8c919a714b27dfd6e71"
+    },
+    {
+      "user": "6a36a5a582648fc60e6d4f98",
+      "currency": "INR",
+      "balance": 35396.14,
+      "isEnabled": true,
+      "_id": "6a38d8c919a714b27dfd6e72"
+    },
+    {
+      "user": "6a36a5a582648fc60e6d4fab",
+      "currency": "INR",
+      "balance": 4494.8,
+      "isEnabled": true,
+      "_id": "6a38d8c919a714b27dfd6e73"
+    },
+    {
+      "user": "6a36a5a582648fc60e6d4f96",
+      "currency": "INR",
+      "balance": 5956.27,
+      "isEnabled": true,
+      "_id": "6a38d8c919a714b27dfd6e74"
+    },
+    {
+      "user": "6a36a5a582648fc60e6d4f8c",
+      "currency": "INR",
+      "balance": 1010.57,
+      "isEnabled": true,
+      "_id": "6a38d8c919a714b27dfd6e75"
+    },
+    {
+      "user": "6a36a5a582648fc60e6d4fad",
+      "currency": "INR",
+      "balance": 9157.88,
+      "isEnabled": true,
+      "_id": "6a38d8c919a714b27dfd6e76"
+    },
+    {
+      "user": "6a36a5a582648fc60e6d4f91",
+      "currency": "INR",
+      "balance": 9220,
+      "isEnabled": true,
+      "_id": "6a38d8c919a714b27dfd6e77"
+    }
+  ],
+  "transactions": [
+    {
+      "account": "6a38d8c919a714b27dfd6e5a",
+      "type": "REFUND_CREDIT",
+      "amount": 4558.33,
+      "currency": "INR",
+      "transactionDate": "2025-12-29T08:00:07.915Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2025-12-29T08:00:07.915Z",
+      "updatedAt": "2025-12-29T08:00:07.915Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5a",
+      "type": "CREDIT_LOAD",
+      "amount": 4981.35,
+      "currency": "INR",
+      "transactionDate": "2026-01-02T17:12:50.030Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-02T17:12:50.030Z",
+      "updatedAt": "2026-01-02T17:12:50.030Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5a",
+      "type": "DEBIT_SPEND",
+      "amount": -7359.45,
+      "currency": "INR",
+      "transactionDate": "2026-01-07T14:05:46.215Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-07T14:05:46.215Z",
+      "updatedAt": "2026-01-07T14:05:46.215Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5a",
+      "type": "DEBIT_SPEND",
+      "amount": -763.13,
+      "currency": "INR",
+      "transactionDate": "2026-01-13T09:32:13.581Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-13T09:32:13.581Z",
+      "updatedAt": "2026-01-13T09:32:13.581Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5a",
+      "type": "DEBIT_SPEND",
+      "amount": -1015.63,
+      "currency": "INR",
+      "transactionDate": "2026-01-15T10:50:30.982Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-15T10:50:30.982Z",
+      "updatedAt": "2026-01-15T10:50:30.982Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5a",
+      "type": "DEBIT_SPEND",
+      "amount": -164.76,
+      "currency": "INR",
+      "transactionDate": "2026-01-18T16:04:40.100Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-18T16:04:40.100Z",
+      "updatedAt": "2026-01-18T16:04:40.100Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5a",
+      "type": "CREDIT_LOAD",
+      "amount": 3044.27,
+      "currency": "INR",
+      "transactionDate": "2026-01-20T06:34:13.232Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-20T06:34:13.232Z",
+      "updatedAt": "2026-01-20T06:34:13.232Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5a",
+      "type": "REFUND_CREDIT",
+      "amount": 3911.88,
+      "currency": "INR",
+      "transactionDate": "2026-01-23T12:09:10.741Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-23T12:09:10.741Z",
+      "updatedAt": "2026-01-23T12:09:10.741Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5a",
+      "type": "DEBIT_SPEND",
+      "amount": -4493.46,
+      "currency": "INR",
+      "transactionDate": "2026-01-25T09:26:24.152Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-25T09:26:24.152Z",
+      "updatedAt": "2026-01-25T09:26:24.152Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5a",
+      "type": "CREDIT_LOAD",
+      "amount": 1139.34,
+      "currency": "INR",
+      "transactionDate": "2026-01-28T17:01:19.250Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-28T17:01:19.250Z",
+      "updatedAt": "2026-01-28T17:01:19.250Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5a",
+      "type": "REFUND_CREDIT",
+      "amount": 2625.59,
+      "currency": "INR",
+      "transactionDate": "2026-01-30T18:50:30.322Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-30T18:50:30.322Z",
+      "updatedAt": "2026-01-30T18:50:30.322Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5a",
+      "type": "CREDIT_LOAD",
+      "amount": 212.36,
+      "currency": "INR",
+      "transactionDate": "2026-02-02T00:14:12.618Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-02T00:14:12.618Z",
+      "updatedAt": "2026-02-02T00:14:12.618Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5a",
+      "type": "CREDIT_LOAD",
+      "amount": 4180.3,
+      "currency": "INR",
+      "transactionDate": "2026-02-06T12:25:07.708Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-06T12:25:07.708Z",
+      "updatedAt": "2026-02-06T12:25:07.708Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5a",
+      "type": "DEBIT_SPEND",
+      "amount": -2962.56,
+      "currency": "INR",
+      "transactionDate": "2026-02-07T12:34:54.065Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-02-07T12:34:54.065Z",
+      "updatedAt": "2026-02-07T12:34:54.065Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5a",
+      "type": "DEBIT_SPEND",
+      "amount": -5938.25,
+      "currency": "INR",
+      "transactionDate": "2026-02-11T06:16:26.348Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-02-11T06:16:26.348Z",
+      "updatedAt": "2026-02-11T06:16:26.348Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5a",
+      "type": "DEBIT_SPEND",
+      "amount": -963.89,
+      "currency": "INR",
+      "transactionDate": "2026-02-16T04:43:45.715Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-02-16T04:43:45.715Z",
+      "updatedAt": "2026-02-16T04:43:45.715Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5b",
+      "type": "CREDIT_LOAD",
+      "amount": 1172,
+      "currency": "INR",
+      "transactionDate": "2025-12-29T06:08:50.654Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2025-12-29T06:08:50.654Z",
+      "updatedAt": "2025-12-29T06:08:50.654Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5b",
+      "type": "CREDIT_LOAD",
+      "amount": 3880.99,
+      "currency": "INR",
+      "transactionDate": "2025-12-30T08:33:52.998Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2025-12-30T08:33:52.998Z",
+      "updatedAt": "2025-12-30T08:33:52.998Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5b",
+      "type": "CREDIT_LOAD",
+      "amount": 1494.86,
+      "currency": "INR",
+      "transactionDate": "2026-01-03T08:23:45.115Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-03T08:23:45.115Z",
+      "updatedAt": "2026-01-03T08:23:45.115Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5b",
+      "type": "DEBIT_SPEND",
+      "amount": -690.6,
+      "currency": "INR",
+      "transactionDate": "2026-01-06T08:17:30.129Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-06T08:17:30.129Z",
+      "updatedAt": "2026-01-06T08:17:30.129Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5b",
+      "type": "CREDIT_LOAD",
+      "amount": 4458.64,
+      "currency": "INR",
+      "transactionDate": "2026-01-08T18:19:30.857Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-08T18:19:30.857Z",
+      "updatedAt": "2026-01-08T18:19:30.857Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5b",
+      "type": "REFUND_CREDIT",
+      "amount": 262.67,
+      "currency": "INR",
+      "transactionDate": "2026-01-10T05:01:44.207Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-10T05:01:44.207Z",
+      "updatedAt": "2026-01-10T05:01:44.207Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5b",
+      "type": "REFUND_CREDIT",
+      "amount": 4653.5,
+      "currency": "INR",
+      "transactionDate": "2026-01-12T04:55:27.243Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-12T04:55:27.243Z",
+      "updatedAt": "2026-01-12T04:55:27.243Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5b",
+      "type": "CREDIT_LOAD",
+      "amount": 1260.38,
+      "currency": "INR",
+      "transactionDate": "2026-01-17T21:07:47.032Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-17T21:07:47.032Z",
+      "updatedAt": "2026-01-17T21:07:47.032Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5b",
+      "type": "DEBIT_SPEND",
+      "amount": -2045.11,
+      "currency": "INR",
+      "transactionDate": "2026-01-20T13:20:33.847Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-20T13:20:33.847Z",
+      "updatedAt": "2026-01-20T13:20:33.847Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5b",
+      "type": "CREDIT_LOAD",
+      "amount": 1394.76,
+      "currency": "INR",
+      "transactionDate": "2026-01-23T06:05:49.699Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-23T06:05:49.699Z",
+      "updatedAt": "2026-01-23T06:05:49.699Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5b",
+      "type": "REFUND_CREDIT",
+      "amount": 1785.91,
+      "currency": "INR",
+      "transactionDate": "2026-01-28T12:24:54.983Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-28T12:24:54.983Z",
+      "updatedAt": "2026-01-28T12:24:54.983Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5b",
+      "type": "REFUND_CREDIT",
+      "amount": 3830.32,
+      "currency": "INR",
+      "transactionDate": "2026-02-01T21:31:15.916Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-02-01T21:31:15.916Z",
+      "updatedAt": "2026-02-01T21:31:15.916Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5b",
+      "type": "REFUND_CREDIT",
+      "amount": 207.55,
+      "currency": "INR",
+      "transactionDate": "2026-02-04T22:40:55.254Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-02-04T22:40:55.254Z",
+      "updatedAt": "2026-02-04T22:40:55.254Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5b",
+      "type": "DEBIT_SPEND",
+      "amount": -8843.44,
+      "currency": "INR",
+      "transactionDate": "2026-02-07T07:26:34.649Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-02-07T07:26:34.649Z",
+      "updatedAt": "2026-02-07T07:26:34.649Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5b",
+      "type": "CREDIT_LOAD",
+      "amount": 2561.11,
+      "currency": "INR",
+      "transactionDate": "2026-02-08T17:57:56.534Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-08T17:57:56.534Z",
+      "updatedAt": "2026-02-08T17:57:56.534Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5b",
+      "type": "CREDIT_LOAD",
+      "amount": 1100.26,
+      "currency": "INR",
+      "transactionDate": "2026-02-10T13:21:20.422Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-10T13:21:20.422Z",
+      "updatedAt": "2026-02-10T13:21:20.422Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5b",
+      "type": "DEBIT_SPEND",
+      "amount": -2630.28,
+      "currency": "INR",
+      "transactionDate": "2026-02-13T04:14:34.733Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-02-13T04:14:34.733Z",
+      "updatedAt": "2026-02-13T04:14:34.733Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5b",
+      "type": "DEBIT_SPEND",
+      "amount": -7555.99,
+      "currency": "INR",
+      "transactionDate": "2026-02-14T09:02:26.234Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-02-14T09:02:26.234Z",
+      "updatedAt": "2026-02-14T09:02:26.234Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5c",
+      "type": "REFUND_CREDIT",
+      "amount": 1592.36,
+      "currency": "INR",
+      "transactionDate": "2025-12-26T19:39:44.516Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2025-12-26T19:39:44.516Z",
+      "updatedAt": "2025-12-26T19:39:44.516Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5c",
+      "type": "REFUND_CREDIT",
+      "amount": 4877.7,
+      "currency": "INR",
+      "transactionDate": "2025-12-31T12:14:14.232Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2025-12-31T12:14:14.232Z",
+      "updatedAt": "2025-12-31T12:14:14.232Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5c",
+      "type": "CREDIT_LOAD",
+      "amount": 4204.74,
+      "currency": "INR",
+      "transactionDate": "2026-01-02T21:34:14.788Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-02T21:34:14.788Z",
+      "updatedAt": "2026-01-02T21:34:14.788Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5c",
+      "type": "CREDIT_LOAD",
+      "amount": 735.68,
+      "currency": "INR",
+      "transactionDate": "2026-01-04T13:35:04.278Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-04T13:35:04.278Z",
+      "updatedAt": "2026-01-04T13:35:04.278Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5c",
+      "type": "DEBIT_SPEND",
+      "amount": -4328.66,
+      "currency": "INR",
+      "transactionDate": "2026-01-06T02:10:57.576Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-06T02:10:57.576Z",
+      "updatedAt": "2026-01-06T02:10:57.576Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5c",
+      "type": "DEBIT_SPEND",
+      "amount": -1621.41,
+      "currency": "INR",
+      "transactionDate": "2026-01-07T02:51:33.739Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-07T02:51:33.739Z",
+      "updatedAt": "2026-01-07T02:51:33.739Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5c",
+      "type": "REFUND_CREDIT",
+      "amount": 2457.21,
+      "currency": "INR",
+      "transactionDate": "2026-01-10T10:52:01.751Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-10T10:52:01.751Z",
+      "updatedAt": "2026-01-10T10:52:01.751Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5c",
+      "type": "CREDIT_LOAD",
+      "amount": 174.15,
+      "currency": "INR",
+      "transactionDate": "2026-01-13T07:19:56.762Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-13T07:19:56.762Z",
+      "updatedAt": "2026-01-13T07:19:56.762Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5c",
+      "type": "DEBIT_SPEND",
+      "amount": -6197.25,
+      "currency": "INR",
+      "transactionDate": "2026-01-16T16:44:53.127Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-16T16:44:53.127Z",
+      "updatedAt": "2026-01-16T16:44:53.127Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5c",
+      "type": "REFUND_CREDIT",
+      "amount": 4320.88,
+      "currency": "INR",
+      "transactionDate": "2026-01-21T17:59:32.820Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-21T17:59:32.820Z",
+      "updatedAt": "2026-01-21T17:59:32.820Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5c",
+      "type": "CREDIT_LOAD",
+      "amount": 3831.09,
+      "currency": "INR",
+      "transactionDate": "2026-01-25T20:21:12.390Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-25T20:21:12.390Z",
+      "updatedAt": "2026-01-25T20:21:12.390Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5c",
+      "type": "CREDIT_LOAD",
+      "amount": 4306.65,
+      "currency": "INR",
+      "transactionDate": "2026-01-28T08:24:37.724Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-28T08:24:37.724Z",
+      "updatedAt": "2026-01-28T08:24:37.724Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5c",
+      "type": "CREDIT_LOAD",
+      "amount": 4426.44,
+      "currency": "INR",
+      "transactionDate": "2026-01-29T16:04:12.339Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-29T16:04:12.339Z",
+      "updatedAt": "2026-01-29T16:04:12.339Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5c",
+      "type": "REFUND_CREDIT",
+      "amount": 2310.38,
+      "currency": "INR",
+      "transactionDate": "2026-01-31T18:12:30.126Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-31T18:12:30.126Z",
+      "updatedAt": "2026-01-31T18:12:30.126Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5c",
+      "type": "DEBIT_SPEND",
+      "amount": -16091.19,
+      "currency": "INR",
+      "transactionDate": "2026-02-05T15:36:53.751Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-02-05T15:36:53.751Z",
+      "updatedAt": "2026-02-05T15:36:53.751Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5c",
+      "type": "CREDIT_LOAD",
+      "amount": 283.94,
+      "currency": "INR",
+      "transactionDate": "2026-02-09T18:51:01.497Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-09T18:51:01.497Z",
+      "updatedAt": "2026-02-09T18:51:01.497Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5c",
+      "type": "DEBIT_SPEND",
+      "amount": -631.92,
+      "currency": "INR",
+      "transactionDate": "2026-02-11T10:21:05.154Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-02-11T10:21:05.154Z",
+      "updatedAt": "2026-02-11T10:21:05.154Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5c",
+      "type": "REFUND_CREDIT",
+      "amount": 1807.87,
+      "currency": "INR",
+      "transactionDate": "2026-02-13T14:23:37.184Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-02-13T14:23:37.184Z",
+      "updatedAt": "2026-02-13T14:23:37.184Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5d",
+      "type": "CREDIT_LOAD",
+      "amount": 750.85,
+      "currency": "INR",
+      "transactionDate": "2025-12-28T11:05:34.766Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2025-12-28T11:05:34.766Z",
+      "updatedAt": "2025-12-28T11:05:34.766Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5d",
+      "type": "CREDIT_LOAD",
+      "amount": 2869.6,
+      "currency": "INR",
+      "transactionDate": "2026-01-02T18:48:59.946Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-02T18:48:59.946Z",
+      "updatedAt": "2026-01-02T18:48:59.946Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5d",
+      "type": "DEBIT_SPEND",
+      "amount": -1635.08,
+      "currency": "INR",
+      "transactionDate": "2026-01-07T20:40:56.333Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-07T20:40:56.333Z",
+      "updatedAt": "2026-01-07T20:40:56.333Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5d",
+      "type": "DEBIT_SPEND",
+      "amount": -209.21,
+      "currency": "INR",
+      "transactionDate": "2026-01-09T09:45:14.740Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-09T09:45:14.740Z",
+      "updatedAt": "2026-01-09T09:45:14.740Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5d",
+      "type": "DEBIT_SPEND",
+      "amount": -770.59,
+      "currency": "INR",
+      "transactionDate": "2026-01-11T08:48:46.347Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-11T08:48:46.347Z",
+      "updatedAt": "2026-01-11T08:48:46.347Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5d",
+      "type": "ADJUSTMENT",
+      "amount": -302.08,
+      "currency": "INR",
+      "transactionDate": "2026-01-12T10:20:28.506Z",
+      "notes": "System generated adjustment for seeding",
+      "createdAt": "2026-01-12T10:20:28.506Z",
+      "updatedAt": "2026-01-12T10:20:28.506Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5d",
+      "type": "REFUND_CREDIT",
+      "amount": 950.15,
+      "currency": "INR",
+      "transactionDate": "2026-01-14T01:40:22.679Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-14T01:40:22.679Z",
+      "updatedAt": "2026-01-14T01:40:22.679Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5d",
+      "type": "CREDIT_LOAD",
+      "amount": 1456.16,
+      "currency": "INR",
+      "transactionDate": "2026-01-15T10:15:02.055Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-15T10:15:02.055Z",
+      "updatedAt": "2026-01-15T10:15:02.055Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5d",
+      "type": "CREDIT_LOAD",
+      "amount": 4711.38,
+      "currency": "INR",
+      "transactionDate": "2026-01-20T09:18:25.980Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-20T09:18:25.980Z",
+      "updatedAt": "2026-01-20T09:18:25.980Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5d",
+      "type": "CREDIT_LOAD",
+      "amount": 1556.75,
+      "currency": "INR",
+      "transactionDate": "2026-01-22T14:57:36.238Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-22T14:57:36.238Z",
+      "updatedAt": "2026-01-22T14:57:36.238Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5d",
+      "type": "DEBIT_SPEND",
+      "amount": -4217.99,
+      "currency": "INR",
+      "transactionDate": "2026-01-27T12:18:16.591Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-27T12:18:16.591Z",
+      "updatedAt": "2026-01-27T12:18:16.591Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5d",
+      "type": "ADJUSTMENT",
+      "amount": -509.93,
+      "currency": "INR",
+      "transactionDate": "2026-02-01T19:43:57.149Z",
+      "notes": "System generated adjustment for seeding",
+      "createdAt": "2026-02-01T19:43:57.149Z",
+      "updatedAt": "2026-02-01T19:43:57.149Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5d",
+      "type": "DEBIT_SPEND",
+      "amount": -3159.25,
+      "currency": "INR",
+      "transactionDate": "2026-02-03T15:05:51.795Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-02-03T15:05:51.795Z",
+      "updatedAt": "2026-02-03T15:05:51.795Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5d",
+      "type": "DEBIT_SPEND",
+      "amount": -1073.61,
+      "currency": "INR",
+      "transactionDate": "2026-02-08T03:14:30.331Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-02-08T03:14:30.331Z",
+      "updatedAt": "2026-02-08T03:14:30.331Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5d",
+      "type": "DEBIT_SPEND",
+      "amount": -167.76,
+      "currency": "INR",
+      "transactionDate": "2026-02-09T14:18:32.317Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-02-09T14:18:32.317Z",
+      "updatedAt": "2026-02-09T14:18:32.317Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5e",
+      "type": "REFUND_CREDIT",
+      "amount": 2879.29,
+      "currency": "INR",
+      "transactionDate": "2025-12-29T21:24:57.912Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2025-12-29T21:24:57.912Z",
+      "updatedAt": "2025-12-29T21:24:57.912Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5e",
+      "type": "CREDIT_LOAD",
+      "amount": 5077.08,
+      "currency": "INR",
+      "transactionDate": "2026-01-02T02:22:45.108Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-02T02:22:45.108Z",
+      "updatedAt": "2026-01-02T02:22:45.108Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5e",
+      "type": "ADJUSTMENT",
+      "amount": 434.16,
+      "currency": "INR",
+      "transactionDate": "2026-01-06T07:33:59.074Z",
+      "notes": "System generated adjustment for seeding",
+      "createdAt": "2026-01-06T07:33:59.074Z",
+      "updatedAt": "2026-01-06T07:33:59.074Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5e",
+      "type": "CREDIT_LOAD",
+      "amount": 2123.84,
+      "currency": "INR",
+      "transactionDate": "2026-01-11T07:19:19.921Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-11T07:19:19.921Z",
+      "updatedAt": "2026-01-11T07:19:19.921Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5e",
+      "type": "CREDIT_LOAD",
+      "amount": 3509.58,
+      "currency": "INR",
+      "transactionDate": "2026-01-14T17:50:38.776Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-14T17:50:38.776Z",
+      "updatedAt": "2026-01-14T17:50:38.776Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5e",
+      "type": "CREDIT_LOAD",
+      "amount": 2065.28,
+      "currency": "INR",
+      "transactionDate": "2026-01-18T13:07:54.104Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-18T13:07:54.104Z",
+      "updatedAt": "2026-01-18T13:07:54.104Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5e",
+      "type": "DEBIT_SPEND",
+      "amount": -6623.57,
+      "currency": "INR",
+      "transactionDate": "2026-01-20T06:04:28.028Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-20T06:04:28.028Z",
+      "updatedAt": "2026-01-20T06:04:28.028Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5e",
+      "type": "CREDIT_LOAD",
+      "amount": 3354.64,
+      "currency": "INR",
+      "transactionDate": "2026-01-25T03:33:57.512Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-25T03:33:57.512Z",
+      "updatedAt": "2026-01-25T03:33:57.512Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5e",
+      "type": "CREDIT_LOAD",
+      "amount": 1407.15,
+      "currency": "INR",
+      "transactionDate": "2026-01-27T02:34:53.689Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-27T02:34:53.689Z",
+      "updatedAt": "2026-01-27T02:34:53.689Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5e",
+      "type": "DEBIT_SPEND",
+      "amount": -7071.88,
+      "currency": "INR",
+      "transactionDate": "2026-01-29T19:51:33.493Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-29T19:51:33.493Z",
+      "updatedAt": "2026-01-29T19:51:33.493Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5e",
+      "type": "DEBIT_SPEND",
+      "amount": -5270.91,
+      "currency": "INR",
+      "transactionDate": "2026-02-03T00:46:34.621Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-02-03T00:46:34.621Z",
+      "updatedAt": "2026-02-03T00:46:34.621Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5e",
+      "type": "REFUND_CREDIT",
+      "amount": 3790.78,
+      "currency": "INR",
+      "transactionDate": "2026-02-07T17:46:31.766Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-02-07T17:46:31.766Z",
+      "updatedAt": "2026-02-07T17:46:31.766Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5e",
+      "type": "REFUND_CREDIT",
+      "amount": 826.37,
+      "currency": "INR",
+      "transactionDate": "2026-02-12T21:03:25.708Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-02-12T21:03:25.708Z",
+      "updatedAt": "2026-02-12T21:03:25.708Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5e",
+      "type": "REFUND_CREDIT",
+      "amount": 1907.83,
+      "currency": "INR",
+      "transactionDate": "2026-02-13T22:20:18.430Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-02-13T22:20:18.430Z",
+      "updatedAt": "2026-02-13T22:20:18.430Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5e",
+      "type": "DEBIT_SPEND",
+      "amount": -5850.9,
+      "currency": "INR",
+      "transactionDate": "2026-02-15T08:17:44.471Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-02-15T08:17:44.471Z",
+      "updatedAt": "2026-02-15T08:17:44.471Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5f",
+      "type": "CREDIT_LOAD",
+      "amount": 2736.94,
+      "currency": "INR",
+      "transactionDate": "2025-12-26T01:40:29.768Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2025-12-26T01:40:29.768Z",
+      "updatedAt": "2025-12-26T01:40:29.768Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5f",
+      "type": "CREDIT_LOAD",
+      "amount": 2336.24,
+      "currency": "INR",
+      "transactionDate": "2025-12-31T10:28:12.661Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2025-12-31T10:28:12.661Z",
+      "updatedAt": "2025-12-31T10:28:12.661Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5f",
+      "type": "DEBIT_SPEND",
+      "amount": -2356.37,
+      "currency": "INR",
+      "transactionDate": "2026-01-05T12:20:18.412Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-05T12:20:18.412Z",
+      "updatedAt": "2026-01-05T12:20:18.412Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5f",
+      "type": "CREDIT_LOAD",
+      "amount": 4301.35,
+      "currency": "INR",
+      "transactionDate": "2026-01-07T02:17:08.467Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-07T02:17:08.467Z",
+      "updatedAt": "2026-01-07T02:17:08.467Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5f",
+      "type": "REFUND_CREDIT",
+      "amount": 3477.93,
+      "currency": "INR",
+      "transactionDate": "2026-01-12T17:30:11.729Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-12T17:30:11.729Z",
+      "updatedAt": "2026-01-12T17:30:11.729Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5f",
+      "type": "REFUND_CREDIT",
+      "amount": 1338.17,
+      "currency": "INR",
+      "transactionDate": "2026-01-15T23:49:27.642Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-15T23:49:27.642Z",
+      "updatedAt": "2026-01-15T23:49:27.642Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5f",
+      "type": "CREDIT_LOAD",
+      "amount": 905.74,
+      "currency": "INR",
+      "transactionDate": "2026-01-19T15:12:14.427Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-19T15:12:14.427Z",
+      "updatedAt": "2026-01-19T15:12:14.427Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5f",
+      "type": "REFUND_CREDIT",
+      "amount": 3598.54,
+      "currency": "INR",
+      "transactionDate": "2026-01-21T20:21:45.392Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-21T20:21:45.392Z",
+      "updatedAt": "2026-01-21T20:21:45.392Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5f",
+      "type": "CREDIT_LOAD",
+      "amount": 1364.14,
+      "currency": "INR",
+      "transactionDate": "2026-01-25T15:48:51.255Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-25T15:48:51.255Z",
+      "updatedAt": "2026-01-25T15:48:51.255Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5f",
+      "type": "DEBIT_SPEND",
+      "amount": -12925.13,
+      "currency": "INR",
+      "transactionDate": "2026-01-28T11:53:03.720Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-28T11:53:03.720Z",
+      "updatedAt": "2026-01-28T11:53:03.720Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5f",
+      "type": "DEBIT_SPEND",
+      "amount": -1545.02,
+      "currency": "INR",
+      "transactionDate": "2026-02-01T22:30:47.375Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-02-01T22:30:47.375Z",
+      "updatedAt": "2026-02-01T22:30:47.375Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5f",
+      "type": "DEBIT_SPEND",
+      "amount": -1892.97,
+      "currency": "INR",
+      "transactionDate": "2026-02-07T07:25:52.795Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-02-07T07:25:52.795Z",
+      "updatedAt": "2026-02-07T07:25:52.795Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5f",
+      "type": "DEBIT_SPEND",
+      "amount": -627.93,
+      "currency": "INR",
+      "transactionDate": "2026-02-11T11:47:38.166Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-02-11T11:47:38.166Z",
+      "updatedAt": "2026-02-11T11:47:38.166Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5f",
+      "type": "DEBIT_SPEND",
+      "amount": -433.7,
+      "currency": "INR",
+      "transactionDate": "2026-02-16T22:20:07.732Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-02-16T22:20:07.732Z",
+      "updatedAt": "2026-02-16T22:20:07.732Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5f",
+      "type": "CREDIT_LOAD",
+      "amount": 3751.32,
+      "currency": "INR",
+      "transactionDate": "2026-02-22T12:04:40.955Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-22T12:04:40.955Z",
+      "updatedAt": "2026-02-22T12:04:40.955Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5f",
+      "type": "ADJUSTMENT",
+      "amount": 344.2,
+      "currency": "INR",
+      "transactionDate": "2026-02-24T20:50:57.779Z",
+      "notes": "System generated adjustment for seeding",
+      "createdAt": "2026-02-24T20:50:57.779Z",
+      "updatedAt": "2026-02-24T20:50:57.779Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5f",
+      "type": "REFUND_CREDIT",
+      "amount": 1865.74,
+      "currency": "INR",
+      "transactionDate": "2026-02-28T09:50:07.683Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-02-28T09:50:07.683Z",
+      "updatedAt": "2026-02-28T09:50:07.683Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e5f",
+      "type": "DEBIT_SPEND",
+      "amount": -4939.02,
+      "currency": "INR",
+      "transactionDate": "2026-03-06T00:32:09.734Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-03-06T00:32:09.734Z",
+      "updatedAt": "2026-03-06T00:32:09.734Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e60",
+      "type": "REFUND_CREDIT",
+      "amount": 4964.28,
+      "currency": "INR",
+      "transactionDate": "2025-12-30T04:58:53.194Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2025-12-30T04:58:53.194Z",
+      "updatedAt": "2025-12-30T04:58:53.194Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e60",
+      "type": "DEBIT_SPEND",
+      "amount": -3265.88,
+      "currency": "INR",
+      "transactionDate": "2025-12-31T22:20:14.427Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2025-12-31T22:20:14.427Z",
+      "updatedAt": "2025-12-31T22:20:14.427Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e60",
+      "type": "DEBIT_SPEND",
+      "amount": -183.42,
+      "currency": "INR",
+      "transactionDate": "2026-01-06T19:42:09.926Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-06T19:42:09.926Z",
+      "updatedAt": "2026-01-06T19:42:09.926Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e60",
+      "type": "ADJUSTMENT",
+      "amount": 442.72,
+      "currency": "INR",
+      "transactionDate": "2026-01-12T10:28:44.492Z",
+      "notes": "System generated adjustment for seeding",
+      "createdAt": "2026-01-12T10:28:44.492Z",
+      "updatedAt": "2026-01-12T10:28:44.492Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e60",
+      "type": "DEBIT_SPEND",
+      "amount": -631.75,
+      "currency": "INR",
+      "transactionDate": "2026-01-13T13:04:58.320Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-13T13:04:58.320Z",
+      "updatedAt": "2026-01-13T13:04:58.320Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e60",
+      "type": "CREDIT_LOAD",
+      "amount": 4749.44,
+      "currency": "INR",
+      "transactionDate": "2026-01-19T08:53:36.909Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-19T08:53:36.909Z",
+      "updatedAt": "2026-01-19T08:53:36.909Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e60",
+      "type": "DEBIT_SPEND",
+      "amount": -2904.97,
+      "currency": "INR",
+      "transactionDate": "2026-01-22T19:07:18.484Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-22T19:07:18.484Z",
+      "updatedAt": "2026-01-22T19:07:18.484Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e60",
+      "type": "CREDIT_LOAD",
+      "amount": 1787.58,
+      "currency": "INR",
+      "transactionDate": "2026-01-27T19:12:06.680Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-27T19:12:06.680Z",
+      "updatedAt": "2026-01-27T19:12:06.680Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e60",
+      "type": "CREDIT_LOAD",
+      "amount": 796.43,
+      "currency": "INR",
+      "transactionDate": "2026-01-31T22:23:36.379Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-31T22:23:36.379Z",
+      "updatedAt": "2026-01-31T22:23:36.379Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e60",
+      "type": "DEBIT_SPEND",
+      "amount": -1161.94,
+      "currency": "INR",
+      "transactionDate": "2026-02-02T09:47:56.934Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-02-02T09:47:56.934Z",
+      "updatedAt": "2026-02-02T09:47:56.934Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e60",
+      "type": "DEBIT_SPEND",
+      "amount": -1698.39,
+      "currency": "INR",
+      "transactionDate": "2026-02-03T11:46:16.342Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-02-03T11:46:16.342Z",
+      "updatedAt": "2026-02-03T11:46:16.342Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e60",
+      "type": "DEBIT_SPEND",
+      "amount": -589.09,
+      "currency": "INR",
+      "transactionDate": "2026-02-06T19:10:26.488Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-02-06T19:10:26.488Z",
+      "updatedAt": "2026-02-06T19:10:26.488Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e60",
+      "type": "CREDIT_LOAD",
+      "amount": 3581.89,
+      "currency": "INR",
+      "transactionDate": "2026-02-08T04:11:42.754Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-08T04:11:42.754Z",
+      "updatedAt": "2026-02-08T04:11:42.754Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e60",
+      "type": "REFUND_CREDIT",
+      "amount": 1290.68,
+      "currency": "INR",
+      "transactionDate": "2026-02-10T14:20:49.391Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-02-10T14:20:49.391Z",
+      "updatedAt": "2026-02-10T14:20:49.391Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e60",
+      "type": "REFUND_CREDIT",
+      "amount": 2109.91,
+      "currency": "INR",
+      "transactionDate": "2026-02-13T07:04:46.780Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-02-13T07:04:46.780Z",
+      "updatedAt": "2026-02-13T07:04:46.780Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e60",
+      "type": "DEBIT_SPEND",
+      "amount": -2864.91,
+      "currency": "INR",
+      "transactionDate": "2026-02-14T07:52:33.523Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-02-14T07:52:33.523Z",
+      "updatedAt": "2026-02-14T07:52:33.523Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e60",
+      "type": "DEBIT_SPEND",
+      "amount": -2744.31,
+      "currency": "INR",
+      "transactionDate": "2026-02-19T23:13:57.202Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-02-19T23:13:57.202Z",
+      "updatedAt": "2026-02-19T23:13:57.202Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e60",
+      "type": "REFUND_CREDIT",
+      "amount": 3966.78,
+      "currency": "INR",
+      "transactionDate": "2026-02-23T18:13:31.595Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-02-23T18:13:31.595Z",
+      "updatedAt": "2026-02-23T18:13:31.595Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e61",
+      "type": "CREDIT_LOAD",
+      "amount": 1239.83,
+      "currency": "INR",
+      "transactionDate": "2025-12-26T20:29:25.154Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2025-12-26T20:29:25.154Z",
+      "updatedAt": "2025-12-26T20:29:25.154Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e61",
+      "type": "DEBIT_SPEND",
+      "amount": -676.25,
+      "currency": "INR",
+      "transactionDate": "2026-01-01T05:13:21.919Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-01T05:13:21.919Z",
+      "updatedAt": "2026-01-01T05:13:21.919Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e61",
+      "type": "DEBIT_SPEND",
+      "amount": -155.38,
+      "currency": "INR",
+      "transactionDate": "2026-01-06T21:55:35.668Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-06T21:55:35.668Z",
+      "updatedAt": "2026-01-06T21:55:35.668Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e61",
+      "type": "CREDIT_LOAD",
+      "amount": 4056.69,
+      "currency": "INR",
+      "transactionDate": "2026-01-11T01:26:17.377Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-11T01:26:17.377Z",
+      "updatedAt": "2026-01-11T01:26:17.377Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e61",
+      "type": "CREDIT_LOAD",
+      "amount": 804.5,
+      "currency": "INR",
+      "transactionDate": "2026-01-12T23:16:53.557Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-12T23:16:53.557Z",
+      "updatedAt": "2026-01-12T23:16:53.557Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e61",
+      "type": "CREDIT_LOAD",
+      "amount": 480.14,
+      "currency": "INR",
+      "transactionDate": "2026-01-14T07:41:34.225Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-14T07:41:34.225Z",
+      "updatedAt": "2026-01-14T07:41:34.225Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e61",
+      "type": "DEBIT_SPEND",
+      "amount": -3174.68,
+      "currency": "INR",
+      "transactionDate": "2026-01-18T10:39:17.629Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-18T10:39:17.629Z",
+      "updatedAt": "2026-01-18T10:39:17.629Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e61",
+      "type": "REFUND_CREDIT",
+      "amount": 2719.62,
+      "currency": "INR",
+      "transactionDate": "2026-01-23T18:29:33.273Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-23T18:29:33.273Z",
+      "updatedAt": "2026-01-23T18:29:33.273Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e61",
+      "type": "REFUND_CREDIT",
+      "amount": 976.03,
+      "currency": "INR",
+      "transactionDate": "2026-01-27T14:57:49.489Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-27T14:57:49.489Z",
+      "updatedAt": "2026-01-27T14:57:49.489Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e61",
+      "type": "DEBIT_SPEND",
+      "amount": -1560.11,
+      "currency": "INR",
+      "transactionDate": "2026-02-01T13:14:25.154Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-02-01T13:14:25.154Z",
+      "updatedAt": "2026-02-01T13:14:25.154Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e61",
+      "type": "CREDIT_LOAD",
+      "amount": 3943.25,
+      "currency": "INR",
+      "transactionDate": "2026-02-03T07:30:07.250Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-03T07:30:07.250Z",
+      "updatedAt": "2026-02-03T07:30:07.250Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e61",
+      "type": "DEBIT_SPEND",
+      "amount": -3722.42,
+      "currency": "INR",
+      "transactionDate": "2026-02-09T05:23:18.835Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-02-09T05:23:18.835Z",
+      "updatedAt": "2026-02-09T05:23:18.835Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e61",
+      "type": "REFUND_CREDIT",
+      "amount": 710.84,
+      "currency": "INR",
+      "transactionDate": "2026-02-12T19:27:26.168Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-02-12T19:27:26.168Z",
+      "updatedAt": "2026-02-12T19:27:26.168Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e61",
+      "type": "CREDIT_LOAD",
+      "amount": 823.89,
+      "currency": "INR",
+      "transactionDate": "2026-02-18T16:37:06.244Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-18T16:37:06.244Z",
+      "updatedAt": "2026-02-18T16:37:06.244Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e61",
+      "type": "DEBIT_SPEND",
+      "amount": -2693.45,
+      "currency": "INR",
+      "transactionDate": "2026-02-19T21:28:14.077Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-02-19T21:28:14.077Z",
+      "updatedAt": "2026-02-19T21:28:14.077Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e62",
+      "type": "CREDIT_LOAD",
+      "amount": 4416.97,
+      "currency": "INR",
+      "transactionDate": "2025-12-29T12:07:14.015Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2025-12-29T12:07:14.015Z",
+      "updatedAt": "2025-12-29T12:07:14.015Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e62",
+      "type": "CREDIT_LOAD",
+      "amount": 1481.83,
+      "currency": "INR",
+      "transactionDate": "2025-12-31T06:02:56.881Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2025-12-31T06:02:56.881Z",
+      "updatedAt": "2025-12-31T06:02:56.881Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e62",
+      "type": "DEBIT_SPEND",
+      "amount": -1317.99,
+      "currency": "INR",
+      "transactionDate": "2026-01-05T07:18:39.227Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-05T07:18:39.227Z",
+      "updatedAt": "2026-01-05T07:18:39.227Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e62",
+      "type": "REFUND_CREDIT",
+      "amount": 4187.08,
+      "currency": "INR",
+      "transactionDate": "2026-01-10T18:50:24.074Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-10T18:50:24.074Z",
+      "updatedAt": "2026-01-10T18:50:24.074Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e62",
+      "type": "DEBIT_SPEND",
+      "amount": -1788.5,
+      "currency": "INR",
+      "transactionDate": "2026-01-12T03:25:42.225Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-12T03:25:42.225Z",
+      "updatedAt": "2026-01-12T03:25:42.225Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e62",
+      "type": "CREDIT_LOAD",
+      "amount": 1738.63,
+      "currency": "INR",
+      "transactionDate": "2026-01-15T17:39:08.013Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-15T17:39:08.013Z",
+      "updatedAt": "2026-01-15T17:39:08.013Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e62",
+      "type": "DEBIT_SPEND",
+      "amount": -1333.06,
+      "currency": "INR",
+      "transactionDate": "2026-01-18T21:55:42.867Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-18T21:55:42.867Z",
+      "updatedAt": "2026-01-18T21:55:42.867Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e62",
+      "type": "DEBIT_SPEND",
+      "amount": -5419.32,
+      "currency": "INR",
+      "transactionDate": "2026-01-22T15:36:27.980Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-22T15:36:27.980Z",
+      "updatedAt": "2026-01-22T15:36:27.980Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e62",
+      "type": "REFUND_CREDIT",
+      "amount": 2080.94,
+      "currency": "INR",
+      "transactionDate": "2026-01-24T02:24:06.984Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-24T02:24:06.984Z",
+      "updatedAt": "2026-01-24T02:24:06.984Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e62",
+      "type": "DEBIT_SPEND",
+      "amount": -1532.63,
+      "currency": "INR",
+      "transactionDate": "2026-01-26T00:27:23.320Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-26T00:27:23.320Z",
+      "updatedAt": "2026-01-26T00:27:23.320Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e62",
+      "type": "CREDIT_LOAD",
+      "amount": 484.57,
+      "currency": "INR",
+      "transactionDate": "2026-01-28T18:30:55.555Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-28T18:30:55.555Z",
+      "updatedAt": "2026-01-28T18:30:55.555Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e62",
+      "type": "CREDIT_LOAD",
+      "amount": 3220.28,
+      "currency": "INR",
+      "transactionDate": "2026-01-31T09:22:09.756Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-31T09:22:09.756Z",
+      "updatedAt": "2026-01-31T09:22:09.756Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e62",
+      "type": "CREDIT_LOAD",
+      "amount": 4787.6,
+      "currency": "INR",
+      "transactionDate": "2026-02-02T21:59:22.424Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-02T21:59:22.424Z",
+      "updatedAt": "2026-02-02T21:59:22.424Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e62",
+      "type": "CREDIT_LOAD",
+      "amount": 2264.08,
+      "currency": "INR",
+      "transactionDate": "2026-02-08T02:09:18.412Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-08T02:09:18.412Z",
+      "updatedAt": "2026-02-08T02:09:18.412Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e62",
+      "type": "CREDIT_LOAD",
+      "amount": 4248.69,
+      "currency": "INR",
+      "transactionDate": "2026-02-13T03:32:53.474Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-13T03:32:53.474Z",
+      "updatedAt": "2026-02-13T03:32:53.474Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e62",
+      "type": "DEBIT_SPEND",
+      "amount": -3776.91,
+      "currency": "INR",
+      "transactionDate": "2026-02-16T17:46:35.248Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-02-16T17:46:35.248Z",
+      "updatedAt": "2026-02-16T17:46:35.248Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e62",
+      "type": "CREDIT_LOAD",
+      "amount": 1783.21,
+      "currency": "INR",
+      "transactionDate": "2026-02-19T11:04:33.398Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-19T11:04:33.398Z",
+      "updatedAt": "2026-02-19T11:04:33.398Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e63",
+      "type": "CREDIT_LOAD",
+      "amount": 1084.21,
+      "currency": "INR",
+      "transactionDate": "2025-12-30T02:15:11.268Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2025-12-30T02:15:11.268Z",
+      "updatedAt": "2025-12-30T02:15:11.268Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e63",
+      "type": "CREDIT_LOAD",
+      "amount": 4997.86,
+      "currency": "INR",
+      "transactionDate": "2026-01-01T05:31:16.608Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-01T05:31:16.608Z",
+      "updatedAt": "2026-01-01T05:31:16.608Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e63",
+      "type": "REFUND_CREDIT",
+      "amount": 5019.01,
+      "currency": "INR",
+      "transactionDate": "2026-01-06T15:05:09.840Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-06T15:05:09.840Z",
+      "updatedAt": "2026-01-06T15:05:09.840Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e63",
+      "type": "REFUND_CREDIT",
+      "amount": 3793.13,
+      "currency": "INR",
+      "transactionDate": "2026-01-08T09:33:30.267Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-08T09:33:30.267Z",
+      "updatedAt": "2026-01-08T09:33:30.267Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e63",
+      "type": "CREDIT_LOAD",
+      "amount": 3768.09,
+      "currency": "INR",
+      "transactionDate": "2026-01-11T04:02:05.322Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-11T04:02:05.322Z",
+      "updatedAt": "2026-01-11T04:02:05.322Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e63",
+      "type": "DEBIT_SPEND",
+      "amount": -12450.92,
+      "currency": "INR",
+      "transactionDate": "2026-01-12T09:14:02.885Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-12T09:14:02.885Z",
+      "updatedAt": "2026-01-12T09:14:02.885Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e63",
+      "type": "ADJUSTMENT",
+      "amount": 238.24,
+      "currency": "INR",
+      "transactionDate": "2026-01-16T17:32:57.483Z",
+      "notes": "System generated adjustment for seeding",
+      "createdAt": "2026-01-16T17:32:57.483Z",
+      "updatedAt": "2026-01-16T17:32:57.483Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e63",
+      "type": "CREDIT_LOAD",
+      "amount": 1278.82,
+      "currency": "INR",
+      "transactionDate": "2026-01-22T12:01:28.529Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-22T12:01:28.529Z",
+      "updatedAt": "2026-01-22T12:01:28.529Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e63",
+      "type": "REFUND_CREDIT",
+      "amount": 3823.89,
+      "currency": "INR",
+      "transactionDate": "2026-01-24T20:27:07.426Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-24T20:27:07.426Z",
+      "updatedAt": "2026-01-24T20:27:07.426Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e63",
+      "type": "ADJUSTMENT",
+      "amount": 433.84,
+      "currency": "INR",
+      "transactionDate": "2026-01-26T07:16:17.749Z",
+      "notes": "System generated adjustment for seeding",
+      "createdAt": "2026-01-26T07:16:17.749Z",
+      "updatedAt": "2026-01-26T07:16:17.749Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e63",
+      "type": "REFUND_CREDIT",
+      "amount": 1489.74,
+      "currency": "INR",
+      "transactionDate": "2026-01-31T10:51:03.607Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-31T10:51:03.607Z",
+      "updatedAt": "2026-01-31T10:51:03.607Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e63",
+      "type": "DEBIT_SPEND",
+      "amount": -2731.13,
+      "currency": "INR",
+      "transactionDate": "2026-02-05T18:46:33.976Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-02-05T18:46:33.976Z",
+      "updatedAt": "2026-02-05T18:46:33.976Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e63",
+      "type": "CREDIT_LOAD",
+      "amount": 1985.73,
+      "currency": "INR",
+      "transactionDate": "2026-02-07T21:33:51.108Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-07T21:33:51.108Z",
+      "updatedAt": "2026-02-07T21:33:51.108Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e63",
+      "type": "CREDIT_LOAD",
+      "amount": 3933.54,
+      "currency": "INR",
+      "transactionDate": "2026-02-11T00:08:30.955Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-11T00:08:30.955Z",
+      "updatedAt": "2026-02-11T00:08:30.955Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e64",
+      "type": "CREDIT_LOAD",
+      "amount": 4495.8,
+      "currency": "INR",
+      "transactionDate": "2025-12-25T10:44:33.494Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2025-12-25T10:44:33.494Z",
+      "updatedAt": "2025-12-25T10:44:33.494Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e64",
+      "type": "CREDIT_LOAD",
+      "amount": 2494.99,
+      "currency": "INR",
+      "transactionDate": "2025-12-27T21:08:10.209Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2025-12-27T21:08:10.209Z",
+      "updatedAt": "2025-12-27T21:08:10.209Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e64",
+      "type": "DEBIT_SPEND",
+      "amount": -1003.63,
+      "currency": "INR",
+      "transactionDate": "2026-01-02T06:11:53.524Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-02T06:11:53.524Z",
+      "updatedAt": "2026-01-02T06:11:53.524Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e64",
+      "type": "DEBIT_SPEND",
+      "amount": -2522.96,
+      "currency": "INR",
+      "transactionDate": "2026-01-05T01:51:18.538Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-05T01:51:18.538Z",
+      "updatedAt": "2026-01-05T01:51:18.538Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e64",
+      "type": "CREDIT_LOAD",
+      "amount": 3515.36,
+      "currency": "INR",
+      "transactionDate": "2026-01-07T00:49:12.844Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-07T00:49:12.844Z",
+      "updatedAt": "2026-01-07T00:49:12.844Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e64",
+      "type": "DEBIT_SPEND",
+      "amount": -3554.03,
+      "currency": "INR",
+      "transactionDate": "2026-01-08T05:12:47.242Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-08T05:12:47.242Z",
+      "updatedAt": "2026-01-08T05:12:47.242Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e64",
+      "type": "CREDIT_LOAD",
+      "amount": 1337.02,
+      "currency": "INR",
+      "transactionDate": "2026-01-10T15:28:19.673Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-10T15:28:19.673Z",
+      "updatedAt": "2026-01-10T15:28:19.673Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e64",
+      "type": "DEBIT_SPEND",
+      "amount": -2108.18,
+      "currency": "INR",
+      "transactionDate": "2026-01-14T21:18:55.087Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-14T21:18:55.087Z",
+      "updatedAt": "2026-01-14T21:18:55.087Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e64",
+      "type": "CREDIT_LOAD",
+      "amount": 1806.64,
+      "currency": "INR",
+      "transactionDate": "2026-01-19T15:27:36.035Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-19T15:27:36.035Z",
+      "updatedAt": "2026-01-19T15:27:36.035Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e64",
+      "type": "DEBIT_SPEND",
+      "amount": -2940.4,
+      "currency": "INR",
+      "transactionDate": "2026-01-25T07:36:24.877Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-25T07:36:24.877Z",
+      "updatedAt": "2026-01-25T07:36:24.877Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e64",
+      "type": "DEBIT_SPEND",
+      "amount": -1102.94,
+      "currency": "INR",
+      "transactionDate": "2026-01-30T17:03:26.659Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-30T17:03:26.659Z",
+      "updatedAt": "2026-01-30T17:03:26.659Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e64",
+      "type": "REFUND_CREDIT",
+      "amount": 746.36,
+      "currency": "INR",
+      "transactionDate": "2026-02-05T15:07:49.601Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-02-05T15:07:49.601Z",
+      "updatedAt": "2026-02-05T15:07:49.601Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e64",
+      "type": "DEBIT_SPEND",
+      "amount": -549.95,
+      "currency": "INR",
+      "transactionDate": "2026-02-10T01:01:52.992Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-02-10T01:01:52.992Z",
+      "updatedAt": "2026-02-10T01:01:52.992Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e64",
+      "type": "REFUND_CREDIT",
+      "amount": 2342.07,
+      "currency": "INR",
+      "transactionDate": "2026-02-15T04:19:37.783Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-02-15T04:19:37.783Z",
+      "updatedAt": "2026-02-15T04:19:37.783Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e64",
+      "type": "ADJUSTMENT",
+      "amount": 513.13,
+      "currency": "INR",
+      "transactionDate": "2026-02-20T02:57:04.647Z",
+      "notes": "System generated adjustment for seeding",
+      "createdAt": "2026-02-20T02:57:04.647Z",
+      "updatedAt": "2026-02-20T02:57:04.647Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e64",
+      "type": "REFUND_CREDIT",
+      "amount": 4833.57,
+      "currency": "INR",
+      "transactionDate": "2026-02-22T04:14:00.657Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-02-22T04:14:00.657Z",
+      "updatedAt": "2026-02-22T04:14:00.657Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e64",
+      "type": "CREDIT_LOAD",
+      "amount": 445.24,
+      "currency": "INR",
+      "transactionDate": "2026-02-27T01:21:12.757Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-27T01:21:12.757Z",
+      "updatedAt": "2026-02-27T01:21:12.757Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e64",
+      "type": "ADJUSTMENT",
+      "amount": 195.72,
+      "currency": "INR",
+      "transactionDate": "2026-03-03T02:48:13.349Z",
+      "notes": "System generated adjustment for seeding",
+      "createdAt": "2026-03-03T02:48:13.349Z",
+      "updatedAt": "2026-03-03T02:48:13.349Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e65",
+      "type": "CREDIT_LOAD",
+      "amount": 5018.71,
+      "currency": "INR",
+      "transactionDate": "2025-12-25T18:51:12.827Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2025-12-25T18:51:12.827Z",
+      "updatedAt": "2025-12-25T18:51:12.827Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e65",
+      "type": "REFUND_CREDIT",
+      "amount": 4238.2,
+      "currency": "INR",
+      "transactionDate": "2025-12-30T19:41:38.369Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2025-12-30T19:41:38.369Z",
+      "updatedAt": "2025-12-30T19:41:38.369Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e65",
+      "type": "REFUND_CREDIT",
+      "amount": 4013.83,
+      "currency": "INR",
+      "transactionDate": "2026-01-05T19:39:17.947Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-05T19:39:17.947Z",
+      "updatedAt": "2026-01-05T19:39:17.947Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e65",
+      "type": "REFUND_CREDIT",
+      "amount": 1570.89,
+      "currency": "INR",
+      "transactionDate": "2026-01-07T19:51:30.013Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-07T19:51:30.013Z",
+      "updatedAt": "2026-01-07T19:51:30.013Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e65",
+      "type": "CREDIT_LOAD",
+      "amount": 479.81,
+      "currency": "INR",
+      "transactionDate": "2026-01-13T02:35:27.080Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-13T02:35:27.080Z",
+      "updatedAt": "2026-01-13T02:35:27.080Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e65",
+      "type": "CREDIT_LOAD",
+      "amount": 3042.57,
+      "currency": "INR",
+      "transactionDate": "2026-01-16T05:04:35.055Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-16T05:04:35.055Z",
+      "updatedAt": "2026-01-16T05:04:35.055Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e65",
+      "type": "ADJUSTMENT",
+      "amount": 266.84,
+      "currency": "INR",
+      "transactionDate": "2026-01-17T08:34:23.913Z",
+      "notes": "System generated adjustment for seeding",
+      "createdAt": "2026-01-17T08:34:23.913Z",
+      "updatedAt": "2026-01-17T08:34:23.913Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e65",
+      "type": "DEBIT_SPEND",
+      "amount": -5963.17,
+      "currency": "INR",
+      "transactionDate": "2026-01-22T08:56:10.263Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-22T08:56:10.263Z",
+      "updatedAt": "2026-01-22T08:56:10.263Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e65",
+      "type": "CREDIT_LOAD",
+      "amount": 1251.55,
+      "currency": "INR",
+      "transactionDate": "2026-01-24T14:49:55.939Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-24T14:49:55.939Z",
+      "updatedAt": "2026-01-24T14:49:55.939Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e65",
+      "type": "CREDIT_LOAD",
+      "amount": 4487.34,
+      "currency": "INR",
+      "transactionDate": "2026-01-25T21:00:45.043Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-25T21:00:45.043Z",
+      "updatedAt": "2026-01-25T21:00:45.043Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e65",
+      "type": "REFUND_CREDIT",
+      "amount": 862.91,
+      "currency": "INR",
+      "transactionDate": "2026-01-29T06:24:07.812Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-29T06:24:07.812Z",
+      "updatedAt": "2026-01-29T06:24:07.812Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e65",
+      "type": "REFUND_CREDIT",
+      "amount": 2704.3,
+      "currency": "INR",
+      "transactionDate": "2026-01-31T13:23:11.590Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-31T13:23:11.590Z",
+      "updatedAt": "2026-01-31T13:23:11.590Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e65",
+      "type": "CREDIT_LOAD",
+      "amount": 250.78,
+      "currency": "INR",
+      "transactionDate": "2026-02-01T21:42:23.902Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-01T21:42:23.902Z",
+      "updatedAt": "2026-02-01T21:42:23.902Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e65",
+      "type": "DEBIT_SPEND",
+      "amount": -11553.62,
+      "currency": "INR",
+      "transactionDate": "2026-02-06T11:16:16.456Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-02-06T11:16:16.456Z",
+      "updatedAt": "2026-02-06T11:16:16.456Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e65",
+      "type": "CREDIT_LOAD",
+      "amount": 147.92,
+      "currency": "INR",
+      "transactionDate": "2026-02-10T16:31:43.048Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-10T16:31:43.048Z",
+      "updatedAt": "2026-02-10T16:31:43.048Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e66",
+      "type": "REFUND_CREDIT",
+      "amount": 2786.26,
+      "currency": "INR",
+      "transactionDate": "2025-12-27T04:35:01.339Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2025-12-27T04:35:01.339Z",
+      "updatedAt": "2025-12-27T04:35:01.339Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e66",
+      "type": "CREDIT_LOAD",
+      "amount": 347.85,
+      "currency": "INR",
+      "transactionDate": "2026-01-01T04:48:35.539Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-01T04:48:35.539Z",
+      "updatedAt": "2026-01-01T04:48:35.539Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e66",
+      "type": "REFUND_CREDIT",
+      "amount": 4646.56,
+      "currency": "INR",
+      "transactionDate": "2026-01-04T12:51:01.546Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-04T12:51:01.546Z",
+      "updatedAt": "2026-01-04T12:51:01.546Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e66",
+      "type": "REFUND_CREDIT",
+      "amount": 1257.58,
+      "currency": "INR",
+      "transactionDate": "2026-01-08T11:32:33.871Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-08T11:32:33.871Z",
+      "updatedAt": "2026-01-08T11:32:33.871Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e66",
+      "type": "DEBIT_SPEND",
+      "amount": -4982.65,
+      "currency": "INR",
+      "transactionDate": "2026-01-13T17:37:48.627Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-13T17:37:48.627Z",
+      "updatedAt": "2026-01-13T17:37:48.627Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e66",
+      "type": "CREDIT_LOAD",
+      "amount": 190.21,
+      "currency": "INR",
+      "transactionDate": "2026-01-15T10:25:33.194Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-15T10:25:33.194Z",
+      "updatedAt": "2026-01-15T10:25:33.194Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e66",
+      "type": "ADJUSTMENT",
+      "amount": 169.53,
+      "currency": "INR",
+      "transactionDate": "2026-01-18T20:11:47.430Z",
+      "notes": "System generated adjustment for seeding",
+      "createdAt": "2026-01-18T20:11:47.430Z",
+      "updatedAt": "2026-01-18T20:11:47.430Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e66",
+      "type": "CREDIT_LOAD",
+      "amount": 3138.8,
+      "currency": "INR",
+      "transactionDate": "2026-01-23T01:28:50.256Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-23T01:28:50.256Z",
+      "updatedAt": "2026-01-23T01:28:50.256Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e66",
+      "type": "DEBIT_SPEND",
+      "amount": -3551.32,
+      "currency": "INR",
+      "transactionDate": "2026-01-26T08:54:53.510Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-26T08:54:53.510Z",
+      "updatedAt": "2026-01-26T08:54:53.510Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e66",
+      "type": "REFUND_CREDIT",
+      "amount": 2352.9,
+      "currency": "INR",
+      "transactionDate": "2026-01-29T12:15:20.425Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-29T12:15:20.425Z",
+      "updatedAt": "2026-01-29T12:15:20.425Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e66",
+      "type": "ADJUSTMENT",
+      "amount": 336.09,
+      "currency": "INR",
+      "transactionDate": "2026-01-31T01:05:48.730Z",
+      "notes": "System generated adjustment for seeding",
+      "createdAt": "2026-01-31T01:05:48.730Z",
+      "updatedAt": "2026-01-31T01:05:48.730Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e66",
+      "type": "CREDIT_LOAD",
+      "amount": 1561.5,
+      "currency": "INR",
+      "transactionDate": "2026-02-03T08:09:06.924Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-03T08:09:06.924Z",
+      "updatedAt": "2026-02-03T08:09:06.924Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e66",
+      "type": "REFUND_CREDIT",
+      "amount": 1558.88,
+      "currency": "INR",
+      "transactionDate": "2026-02-08T15:18:05.445Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-02-08T15:18:05.445Z",
+      "updatedAt": "2026-02-08T15:18:05.445Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e66",
+      "type": "CREDIT_LOAD",
+      "amount": 817.24,
+      "currency": "INR",
+      "transactionDate": "2026-02-10T15:42:40.074Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-10T15:42:40.074Z",
+      "updatedAt": "2026-02-10T15:42:40.074Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e66",
+      "type": "REFUND_CREDIT",
+      "amount": 4011.56,
+      "currency": "INR",
+      "transactionDate": "2026-02-13T16:33:16.725Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-02-13T16:33:16.725Z",
+      "updatedAt": "2026-02-13T16:33:16.725Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e66",
+      "type": "DEBIT_SPEND",
+      "amount": -9054.71,
+      "currency": "INR",
+      "transactionDate": "2026-02-19T11:18:22.396Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-02-19T11:18:22.396Z",
+      "updatedAt": "2026-02-19T11:18:22.396Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e66",
+      "type": "CREDIT_LOAD",
+      "amount": 4492.45,
+      "currency": "INR",
+      "transactionDate": "2026-02-25T07:36:37.533Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-25T07:36:37.533Z",
+      "updatedAt": "2026-02-25T07:36:37.533Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e66",
+      "type": "CREDIT_LOAD",
+      "amount": 3224.07,
+      "currency": "INR",
+      "transactionDate": "2026-02-27T21:38:53.439Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-27T21:38:53.439Z",
+      "updatedAt": "2026-02-27T21:38:53.439Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e67",
+      "type": "REFUND_CREDIT",
+      "amount": 1742.3,
+      "currency": "INR",
+      "transactionDate": "2025-12-28T10:47:37.377Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2025-12-28T10:47:37.377Z",
+      "updatedAt": "2025-12-28T10:47:37.377Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e67",
+      "type": "CREDIT_LOAD",
+      "amount": 301.43,
+      "currency": "INR",
+      "transactionDate": "2026-01-03T03:45:04.942Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-03T03:45:04.942Z",
+      "updatedAt": "2026-01-03T03:45:04.942Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e67",
+      "type": "CREDIT_LOAD",
+      "amount": 4035.54,
+      "currency": "INR",
+      "transactionDate": "2026-01-06T09:49:56.841Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-06T09:49:56.841Z",
+      "updatedAt": "2026-01-06T09:49:56.841Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e67",
+      "type": "CREDIT_LOAD",
+      "amount": 4338.51,
+      "currency": "INR",
+      "transactionDate": "2026-01-10T12:39:58.042Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-10T12:39:58.042Z",
+      "updatedAt": "2026-01-10T12:39:58.042Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e67",
+      "type": "REFUND_CREDIT",
+      "amount": 1264.25,
+      "currency": "INR",
+      "transactionDate": "2026-01-12T04:57:33.161Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-12T04:57:33.161Z",
+      "updatedAt": "2026-01-12T04:57:33.161Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e67",
+      "type": "REFUND_CREDIT",
+      "amount": 1591.49,
+      "currency": "INR",
+      "transactionDate": "2026-01-17T15:52:29.097Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-17T15:52:29.097Z",
+      "updatedAt": "2026-01-17T15:52:29.097Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e67",
+      "type": "REFUND_CREDIT",
+      "amount": 4251.69,
+      "currency": "INR",
+      "transactionDate": "2026-01-20T05:06:14.999Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-20T05:06:14.999Z",
+      "updatedAt": "2026-01-20T05:06:14.999Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e67",
+      "type": "CREDIT_LOAD",
+      "amount": 601.94,
+      "currency": "INR",
+      "transactionDate": "2026-01-25T03:40:12.514Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-25T03:40:12.514Z",
+      "updatedAt": "2026-01-25T03:40:12.514Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e67",
+      "type": "DEBIT_SPEND",
+      "amount": -14207.6,
+      "currency": "INR",
+      "transactionDate": "2026-01-27T12:46:46.947Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-27T12:46:46.947Z",
+      "updatedAt": "2026-01-27T12:46:46.947Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e67",
+      "type": "CREDIT_LOAD",
+      "amount": 974.3,
+      "currency": "INR",
+      "transactionDate": "2026-01-31T12:07:59.430Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-31T12:07:59.430Z",
+      "updatedAt": "2026-01-31T12:07:59.430Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e67",
+      "type": "REFUND_CREDIT",
+      "amount": 673.92,
+      "currency": "INR",
+      "transactionDate": "2026-02-06T00:22:25.537Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-02-06T00:22:25.537Z",
+      "updatedAt": "2026-02-06T00:22:25.537Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e67",
+      "type": "CREDIT_LOAD",
+      "amount": 2217.85,
+      "currency": "INR",
+      "transactionDate": "2026-02-08T12:59:27.376Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-08T12:59:27.376Z",
+      "updatedAt": "2026-02-08T12:59:27.376Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e67",
+      "type": "REFUND_CREDIT",
+      "amount": 188.59,
+      "currency": "INR",
+      "transactionDate": "2026-02-13T00:26:46.171Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-02-13T00:26:46.171Z",
+      "updatedAt": "2026-02-13T00:26:46.171Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e67",
+      "type": "DEBIT_SPEND",
+      "amount": -5368.75,
+      "currency": "INR",
+      "transactionDate": "2026-02-14T00:33:06.808Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-02-14T00:33:06.808Z",
+      "updatedAt": "2026-02-14T00:33:06.808Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e67",
+      "type": "REFUND_CREDIT",
+      "amount": 3806.45,
+      "currency": "INR",
+      "transactionDate": "2026-02-18T08:48:22.257Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-02-18T08:48:22.257Z",
+      "updatedAt": "2026-02-18T08:48:22.257Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e67",
+      "type": "DEBIT_SPEND",
+      "amount": -1471.62,
+      "currency": "INR",
+      "transactionDate": "2026-02-24T04:58:47.059Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-02-24T04:58:47.059Z",
+      "updatedAt": "2026-02-24T04:58:47.059Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e67",
+      "type": "CREDIT_LOAD",
+      "amount": 218.42,
+      "currency": "INR",
+      "transactionDate": "2026-02-27T03:28:20.983Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-27T03:28:20.983Z",
+      "updatedAt": "2026-02-27T03:28:20.983Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e67",
+      "type": "REFUND_CREDIT",
+      "amount": 4549.95,
+      "currency": "INR",
+      "transactionDate": "2026-03-01T11:07:04.287Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-03-01T11:07:04.287Z",
+      "updatedAt": "2026-03-01T11:07:04.287Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e68",
+      "type": "CREDIT_LOAD",
+      "amount": 1875.69,
+      "currency": "INR",
+      "transactionDate": "2025-12-25T10:46:11.220Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2025-12-25T10:46:11.220Z",
+      "updatedAt": "2025-12-25T10:46:11.220Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e68",
+      "type": "REFUND_CREDIT",
+      "amount": 1405.48,
+      "currency": "INR",
+      "transactionDate": "2025-12-30T17:47:54.846Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2025-12-30T17:47:54.846Z",
+      "updatedAt": "2025-12-30T17:47:54.846Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e68",
+      "type": "CREDIT_LOAD",
+      "amount": 3605.09,
+      "currency": "INR",
+      "transactionDate": "2026-01-02T01:39:19.015Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-02T01:39:19.015Z",
+      "updatedAt": "2026-01-02T01:39:19.015Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e68",
+      "type": "DEBIT_SPEND",
+      "amount": -4388.44,
+      "currency": "INR",
+      "transactionDate": "2026-01-07T00:53:22.427Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-07T00:53:22.427Z",
+      "updatedAt": "2026-01-07T00:53:22.427Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e68",
+      "type": "CREDIT_LOAD",
+      "amount": 4104.19,
+      "currency": "INR",
+      "transactionDate": "2026-01-08T02:56:27.119Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-08T02:56:27.119Z",
+      "updatedAt": "2026-01-08T02:56:27.119Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e68",
+      "type": "REFUND_CREDIT",
+      "amount": 2142.5,
+      "currency": "INR",
+      "transactionDate": "2026-01-12T02:34:26.071Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-12T02:34:26.071Z",
+      "updatedAt": "2026-01-12T02:34:26.071Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e68",
+      "type": "REFUND_CREDIT",
+      "amount": 634.53,
+      "currency": "INR",
+      "transactionDate": "2026-01-14T13:36:14.755Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-14T13:36:14.755Z",
+      "updatedAt": "2026-01-14T13:36:14.755Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e68",
+      "type": "DEBIT_SPEND",
+      "amount": -2186.24,
+      "currency": "INR",
+      "transactionDate": "2026-01-18T10:42:52.298Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-18T10:42:52.298Z",
+      "updatedAt": "2026-01-18T10:42:52.298Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e68",
+      "type": "CREDIT_LOAD",
+      "amount": 1906.35,
+      "currency": "INR",
+      "transactionDate": "2026-01-24T09:02:10.482Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-24T09:02:10.482Z",
+      "updatedAt": "2026-01-24T09:02:10.482Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e68",
+      "type": "CREDIT_LOAD",
+      "amount": 2304.27,
+      "currency": "INR",
+      "transactionDate": "2026-01-27T19:33:03.516Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-27T19:33:03.516Z",
+      "updatedAt": "2026-01-27T19:33:03.516Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e68",
+      "type": "DEBIT_SPEND",
+      "amount": -6263.2,
+      "currency": "INR",
+      "transactionDate": "2026-01-30T07:17:28.920Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-30T07:17:28.920Z",
+      "updatedAt": "2026-01-30T07:17:28.920Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e68",
+      "type": "DEBIT_SPEND",
+      "amount": -539.55,
+      "currency": "INR",
+      "transactionDate": "2026-01-31T11:59:59.149Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-31T11:59:59.149Z",
+      "updatedAt": "2026-01-31T11:59:59.149Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e68",
+      "type": "DEBIT_SPEND",
+      "amount": -2518.5,
+      "currency": "INR",
+      "transactionDate": "2026-02-04T22:38:29.274Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-02-04T22:38:29.274Z",
+      "updatedAt": "2026-02-04T22:38:29.274Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e68",
+      "type": "REFUND_CREDIT",
+      "amount": 3843.46,
+      "currency": "INR",
+      "transactionDate": "2026-02-07T02:23:43.001Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-02-07T02:23:43.001Z",
+      "updatedAt": "2026-02-07T02:23:43.001Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e68",
+      "type": "CREDIT_LOAD",
+      "amount": 2341.02,
+      "currency": "INR",
+      "transactionDate": "2026-02-12T20:33:55.885Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-12T20:33:55.885Z",
+      "updatedAt": "2026-02-12T20:33:55.885Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e68",
+      "type": "CREDIT_LOAD",
+      "amount": 597.13,
+      "currency": "INR",
+      "transactionDate": "2026-02-15T23:47:04.522Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-15T23:47:04.522Z",
+      "updatedAt": "2026-02-15T23:47:04.522Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e68",
+      "type": "CREDIT_LOAD",
+      "amount": 2546.66,
+      "currency": "INR",
+      "transactionDate": "2026-02-20T03:58:47.410Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-20T03:58:47.410Z",
+      "updatedAt": "2026-02-20T03:58:47.410Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e68",
+      "type": "CREDIT_LOAD",
+      "amount": 120.95,
+      "currency": "INR",
+      "transactionDate": "2026-02-25T16:55:20.099Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-25T16:55:20.099Z",
+      "updatedAt": "2026-02-25T16:55:20.099Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e69",
+      "type": "REFUND_CREDIT",
+      "amount": 1050.14,
+      "currency": "INR",
+      "transactionDate": "2025-12-26T16:15:19.057Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2025-12-26T16:15:19.057Z",
+      "updatedAt": "2025-12-26T16:15:19.057Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e69",
+      "type": "CREDIT_LOAD",
+      "amount": 4026.35,
+      "currency": "INR",
+      "transactionDate": "2025-12-30T07:38:01.342Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2025-12-30T07:38:01.342Z",
+      "updatedAt": "2025-12-30T07:38:01.342Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e69",
+      "type": "CREDIT_LOAD",
+      "amount": 3204.91,
+      "currency": "INR",
+      "transactionDate": "2026-01-03T09:30:35.319Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-03T09:30:35.319Z",
+      "updatedAt": "2026-01-03T09:30:35.319Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e69",
+      "type": "DEBIT_SPEND",
+      "amount": -4576.31,
+      "currency": "INR",
+      "transactionDate": "2026-01-08T20:11:40.027Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-08T20:11:40.027Z",
+      "updatedAt": "2026-01-08T20:11:40.027Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e69",
+      "type": "REFUND_CREDIT",
+      "amount": 2624.4,
+      "currency": "INR",
+      "transactionDate": "2026-01-13T14:18:51.779Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-13T14:18:51.779Z",
+      "updatedAt": "2026-01-13T14:18:51.779Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e69",
+      "type": "CREDIT_LOAD",
+      "amount": 1027.28,
+      "currency": "INR",
+      "transactionDate": "2026-01-14T23:24:20.895Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-14T23:24:20.895Z",
+      "updatedAt": "2026-01-14T23:24:20.895Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e69",
+      "type": "CREDIT_LOAD",
+      "amount": 1418.77,
+      "currency": "INR",
+      "transactionDate": "2026-01-16T08:48:56.522Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-16T08:48:56.522Z",
+      "updatedAt": "2026-01-16T08:48:56.522Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e69",
+      "type": "REFUND_CREDIT",
+      "amount": 2060.55,
+      "currency": "INR",
+      "transactionDate": "2026-01-20T01:03:24.782Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-20T01:03:24.782Z",
+      "updatedAt": "2026-01-20T01:03:24.782Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e69",
+      "type": "CREDIT_LOAD",
+      "amount": 2354,
+      "currency": "INR",
+      "transactionDate": "2026-01-22T18:45:14.837Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-22T18:45:14.837Z",
+      "updatedAt": "2026-01-22T18:45:14.837Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e69",
+      "type": "CREDIT_LOAD",
+      "amount": 1682.85,
+      "currency": "INR",
+      "transactionDate": "2026-01-24T11:58:29.627Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-24T11:58:29.627Z",
+      "updatedAt": "2026-01-24T11:58:29.627Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e69",
+      "type": "REFUND_CREDIT",
+      "amount": 1468.02,
+      "currency": "INR",
+      "transactionDate": "2026-01-29T00:52:25.942Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-29T00:52:25.942Z",
+      "updatedAt": "2026-01-29T00:52:25.942Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e69",
+      "type": "ADJUSTMENT",
+      "amount": 162.85,
+      "currency": "INR",
+      "transactionDate": "2026-01-31T19:09:55.074Z",
+      "notes": "System generated adjustment for seeding",
+      "createdAt": "2026-01-31T19:09:55.074Z",
+      "updatedAt": "2026-01-31T19:09:55.074Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e69",
+      "type": "ADJUSTMENT",
+      "amount": 489.67,
+      "currency": "INR",
+      "transactionDate": "2026-02-03T16:14:44.794Z",
+      "notes": "System generated adjustment for seeding",
+      "createdAt": "2026-02-03T16:14:44.794Z",
+      "updatedAt": "2026-02-03T16:14:44.794Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e69",
+      "type": "REFUND_CREDIT",
+      "amount": 750.86,
+      "currency": "INR",
+      "transactionDate": "2026-02-08T02:00:46.374Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-02-08T02:00:46.374Z",
+      "updatedAt": "2026-02-08T02:00:46.374Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e69",
+      "type": "CREDIT_LOAD",
+      "amount": 3405.1,
+      "currency": "INR",
+      "transactionDate": "2026-02-10T11:32:44.726Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-10T11:32:44.726Z",
+      "updatedAt": "2026-02-10T11:32:44.726Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6a",
+      "type": "CREDIT_LOAD",
+      "amount": 4037.52,
+      "currency": "INR",
+      "transactionDate": "2025-12-26T17:44:15.064Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2025-12-26T17:44:15.064Z",
+      "updatedAt": "2025-12-26T17:44:15.064Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6a",
+      "type": "ADJUSTMENT",
+      "amount": 331.91,
+      "currency": "INR",
+      "transactionDate": "2026-01-01T07:09:32.869Z",
+      "notes": "System generated adjustment for seeding",
+      "createdAt": "2026-01-01T07:09:32.869Z",
+      "updatedAt": "2026-01-01T07:09:32.869Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6a",
+      "type": "CREDIT_LOAD",
+      "amount": 1779.68,
+      "currency": "INR",
+      "transactionDate": "2026-01-05T15:51:42.595Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-05T15:51:42.595Z",
+      "updatedAt": "2026-01-05T15:51:42.595Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6a",
+      "type": "ADJUSTMENT",
+      "amount": 361.58,
+      "currency": "INR",
+      "transactionDate": "2026-01-09T08:30:44.036Z",
+      "notes": "System generated adjustment for seeding",
+      "createdAt": "2026-01-09T08:30:44.036Z",
+      "updatedAt": "2026-01-09T08:30:44.036Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6a",
+      "type": "DEBIT_SPEND",
+      "amount": -4334.22,
+      "currency": "INR",
+      "transactionDate": "2026-01-10T21:26:10.249Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-10T21:26:10.249Z",
+      "updatedAt": "2026-01-10T21:26:10.249Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6a",
+      "type": "CREDIT_LOAD",
+      "amount": 1666.27,
+      "currency": "INR",
+      "transactionDate": "2026-01-16T13:54:20.861Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-16T13:54:20.861Z",
+      "updatedAt": "2026-01-16T13:54:20.861Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6a",
+      "type": "CREDIT_LOAD",
+      "amount": 1306.7,
+      "currency": "INR",
+      "transactionDate": "2026-01-18T20:27:49.058Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-18T20:27:49.058Z",
+      "updatedAt": "2026-01-18T20:27:49.058Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6a",
+      "type": "REFUND_CREDIT",
+      "amount": 1033.34,
+      "currency": "INR",
+      "transactionDate": "2026-01-20T18:50:12.808Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-20T18:50:12.808Z",
+      "updatedAt": "2026-01-20T18:50:12.808Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6a",
+      "type": "REFUND_CREDIT",
+      "amount": 2741.24,
+      "currency": "INR",
+      "transactionDate": "2026-01-25T21:38:30.811Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-25T21:38:30.811Z",
+      "updatedAt": "2026-01-25T21:38:30.811Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6a",
+      "type": "DEBIT_SPEND",
+      "amount": -4371.33,
+      "currency": "INR",
+      "transactionDate": "2026-01-26T22:08:33.635Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-26T22:08:33.635Z",
+      "updatedAt": "2026-01-26T22:08:33.635Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6a",
+      "type": "ADJUSTMENT",
+      "amount": 363.47,
+      "currency": "INR",
+      "transactionDate": "2026-01-29T18:41:54.321Z",
+      "notes": "System generated adjustment for seeding",
+      "createdAt": "2026-01-29T18:41:54.321Z",
+      "updatedAt": "2026-01-29T18:41:54.321Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6a",
+      "type": "REFUND_CREDIT",
+      "amount": 206.78,
+      "currency": "INR",
+      "transactionDate": "2026-02-01T15:59:15.721Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-02-01T15:59:15.721Z",
+      "updatedAt": "2026-02-01T15:59:15.721Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6a",
+      "type": "CREDIT_LOAD",
+      "amount": 4211.64,
+      "currency": "INR",
+      "transactionDate": "2026-02-07T15:34:52.264Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-07T15:34:52.264Z",
+      "updatedAt": "2026-02-07T15:34:52.264Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6a",
+      "type": "CREDIT_LOAD",
+      "amount": 2685.11,
+      "currency": "INR",
+      "transactionDate": "2026-02-08T16:17:11.177Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-08T16:17:11.177Z",
+      "updatedAt": "2026-02-08T16:17:11.177Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6a",
+      "type": "ADJUSTMENT",
+      "amount": -522.24,
+      "currency": "INR",
+      "transactionDate": "2026-02-12T11:40:08.557Z",
+      "notes": "System generated adjustment for seeding",
+      "createdAt": "2026-02-12T11:40:08.557Z",
+      "updatedAt": "2026-02-12T11:40:08.557Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6a",
+      "type": "DEBIT_SPEND",
+      "amount": -6927.49,
+      "currency": "INR",
+      "transactionDate": "2026-02-14T21:34:20.733Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-02-14T21:34:20.733Z",
+      "updatedAt": "2026-02-14T21:34:20.733Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6a",
+      "type": "DEBIT_SPEND",
+      "amount": -2994.53,
+      "currency": "INR",
+      "transactionDate": "2026-02-20T19:06:48.616Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-02-20T19:06:48.616Z",
+      "updatedAt": "2026-02-20T19:06:48.616Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6b",
+      "type": "CREDIT_LOAD",
+      "amount": 2128.18,
+      "currency": "INR",
+      "transactionDate": "2025-12-26T04:04:07.089Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2025-12-26T04:04:07.089Z",
+      "updatedAt": "2025-12-26T04:04:07.089Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6b",
+      "type": "REFUND_CREDIT",
+      "amount": 1729.89,
+      "currency": "INR",
+      "transactionDate": "2025-12-30T20:30:12.930Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2025-12-30T20:30:12.930Z",
+      "updatedAt": "2025-12-30T20:30:12.930Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6b",
+      "type": "CREDIT_LOAD",
+      "amount": 2466.7,
+      "currency": "INR",
+      "transactionDate": "2026-01-03T16:23:15.235Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-03T16:23:15.235Z",
+      "updatedAt": "2026-01-03T16:23:15.235Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6b",
+      "type": "REFUND_CREDIT",
+      "amount": 4966.74,
+      "currency": "INR",
+      "transactionDate": "2026-01-08T03:39:24.881Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-08T03:39:24.881Z",
+      "updatedAt": "2026-01-08T03:39:24.881Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6b",
+      "type": "CREDIT_LOAD",
+      "amount": 4161.47,
+      "currency": "INR",
+      "transactionDate": "2026-01-11T07:23:45.163Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-11T07:23:45.163Z",
+      "updatedAt": "2026-01-11T07:23:45.163Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6b",
+      "type": "CREDIT_LOAD",
+      "amount": 1688.78,
+      "currency": "INR",
+      "transactionDate": "2026-01-13T02:20:07.592Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-13T02:20:07.592Z",
+      "updatedAt": "2026-01-13T02:20:07.592Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6b",
+      "type": "REFUND_CREDIT",
+      "amount": 3880.67,
+      "currency": "INR",
+      "transactionDate": "2026-01-17T03:18:08.957Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-17T03:18:08.957Z",
+      "updatedAt": "2026-01-17T03:18:08.957Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6b",
+      "type": "CREDIT_LOAD",
+      "amount": 2164.09,
+      "currency": "INR",
+      "transactionDate": "2026-01-21T07:49:00.216Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-21T07:49:00.216Z",
+      "updatedAt": "2026-01-21T07:49:00.216Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6b",
+      "type": "DEBIT_SPEND",
+      "amount": -7001.01,
+      "currency": "INR",
+      "transactionDate": "2026-01-25T06:38:49.007Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-25T06:38:49.007Z",
+      "updatedAt": "2026-01-25T06:38:49.007Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6b",
+      "type": "REFUND_CREDIT",
+      "amount": 4642.21,
+      "currency": "INR",
+      "transactionDate": "2026-01-26T22:03:23.339Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-26T22:03:23.339Z",
+      "updatedAt": "2026-01-26T22:03:23.339Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6b",
+      "type": "REFUND_CREDIT",
+      "amount": 4526.57,
+      "currency": "INR",
+      "transactionDate": "2026-01-31T18:53:08.145Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-31T18:53:08.145Z",
+      "updatedAt": "2026-01-31T18:53:08.145Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6b",
+      "type": "REFUND_CREDIT",
+      "amount": 3442.08,
+      "currency": "INR",
+      "transactionDate": "2026-02-03T11:03:57.834Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-02-03T11:03:57.834Z",
+      "updatedAt": "2026-02-03T11:03:57.834Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6b",
+      "type": "CREDIT_LOAD",
+      "amount": 4105.31,
+      "currency": "INR",
+      "transactionDate": "2026-02-08T23:41:12.556Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-08T23:41:12.556Z",
+      "updatedAt": "2026-02-08T23:41:12.556Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6b",
+      "type": "DEBIT_SPEND",
+      "amount": -22814.89,
+      "currency": "INR",
+      "transactionDate": "2026-02-13T02:31:13.353Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-02-13T02:31:13.353Z",
+      "updatedAt": "2026-02-13T02:31:13.353Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6c",
+      "type": "CREDIT_LOAD",
+      "amount": 295.88,
+      "currency": "INR",
+      "transactionDate": "2025-12-29T12:32:49.053Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2025-12-29T12:32:49.053Z",
+      "updatedAt": "2025-12-29T12:32:49.053Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6c",
+      "type": "DEBIT_SPEND",
+      "amount": -65.69,
+      "currency": "INR",
+      "transactionDate": "2026-01-03T09:42:22.642Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-03T09:42:22.642Z",
+      "updatedAt": "2026-01-03T09:42:22.642Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6c",
+      "type": "REFUND_CREDIT",
+      "amount": 3902.94,
+      "currency": "INR",
+      "transactionDate": "2026-01-08T21:59:02.851Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-08T21:59:02.851Z",
+      "updatedAt": "2026-01-08T21:59:02.851Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6c",
+      "type": "DEBIT_SPEND",
+      "amount": -1940.85,
+      "currency": "INR",
+      "transactionDate": "2026-01-12T22:26:08.144Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-12T22:26:08.144Z",
+      "updatedAt": "2026-01-12T22:26:08.144Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6c",
+      "type": "CREDIT_LOAD",
+      "amount": 683.18,
+      "currency": "INR",
+      "transactionDate": "2026-01-17T20:17:12.389Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-17T20:17:12.389Z",
+      "updatedAt": "2026-01-17T20:17:12.389Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6c",
+      "type": "CREDIT_LOAD",
+      "amount": 3877.88,
+      "currency": "INR",
+      "transactionDate": "2026-01-22T08:16:14.079Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-22T08:16:14.079Z",
+      "updatedAt": "2026-01-22T08:16:14.079Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6c",
+      "type": "DEBIT_SPEND",
+      "amount": -4370.95,
+      "currency": "INR",
+      "transactionDate": "2026-01-23T14:23:41.947Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-23T14:23:41.947Z",
+      "updatedAt": "2026-01-23T14:23:41.947Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6c",
+      "type": "REFUND_CREDIT",
+      "amount": 908.24,
+      "currency": "INR",
+      "transactionDate": "2026-01-25T05:16:50.046Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-25T05:16:50.046Z",
+      "updatedAt": "2026-01-25T05:16:50.046Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6c",
+      "type": "REFUND_CREDIT",
+      "amount": 4204.73,
+      "currency": "INR",
+      "transactionDate": "2026-01-26T15:28:16.006Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-26T15:28:16.006Z",
+      "updatedAt": "2026-01-26T15:28:16.006Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6c",
+      "type": "REFUND_CREDIT",
+      "amount": 1716.38,
+      "currency": "INR",
+      "transactionDate": "2026-01-31T00:12:43.376Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-31T00:12:43.376Z",
+      "updatedAt": "2026-01-31T00:12:43.376Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6c",
+      "type": "DEBIT_SPEND",
+      "amount": -1554.74,
+      "currency": "INR",
+      "transactionDate": "2026-02-04T05:33:15.389Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-02-04T05:33:15.389Z",
+      "updatedAt": "2026-02-04T05:33:15.389Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6c",
+      "type": "CREDIT_LOAD",
+      "amount": 1161.6,
+      "currency": "INR",
+      "transactionDate": "2026-02-05T17:14:17.613Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-05T17:14:17.613Z",
+      "updatedAt": "2026-02-05T17:14:17.613Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6c",
+      "type": "DEBIT_SPEND",
+      "amount": -6079.33,
+      "currency": "INR",
+      "transactionDate": "2026-02-09T11:39:09.583Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-02-09T11:39:09.583Z",
+      "updatedAt": "2026-02-09T11:39:09.583Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6c",
+      "type": "CREDIT_LOAD",
+      "amount": 4870.22,
+      "currency": "INR",
+      "transactionDate": "2026-02-13T23:44:13.777Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-13T23:44:13.777Z",
+      "updatedAt": "2026-02-13T23:44:13.777Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6c",
+      "type": "CREDIT_LOAD",
+      "amount": 4392.49,
+      "currency": "INR",
+      "transactionDate": "2026-02-16T06:09:14.481Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-16T06:09:14.481Z",
+      "updatedAt": "2026-02-16T06:09:14.481Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6c",
+      "type": "CREDIT_LOAD",
+      "amount": 3470.11,
+      "currency": "INR",
+      "transactionDate": "2026-02-18T15:50:38.646Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-18T15:50:38.646Z",
+      "updatedAt": "2026-02-18T15:50:38.646Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6c",
+      "type": "DEBIT_SPEND",
+      "amount": -10518.11,
+      "currency": "INR",
+      "transactionDate": "2026-02-24T11:15:25.364Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-02-24T11:15:25.364Z",
+      "updatedAt": "2026-02-24T11:15:25.364Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6c",
+      "type": "CREDIT_LOAD",
+      "amount": 338.16,
+      "currency": "INR",
+      "transactionDate": "2026-02-27T07:26:26.568Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-27T07:26:26.568Z",
+      "updatedAt": "2026-02-27T07:26:26.568Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6d",
+      "type": "CREDIT_LOAD",
+      "amount": 971.71,
+      "currency": "INR",
+      "transactionDate": "2025-12-29T12:25:29.927Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2025-12-29T12:25:29.927Z",
+      "updatedAt": "2025-12-29T12:25:29.927Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6d",
+      "type": "CREDIT_LOAD",
+      "amount": 2819.33,
+      "currency": "INR",
+      "transactionDate": "2026-01-02T19:54:51.834Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-02T19:54:51.834Z",
+      "updatedAt": "2026-01-02T19:54:51.834Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6d",
+      "type": "CREDIT_LOAD",
+      "amount": 102.11,
+      "currency": "INR",
+      "transactionDate": "2026-01-08T01:10:36.875Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-08T01:10:36.875Z",
+      "updatedAt": "2026-01-08T01:10:36.875Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6d",
+      "type": "REFUND_CREDIT",
+      "amount": 1243.25,
+      "currency": "INR",
+      "transactionDate": "2026-01-12T07:35:43.753Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-12T07:35:43.753Z",
+      "updatedAt": "2026-01-12T07:35:43.753Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6d",
+      "type": "CREDIT_LOAD",
+      "amount": 2014.07,
+      "currency": "INR",
+      "transactionDate": "2026-01-13T20:01:25.136Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-13T20:01:25.136Z",
+      "updatedAt": "2026-01-13T20:01:25.136Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6d",
+      "type": "REFUND_CREDIT",
+      "amount": 4533.27,
+      "currency": "INR",
+      "transactionDate": "2026-01-17T18:07:23.733Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-17T18:07:23.733Z",
+      "updatedAt": "2026-01-17T18:07:23.733Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6d",
+      "type": "REFUND_CREDIT",
+      "amount": 3883.11,
+      "currency": "INR",
+      "transactionDate": "2026-01-18T21:46:41.976Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-18T21:46:41.976Z",
+      "updatedAt": "2026-01-18T21:46:41.976Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6d",
+      "type": "REFUND_CREDIT",
+      "amount": 1197.44,
+      "currency": "INR",
+      "transactionDate": "2026-01-24T02:54:43.162Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-24T02:54:43.162Z",
+      "updatedAt": "2026-01-24T02:54:43.162Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6d",
+      "type": "CREDIT_LOAD",
+      "amount": 3314.26,
+      "currency": "INR",
+      "transactionDate": "2026-01-26T07:56:23.571Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-26T07:56:23.571Z",
+      "updatedAt": "2026-01-26T07:56:23.571Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6d",
+      "type": "CREDIT_LOAD",
+      "amount": 2015.5,
+      "currency": "INR",
+      "transactionDate": "2026-01-29T16:25:32.422Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-29T16:25:32.422Z",
+      "updatedAt": "2026-01-29T16:25:32.422Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6d",
+      "type": "CREDIT_LOAD",
+      "amount": 4825.68,
+      "currency": "INR",
+      "transactionDate": "2026-02-02T17:38:39.739Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-02T17:38:39.739Z",
+      "updatedAt": "2026-02-02T17:38:39.739Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6d",
+      "type": "DEBIT_SPEND",
+      "amount": -4520.51,
+      "currency": "INR",
+      "transactionDate": "2026-02-06T08:43:41.368Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-02-06T08:43:41.368Z",
+      "updatedAt": "2026-02-06T08:43:41.368Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6d",
+      "type": "CREDIT_LOAD",
+      "amount": 2622.12,
+      "currency": "INR",
+      "transactionDate": "2026-02-08T07:27:25.548Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-08T07:27:25.548Z",
+      "updatedAt": "2026-02-08T07:27:25.548Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6d",
+      "type": "REFUND_CREDIT",
+      "amount": 3567.29,
+      "currency": "INR",
+      "transactionDate": "2026-02-10T01:52:32.330Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-02-10T01:52:32.330Z",
+      "updatedAt": "2026-02-10T01:52:32.330Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6d",
+      "type": "CREDIT_LOAD",
+      "amount": 3839.36,
+      "currency": "INR",
+      "transactionDate": "2026-02-13T15:46:37.985Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-13T15:46:37.985Z",
+      "updatedAt": "2026-02-13T15:46:37.985Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6e",
+      "type": "CREDIT_LOAD",
+      "amount": 1216.63,
+      "currency": "INR",
+      "transactionDate": "2025-12-28T00:52:12.430Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2025-12-28T00:52:12.430Z",
+      "updatedAt": "2025-12-28T00:52:12.430Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6e",
+      "type": "REFUND_CREDIT",
+      "amount": 2394.36,
+      "currency": "INR",
+      "transactionDate": "2025-12-29T18:44:35.724Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2025-12-29T18:44:35.724Z",
+      "updatedAt": "2025-12-29T18:44:35.724Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6e",
+      "type": "DEBIT_SPEND",
+      "amount": -2508.28,
+      "currency": "INR",
+      "transactionDate": "2026-01-04T07:48:33.917Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-04T07:48:33.917Z",
+      "updatedAt": "2026-01-04T07:48:33.917Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6e",
+      "type": "DEBIT_SPEND",
+      "amount": -205.73,
+      "currency": "INR",
+      "transactionDate": "2026-01-08T17:08:30.685Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-08T17:08:30.685Z",
+      "updatedAt": "2026-01-08T17:08:30.685Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6e",
+      "type": "CREDIT_LOAD",
+      "amount": 1266.1,
+      "currency": "INR",
+      "transactionDate": "2026-01-12T19:14:12.374Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-12T19:14:12.374Z",
+      "updatedAt": "2026-01-12T19:14:12.374Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6e",
+      "type": "DEBIT_SPEND",
+      "amount": -569.78,
+      "currency": "INR",
+      "transactionDate": "2026-01-15T08:57:22.193Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-15T08:57:22.193Z",
+      "updatedAt": "2026-01-15T08:57:22.193Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6e",
+      "type": "CREDIT_LOAD",
+      "amount": 3489.93,
+      "currency": "INR",
+      "transactionDate": "2026-01-18T01:46:38.975Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-18T01:46:38.975Z",
+      "updatedAt": "2026-01-18T01:46:38.975Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6e",
+      "type": "CREDIT_LOAD",
+      "amount": 857.25,
+      "currency": "INR",
+      "transactionDate": "2026-01-22T13:52:35.922Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-22T13:52:35.922Z",
+      "updatedAt": "2026-01-22T13:52:35.922Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6e",
+      "type": "DEBIT_SPEND",
+      "amount": -2852.49,
+      "currency": "INR",
+      "transactionDate": "2026-01-25T14:47:35.423Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-25T14:47:35.423Z",
+      "updatedAt": "2026-01-25T14:47:35.423Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6e",
+      "type": "REFUND_CREDIT",
+      "amount": 3659.05,
+      "currency": "INR",
+      "transactionDate": "2026-01-30T16:32:20.268Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-30T16:32:20.268Z",
+      "updatedAt": "2026-01-30T16:32:20.268Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6e",
+      "type": "CREDIT_LOAD",
+      "amount": 2329.01,
+      "currency": "INR",
+      "transactionDate": "2026-02-04T13:04:02.753Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-04T13:04:02.753Z",
+      "updatedAt": "2026-02-04T13:04:02.753Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6e",
+      "type": "CREDIT_LOAD",
+      "amount": 3644.61,
+      "currency": "INR",
+      "transactionDate": "2026-02-09T14:14:01.454Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-09T14:14:01.454Z",
+      "updatedAt": "2026-02-09T14:14:01.454Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6e",
+      "type": "DEBIT_SPEND",
+      "amount": -7325.86,
+      "currency": "INR",
+      "transactionDate": "2026-02-10T20:34:58.357Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-02-10T20:34:58.357Z",
+      "updatedAt": "2026-02-10T20:34:58.357Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6e",
+      "type": "DEBIT_SPEND",
+      "amount": -783.46,
+      "currency": "INR",
+      "transactionDate": "2026-02-15T14:49:45.748Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-02-15T14:49:45.748Z",
+      "updatedAt": "2026-02-15T14:49:45.748Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6e",
+      "type": "CREDIT_LOAD",
+      "amount": 3237.53,
+      "currency": "INR",
+      "transactionDate": "2026-02-20T21:11:50.976Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-20T21:11:50.976Z",
+      "updatedAt": "2026-02-20T21:11:50.976Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6f",
+      "type": "CREDIT_LOAD",
+      "amount": 1457.16,
+      "currency": "INR",
+      "transactionDate": "2025-12-29T05:51:19.270Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2025-12-29T05:51:19.270Z",
+      "updatedAt": "2025-12-29T05:51:19.270Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6f",
+      "type": "DEBIT_SPEND",
+      "amount": -183.53,
+      "currency": "INR",
+      "transactionDate": "2026-01-01T04:22:30.500Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-01T04:22:30.500Z",
+      "updatedAt": "2026-01-01T04:22:30.500Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6f",
+      "type": "DEBIT_SPEND",
+      "amount": -333.15,
+      "currency": "INR",
+      "transactionDate": "2026-01-05T01:18:44.807Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-05T01:18:44.807Z",
+      "updatedAt": "2026-01-05T01:18:44.807Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6f",
+      "type": "CREDIT_LOAD",
+      "amount": 3100.6,
+      "currency": "INR",
+      "transactionDate": "2026-01-08T13:11:58.685Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-08T13:11:58.685Z",
+      "updatedAt": "2026-01-08T13:11:58.685Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6f",
+      "type": "CREDIT_LOAD",
+      "amount": 3596.92,
+      "currency": "INR",
+      "transactionDate": "2026-01-11T14:42:37.616Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-11T14:42:37.616Z",
+      "updatedAt": "2026-01-11T14:42:37.616Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6f",
+      "type": "ADJUSTMENT",
+      "amount": 149.44,
+      "currency": "INR",
+      "transactionDate": "2026-01-14T06:58:10.732Z",
+      "notes": "System generated adjustment for seeding",
+      "createdAt": "2026-01-14T06:58:10.732Z",
+      "updatedAt": "2026-01-14T06:58:10.732Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6f",
+      "type": "CREDIT_LOAD",
+      "amount": 1973.78,
+      "currency": "INR",
+      "transactionDate": "2026-01-17T12:55:33.384Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-17T12:55:33.384Z",
+      "updatedAt": "2026-01-17T12:55:33.384Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6f",
+      "type": "REFUND_CREDIT",
+      "amount": 4882.58,
+      "currency": "INR",
+      "transactionDate": "2026-01-19T06:53:00.755Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-19T06:53:00.755Z",
+      "updatedAt": "2026-01-19T06:53:00.755Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6f",
+      "type": "CREDIT_LOAD",
+      "amount": 985.95,
+      "currency": "INR",
+      "transactionDate": "2026-01-21T23:46:24.718Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-21T23:46:24.718Z",
+      "updatedAt": "2026-01-21T23:46:24.718Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6f",
+      "type": "DEBIT_SPEND",
+      "amount": -2677.79,
+      "currency": "INR",
+      "transactionDate": "2026-01-26T01:45:37.259Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-26T01:45:37.259Z",
+      "updatedAt": "2026-01-26T01:45:37.259Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6f",
+      "type": "CREDIT_LOAD",
+      "amount": 2986.95,
+      "currency": "INR",
+      "transactionDate": "2026-01-27T23:43:19.146Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-27T23:43:19.146Z",
+      "updatedAt": "2026-01-27T23:43:19.146Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6f",
+      "type": "CREDIT_LOAD",
+      "amount": 3880.98,
+      "currency": "INR",
+      "transactionDate": "2026-02-02T22:28:39.786Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-02T22:28:39.786Z",
+      "updatedAt": "2026-02-02T22:28:39.786Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6f",
+      "type": "CREDIT_LOAD",
+      "amount": 414.42,
+      "currency": "INR",
+      "transactionDate": "2026-02-05T19:37:05.143Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-05T19:37:05.143Z",
+      "updatedAt": "2026-02-05T19:37:05.143Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6f",
+      "type": "REFUND_CREDIT",
+      "amount": 1610.59,
+      "currency": "INR",
+      "transactionDate": "2026-02-06T19:53:56.273Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-02-06T19:53:56.273Z",
+      "updatedAt": "2026-02-06T19:53:56.273Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6f",
+      "type": "REFUND_CREDIT",
+      "amount": 1343.6,
+      "currency": "INR",
+      "transactionDate": "2026-02-11T01:38:03.657Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-02-11T01:38:03.657Z",
+      "updatedAt": "2026-02-11T01:38:03.657Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6f",
+      "type": "REFUND_CREDIT",
+      "amount": 4360.18,
+      "currency": "INR",
+      "transactionDate": "2026-02-13T14:53:53.213Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-02-13T14:53:53.213Z",
+      "updatedAt": "2026-02-13T14:53:53.213Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6f",
+      "type": "DEBIT_SPEND",
+      "amount": -3487.24,
+      "currency": "INR",
+      "transactionDate": "2026-02-17T01:59:45.609Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-02-17T01:59:45.609Z",
+      "updatedAt": "2026-02-17T01:59:45.609Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e6f",
+      "type": "DEBIT_SPEND",
+      "amount": -3524.94,
+      "currency": "INR",
+      "transactionDate": "2026-02-20T19:28:18.299Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-02-20T19:28:18.299Z",
+      "updatedAt": "2026-02-20T19:28:18.299Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e70",
+      "type": "CREDIT_LOAD",
+      "amount": 3546.87,
+      "currency": "INR",
+      "transactionDate": "2025-12-26T09:56:31.132Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2025-12-26T09:56:31.132Z",
+      "updatedAt": "2025-12-26T09:56:31.132Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e70",
+      "type": "DEBIT_SPEND",
+      "amount": -1080.91,
+      "currency": "INR",
+      "transactionDate": "2025-12-30T14:29:25.648Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2025-12-30T14:29:25.648Z",
+      "updatedAt": "2025-12-30T14:29:25.648Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e70",
+      "type": "ADJUSTMENT",
+      "amount": 307.8,
+      "currency": "INR",
+      "transactionDate": "2026-01-03T11:11:08.470Z",
+      "notes": "System generated adjustment for seeding",
+      "createdAt": "2026-01-03T11:11:08.470Z",
+      "updatedAt": "2026-01-03T11:11:08.470Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e70",
+      "type": "CREDIT_LOAD",
+      "amount": 4606.43,
+      "currency": "INR",
+      "transactionDate": "2026-01-05T07:12:22.075Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-05T07:12:22.075Z",
+      "updatedAt": "2026-01-05T07:12:22.075Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e70",
+      "type": "REFUND_CREDIT",
+      "amount": 1123.06,
+      "currency": "INR",
+      "transactionDate": "2026-01-07T11:22:02.752Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-07T11:22:02.752Z",
+      "updatedAt": "2026-01-07T11:22:02.752Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e70",
+      "type": "DEBIT_SPEND",
+      "amount": -4615.33,
+      "currency": "INR",
+      "transactionDate": "2026-01-09T18:56:11.409Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-09T18:56:11.409Z",
+      "updatedAt": "2026-01-09T18:56:11.409Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e70",
+      "type": "REFUND_CREDIT",
+      "amount": 418.35,
+      "currency": "INR",
+      "transactionDate": "2026-01-14T17:40:27.337Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-14T17:40:27.337Z",
+      "updatedAt": "2026-01-14T17:40:27.337Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e70",
+      "type": "CREDIT_LOAD",
+      "amount": 4265.61,
+      "currency": "INR",
+      "transactionDate": "2026-01-16T05:40:02.259Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-16T05:40:02.259Z",
+      "updatedAt": "2026-01-16T05:40:02.259Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e70",
+      "type": "DEBIT_SPEND",
+      "amount": -4437.74,
+      "currency": "INR",
+      "transactionDate": "2026-01-20T16:02:39.370Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-20T16:02:39.370Z",
+      "updatedAt": "2026-01-20T16:02:39.370Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e70",
+      "type": "DEBIT_SPEND",
+      "amount": -1323.92,
+      "currency": "INR",
+      "transactionDate": "2026-01-22T14:34:21.423Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-22T14:34:21.423Z",
+      "updatedAt": "2026-01-22T14:34:21.423Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e70",
+      "type": "DEBIT_SPEND",
+      "amount": -1375.27,
+      "currency": "INR",
+      "transactionDate": "2026-01-27T09:36:34.878Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-27T09:36:34.878Z",
+      "updatedAt": "2026-01-27T09:36:34.878Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e70",
+      "type": "REFUND_CREDIT",
+      "amount": 3650.27,
+      "currency": "INR",
+      "transactionDate": "2026-01-29T18:12:25.933Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-29T18:12:25.933Z",
+      "updatedAt": "2026-01-29T18:12:25.933Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e70",
+      "type": "CREDIT_LOAD",
+      "amount": 1752.56,
+      "currency": "INR",
+      "transactionDate": "2026-02-03T01:09:25.002Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-03T01:09:25.002Z",
+      "updatedAt": "2026-02-03T01:09:25.002Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e70",
+      "type": "REFUND_CREDIT",
+      "amount": 1911.34,
+      "currency": "INR",
+      "transactionDate": "2026-02-08T21:27:24.122Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-02-08T21:27:24.122Z",
+      "updatedAt": "2026-02-08T21:27:24.122Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e70",
+      "type": "CREDIT_LOAD",
+      "amount": 2163.27,
+      "currency": "INR",
+      "transactionDate": "2026-02-14T12:04:37.269Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-14T12:04:37.269Z",
+      "updatedAt": "2026-02-14T12:04:37.269Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e70",
+      "type": "DEBIT_SPEND",
+      "amount": -5994.51,
+      "currency": "INR",
+      "transactionDate": "2026-02-19T06:00:56.075Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-02-19T06:00:56.075Z",
+      "updatedAt": "2026-02-19T06:00:56.075Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e70",
+      "type": "REFUND_CREDIT",
+      "amount": 4221.24,
+      "currency": "INR",
+      "transactionDate": "2026-02-24T15:51:53.087Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-02-24T15:51:53.087Z",
+      "updatedAt": "2026-02-24T15:51:53.087Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e71",
+      "type": "REFUND_CREDIT",
+      "amount": 2390.47,
+      "currency": "INR",
+      "transactionDate": "2025-12-25T13:25:30.429Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2025-12-25T13:25:30.429Z",
+      "updatedAt": "2025-12-25T13:25:30.429Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e71",
+      "type": "DEBIT_SPEND",
+      "amount": -1709.97,
+      "currency": "INR",
+      "transactionDate": "2025-12-27T16:40:20.394Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2025-12-27T16:40:20.394Z",
+      "updatedAt": "2025-12-27T16:40:20.394Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e71",
+      "type": "CREDIT_LOAD",
+      "amount": 3829.22,
+      "currency": "INR",
+      "transactionDate": "2025-12-31T11:32:55.547Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2025-12-31T11:32:55.547Z",
+      "updatedAt": "2025-12-31T11:32:55.547Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e71",
+      "type": "DEBIT_SPEND",
+      "amount": -2616.43,
+      "currency": "INR",
+      "transactionDate": "2026-01-03T03:39:44.832Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-03T03:39:44.832Z",
+      "updatedAt": "2026-01-03T03:39:44.832Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e71",
+      "type": "REFUND_CREDIT",
+      "amount": 641.41,
+      "currency": "INR",
+      "transactionDate": "2026-01-04T08:11:19.420Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-04T08:11:19.420Z",
+      "updatedAt": "2026-01-04T08:11:19.420Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e71",
+      "type": "CREDIT_LOAD",
+      "amount": 3041.59,
+      "currency": "INR",
+      "transactionDate": "2026-01-06T23:12:05.615Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-06T23:12:05.615Z",
+      "updatedAt": "2026-01-06T23:12:05.615Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e71",
+      "type": "REFUND_CREDIT",
+      "amount": 1601.67,
+      "currency": "INR",
+      "transactionDate": "2026-01-10T17:10:34.478Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-10T17:10:34.478Z",
+      "updatedAt": "2026-01-10T17:10:34.478Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e71",
+      "type": "CREDIT_LOAD",
+      "amount": 957.13,
+      "currency": "INR",
+      "transactionDate": "2026-01-15T22:24:52.136Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-15T22:24:52.136Z",
+      "updatedAt": "2026-01-15T22:24:52.136Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e71",
+      "type": "DEBIT_SPEND",
+      "amount": -3562.06,
+      "currency": "INR",
+      "transactionDate": "2026-01-20T10:36:59.063Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-20T10:36:59.063Z",
+      "updatedAt": "2026-01-20T10:36:59.063Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e71",
+      "type": "REFUND_CREDIT",
+      "amount": 4538.28,
+      "currency": "INR",
+      "transactionDate": "2026-01-26T07:44:15.036Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-26T07:44:15.036Z",
+      "updatedAt": "2026-01-26T07:44:15.036Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e71",
+      "type": "REFUND_CREDIT",
+      "amount": 4962.46,
+      "currency": "INR",
+      "transactionDate": "2026-01-29T16:15:30.983Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-29T16:15:30.983Z",
+      "updatedAt": "2026-01-29T16:15:30.983Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e71",
+      "type": "REFUND_CREDIT",
+      "amount": 451.42,
+      "currency": "INR",
+      "transactionDate": "2026-02-02T09:35:28.007Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-02-02T09:35:28.007Z",
+      "updatedAt": "2026-02-02T09:35:28.007Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e71",
+      "type": "DEBIT_SPEND",
+      "amount": -8048.55,
+      "currency": "INR",
+      "transactionDate": "2026-02-03T23:40:25.334Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-02-03T23:40:25.334Z",
+      "updatedAt": "2026-02-03T23:40:25.334Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e71",
+      "type": "REFUND_CREDIT",
+      "amount": 5077.81,
+      "currency": "INR",
+      "transactionDate": "2026-02-09T23:21:11.849Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-02-09T23:21:11.849Z",
+      "updatedAt": "2026-02-09T23:21:11.849Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e71",
+      "type": "CREDIT_LOAD",
+      "amount": 3205.81,
+      "currency": "INR",
+      "transactionDate": "2026-02-14T06:01:35.210Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-14T06:01:35.210Z",
+      "updatedAt": "2026-02-14T06:01:35.210Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e72",
+      "type": "REFUND_CREDIT",
+      "amount": 3428.2,
+      "currency": "INR",
+      "transactionDate": "2025-12-30T04:58:51.517Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2025-12-30T04:58:51.517Z",
+      "updatedAt": "2025-12-30T04:58:51.517Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e72",
+      "type": "REFUND_CREDIT",
+      "amount": 4391.2,
+      "currency": "INR",
+      "transactionDate": "2026-01-03T04:20:48.387Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-03T04:20:48.387Z",
+      "updatedAt": "2026-01-03T04:20:48.387Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e72",
+      "type": "DEBIT_SPEND",
+      "amount": -5734.81,
+      "currency": "INR",
+      "transactionDate": "2026-01-06T10:26:51.133Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-06T10:26:51.133Z",
+      "updatedAt": "2026-01-06T10:26:51.133Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e72",
+      "type": "CREDIT_LOAD",
+      "amount": 2764.01,
+      "currency": "INR",
+      "transactionDate": "2026-01-09T14:00:10.741Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-09T14:00:10.741Z",
+      "updatedAt": "2026-01-09T14:00:10.741Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e72",
+      "type": "DEBIT_SPEND",
+      "amount": -2249.11,
+      "currency": "INR",
+      "transactionDate": "2026-01-15T13:41:48.608Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-15T13:41:48.608Z",
+      "updatedAt": "2026-01-15T13:41:48.608Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e72",
+      "type": "CREDIT_LOAD",
+      "amount": 5041.28,
+      "currency": "INR",
+      "transactionDate": "2026-01-19T09:53:14.453Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-19T09:53:14.453Z",
+      "updatedAt": "2026-01-19T09:53:14.453Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e72",
+      "type": "CREDIT_LOAD",
+      "amount": 4394,
+      "currency": "INR",
+      "transactionDate": "2026-01-24T21:20:09.047Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-24T21:20:09.047Z",
+      "updatedAt": "2026-01-24T21:20:09.047Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e72",
+      "type": "REFUND_CREDIT",
+      "amount": 4824.02,
+      "currency": "INR",
+      "transactionDate": "2026-01-26T18:17:39.868Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-26T18:17:39.868Z",
+      "updatedAt": "2026-01-26T18:17:39.868Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e72",
+      "type": "REFUND_CREDIT",
+      "amount": 4951.77,
+      "currency": "INR",
+      "transactionDate": "2026-01-30T00:02:51.438Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-30T00:02:51.438Z",
+      "updatedAt": "2026-01-30T00:02:51.438Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e72",
+      "type": "REFUND_CREDIT",
+      "amount": 3836.73,
+      "currency": "INR",
+      "transactionDate": "2026-02-03T18:28:05.287Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-02-03T18:28:05.287Z",
+      "updatedAt": "2026-02-03T18:28:05.287Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e72",
+      "type": "CREDIT_LOAD",
+      "amount": 1313.8,
+      "currency": "INR",
+      "transactionDate": "2026-02-06T15:41:11.173Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-06T15:41:11.173Z",
+      "updatedAt": "2026-02-06T15:41:11.173Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e72",
+      "type": "CREDIT_LOAD",
+      "amount": 749.32,
+      "currency": "INR",
+      "transactionDate": "2026-02-11T23:05:45.051Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-11T23:05:45.051Z",
+      "updatedAt": "2026-02-11T23:05:45.051Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e72",
+      "type": "REFUND_CREDIT",
+      "amount": 1642.75,
+      "currency": "INR",
+      "transactionDate": "2026-02-13T12:43:58.393Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-02-13T12:43:58.393Z",
+      "updatedAt": "2026-02-13T12:43:58.393Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e72",
+      "type": "REFUND_CREDIT",
+      "amount": 4332.08,
+      "currency": "INR",
+      "transactionDate": "2026-02-19T03:18:22.035Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-02-19T03:18:22.035Z",
+      "updatedAt": "2026-02-19T03:18:22.035Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e72",
+      "type": "REFUND_CREDIT",
+      "amount": 1710.9,
+      "currency": "INR",
+      "transactionDate": "2026-02-22T12:08:44.934Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-02-22T12:08:44.934Z",
+      "updatedAt": "2026-02-22T12:08:44.934Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e73",
+      "type": "ADJUSTMENT",
+      "amount": 0,
+      "currency": "INR",
+      "transactionDate": "2025-12-28T07:35:08.346Z",
+      "notes": "System generated adjustment for seeding",
+      "createdAt": "2025-12-28T07:35:08.346Z",
+      "updatedAt": "2025-12-28T07:35:08.346Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e73",
+      "type": "REFUND_CREDIT",
+      "amount": 4888.29,
+      "currency": "INR",
+      "transactionDate": "2026-01-01T04:17:26.040Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-01T04:17:26.040Z",
+      "updatedAt": "2026-01-01T04:17:26.040Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e73",
+      "type": "CREDIT_LOAD",
+      "amount": 3048.63,
+      "currency": "INR",
+      "transactionDate": "2026-01-03T06:52:14.722Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-03T06:52:14.722Z",
+      "updatedAt": "2026-01-03T06:52:14.722Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e73",
+      "type": "CREDIT_LOAD",
+      "amount": 1853.52,
+      "currency": "INR",
+      "transactionDate": "2026-01-06T13:12:42.273Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-06T13:12:42.273Z",
+      "updatedAt": "2026-01-06T13:12:42.273Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e73",
+      "type": "CREDIT_LOAD",
+      "amount": 2629.52,
+      "currency": "INR",
+      "transactionDate": "2026-01-07T18:13:23.080Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-07T18:13:23.080Z",
+      "updatedAt": "2026-01-07T18:13:23.080Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e73",
+      "type": "DEBIT_SPEND",
+      "amount": -7895.66,
+      "currency": "INR",
+      "transactionDate": "2026-01-13T18:00:47.078Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-13T18:00:47.078Z",
+      "updatedAt": "2026-01-13T18:00:47.078Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e73",
+      "type": "DEBIT_SPEND",
+      "amount": -1495.98,
+      "currency": "INR",
+      "transactionDate": "2026-01-18T12:30:11.439Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-18T12:30:11.439Z",
+      "updatedAt": "2026-01-18T12:30:11.439Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e73",
+      "type": "DEBIT_SPEND",
+      "amount": -1458.44,
+      "currency": "INR",
+      "transactionDate": "2026-01-23T16:26:15.745Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-23T16:26:15.745Z",
+      "updatedAt": "2026-01-23T16:26:15.745Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e73",
+      "type": "DEBIT_SPEND",
+      "amount": -941.83,
+      "currency": "INR",
+      "transactionDate": "2026-01-26T03:48:44.844Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-26T03:48:44.844Z",
+      "updatedAt": "2026-01-26T03:48:44.844Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e73",
+      "type": "DEBIT_SPEND",
+      "amount": -358.13,
+      "currency": "INR",
+      "transactionDate": "2026-01-31T04:14:39.175Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-31T04:14:39.175Z",
+      "updatedAt": "2026-01-31T04:14:39.175Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e73",
+      "type": "CREDIT_LOAD",
+      "amount": 1646.72,
+      "currency": "INR",
+      "transactionDate": "2026-02-03T04:53:17.317Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-03T04:53:17.317Z",
+      "updatedAt": "2026-02-03T04:53:17.317Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e73",
+      "type": "REFUND_CREDIT",
+      "amount": 228.23,
+      "currency": "INR",
+      "transactionDate": "2026-02-08T06:06:33.013Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-02-08T06:06:33.013Z",
+      "updatedAt": "2026-02-08T06:06:33.013Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e73",
+      "type": "REFUND_CREDIT",
+      "amount": 2478.33,
+      "currency": "INR",
+      "transactionDate": "2026-02-11T08:08:50.631Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-02-11T08:08:50.631Z",
+      "updatedAt": "2026-02-11T08:08:50.631Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e73",
+      "type": "CREDIT_LOAD",
+      "amount": 1720.03,
+      "currency": "INR",
+      "transactionDate": "2026-02-12T11:24:44.344Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-12T11:24:44.344Z",
+      "updatedAt": "2026-02-12T11:24:44.344Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e73",
+      "type": "ADJUSTMENT",
+      "amount": 327.65,
+      "currency": "INR",
+      "transactionDate": "2026-02-15T06:42:00.010Z",
+      "notes": "System generated adjustment for seeding",
+      "createdAt": "2026-02-15T06:42:00.010Z",
+      "updatedAt": "2026-02-15T06:42:00.010Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e73",
+      "type": "CREDIT_LOAD",
+      "amount": 2766.86,
+      "currency": "INR",
+      "transactionDate": "2026-02-18T12:50:57.867Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-18T12:50:57.867Z",
+      "updatedAt": "2026-02-18T12:50:57.867Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e73",
+      "type": "CREDIT_LOAD",
+      "amount": 1201.7,
+      "currency": "INR",
+      "transactionDate": "2026-02-20T08:09:10.353Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-20T08:09:10.353Z",
+      "updatedAt": "2026-02-20T08:09:10.353Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e73",
+      "type": "DEBIT_SPEND",
+      "amount": -6144.64,
+      "currency": "INR",
+      "transactionDate": "2026-02-21T11:46:30.887Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-02-21T11:46:30.887Z",
+      "updatedAt": "2026-02-21T11:46:30.887Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e74",
+      "type": "REFUND_CREDIT",
+      "amount": 2706.1,
+      "currency": "INR",
+      "transactionDate": "2025-12-28T12:25:38.754Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2025-12-28T12:25:38.754Z",
+      "updatedAt": "2025-12-28T12:25:38.754Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e74",
+      "type": "DEBIT_SPEND",
+      "amount": -1936.82,
+      "currency": "INR",
+      "transactionDate": "2026-01-02T03:38:52.392Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-02T03:38:52.392Z",
+      "updatedAt": "2026-01-02T03:38:52.392Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e74",
+      "type": "CREDIT_LOAD",
+      "amount": 2319.39,
+      "currency": "INR",
+      "transactionDate": "2026-01-08T03:01:34.466Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-08T03:01:34.466Z",
+      "updatedAt": "2026-01-08T03:01:34.466Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e74",
+      "type": "CREDIT_LOAD",
+      "amount": 5096.67,
+      "currency": "INR",
+      "transactionDate": "2026-01-11T16:37:29.270Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-11T16:37:29.270Z",
+      "updatedAt": "2026-01-11T16:37:29.270Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e74",
+      "type": "CREDIT_LOAD",
+      "amount": 3105.24,
+      "currency": "INR",
+      "transactionDate": "2026-01-13T17:15:04.559Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-13T17:15:04.559Z",
+      "updatedAt": "2026-01-13T17:15:04.559Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e74",
+      "type": "CREDIT_LOAD",
+      "amount": 374.25,
+      "currency": "INR",
+      "transactionDate": "2026-01-18T02:33:35.250Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-18T02:33:35.250Z",
+      "updatedAt": "2026-01-18T02:33:35.250Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e74",
+      "type": "CREDIT_LOAD",
+      "amount": 4493.29,
+      "currency": "INR",
+      "transactionDate": "2026-01-23T10:56:08.125Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-23T10:56:08.125Z",
+      "updatedAt": "2026-01-23T10:56:08.125Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e74",
+      "type": "REFUND_CREDIT",
+      "amount": 3932.46,
+      "currency": "INR",
+      "transactionDate": "2026-01-27T23:57:06.846Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-27T23:57:06.846Z",
+      "updatedAt": "2026-01-27T23:57:06.846Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e74",
+      "type": "DEBIT_SPEND",
+      "amount": -10398.41,
+      "currency": "INR",
+      "transactionDate": "2026-01-29T07:19:17.144Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-29T07:19:17.144Z",
+      "updatedAt": "2026-01-29T07:19:17.144Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e74",
+      "type": "ADJUSTMENT",
+      "amount": 342.51,
+      "currency": "INR",
+      "transactionDate": "2026-02-03T04:05:05.101Z",
+      "notes": "System generated adjustment for seeding",
+      "createdAt": "2026-02-03T04:05:05.101Z",
+      "updatedAt": "2026-02-03T04:05:05.101Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e74",
+      "type": "CREDIT_LOAD",
+      "amount": 2561.46,
+      "currency": "INR",
+      "transactionDate": "2026-02-05T17:49:56.950Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-05T17:49:56.950Z",
+      "updatedAt": "2026-02-05T17:49:56.950Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e74",
+      "type": "DEBIT_SPEND",
+      "amount": -3487.14,
+      "currency": "INR",
+      "transactionDate": "2026-02-11T16:10:15.484Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-02-11T16:10:15.484Z",
+      "updatedAt": "2026-02-11T16:10:15.484Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e74",
+      "type": "REFUND_CREDIT",
+      "amount": 3627.42,
+      "currency": "INR",
+      "transactionDate": "2026-02-13T20:33:42.886Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-02-13T20:33:42.886Z",
+      "updatedAt": "2026-02-13T20:33:42.886Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e74",
+      "type": "CREDIT_LOAD",
+      "amount": 1543.95,
+      "currency": "INR",
+      "transactionDate": "2026-02-17T02:53:22.971Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-17T02:53:22.971Z",
+      "updatedAt": "2026-02-17T02:53:22.971Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e74",
+      "type": "REFUND_CREDIT",
+      "amount": 730.69,
+      "currency": "INR",
+      "transactionDate": "2026-02-18T23:03:07.692Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-02-18T23:03:07.692Z",
+      "updatedAt": "2026-02-18T23:03:07.692Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e74",
+      "type": "CREDIT_LOAD",
+      "amount": 1263.64,
+      "currency": "INR",
+      "transactionDate": "2026-02-22T00:10:13.837Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-22T00:10:13.837Z",
+      "updatedAt": "2026-02-22T00:10:13.837Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e74",
+      "type": "DEBIT_SPEND",
+      "amount": -10607.65,
+      "currency": "INR",
+      "transactionDate": "2026-02-26T21:36:20.091Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-02-26T21:36:20.091Z",
+      "updatedAt": "2026-02-26T21:36:20.091Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e74",
+      "type": "REFUND_CREDIT",
+      "amount": 289.22,
+      "currency": "INR",
+      "transactionDate": "2026-03-02T10:57:54.965Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-03-02T10:57:54.965Z",
+      "updatedAt": "2026-03-02T10:57:54.965Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e75",
+      "type": "REFUND_CREDIT",
+      "amount": 2987.85,
+      "currency": "INR",
+      "transactionDate": "2025-12-29T02:02:59.169Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2025-12-29T02:02:59.169Z",
+      "updatedAt": "2025-12-29T02:02:59.169Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e75",
+      "type": "REFUND_CREDIT",
+      "amount": 4159.78,
+      "currency": "INR",
+      "transactionDate": "2026-01-01T02:55:43.055Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-01T02:55:43.055Z",
+      "updatedAt": "2026-01-01T02:55:43.055Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e75",
+      "type": "CREDIT_LOAD",
+      "amount": 1307.64,
+      "currency": "INR",
+      "transactionDate": "2026-01-04T10:14:36.304Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-04T10:14:36.304Z",
+      "updatedAt": "2026-01-04T10:14:36.304Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e75",
+      "type": "CREDIT_LOAD",
+      "amount": 3450.69,
+      "currency": "INR",
+      "transactionDate": "2026-01-10T01:47:37.484Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-10T01:47:37.484Z",
+      "updatedAt": "2026-01-10T01:47:37.484Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e75",
+      "type": "CREDIT_LOAD",
+      "amount": 4602.65,
+      "currency": "INR",
+      "transactionDate": "2026-01-12T07:59:31.300Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-12T07:59:31.300Z",
+      "updatedAt": "2026-01-12T07:59:31.300Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e75",
+      "type": "CREDIT_LOAD",
+      "amount": 1593.56,
+      "currency": "INR",
+      "transactionDate": "2026-01-15T21:31:28.581Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-15T21:31:28.581Z",
+      "updatedAt": "2026-01-15T21:31:28.581Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e75",
+      "type": "CREDIT_LOAD",
+      "amount": 3060.46,
+      "currency": "INR",
+      "transactionDate": "2026-01-17T12:01:46.818Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-17T12:01:46.818Z",
+      "updatedAt": "2026-01-17T12:01:46.818Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e75",
+      "type": "REFUND_CREDIT",
+      "amount": 4890.4,
+      "currency": "INR",
+      "transactionDate": "2026-01-21T16:43:59.345Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-01-21T16:43:59.345Z",
+      "updatedAt": "2026-01-21T16:43:59.345Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e75",
+      "type": "ADJUSTMENT",
+      "amount": -340.37,
+      "currency": "INR",
+      "transactionDate": "2026-01-25T12:12:55.176Z",
+      "notes": "System generated adjustment for seeding",
+      "createdAt": "2026-01-25T12:12:55.176Z",
+      "updatedAt": "2026-01-25T12:12:55.176Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e75",
+      "type": "DEBIT_SPEND",
+      "amount": -8497.13,
+      "currency": "INR",
+      "transactionDate": "2026-01-27T17:27:14.576Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-27T17:27:14.576Z",
+      "updatedAt": "2026-01-27T17:27:14.576Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e75",
+      "type": "CREDIT_LOAD",
+      "amount": 2497.41,
+      "currency": "INR",
+      "transactionDate": "2026-01-31T09:48:59.466Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-31T09:48:59.466Z",
+      "updatedAt": "2026-01-31T09:48:59.466Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e75",
+      "type": "DEBIT_SPEND",
+      "amount": -12426.1,
+      "currency": "INR",
+      "transactionDate": "2026-02-04T16:36:53.987Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-02-04T16:36:53.987Z",
+      "updatedAt": "2026-02-04T16:36:53.987Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e75",
+      "type": "CREDIT_LOAD",
+      "amount": 2939.02,
+      "currency": "INR",
+      "transactionDate": "2026-02-08T08:13:27.451Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-08T08:13:27.451Z",
+      "updatedAt": "2026-02-08T08:13:27.451Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e75",
+      "type": "DEBIT_SPEND",
+      "amount": -6595.42,
+      "currency": "INR",
+      "transactionDate": "2026-02-09T08:56:10.120Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-02-09T08:56:10.120Z",
+      "updatedAt": "2026-02-09T08:56:10.120Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e75",
+      "type": "DEBIT_SPEND",
+      "amount": -2619.87,
+      "currency": "INR",
+      "transactionDate": "2026-02-12T01:08:33.826Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-02-12T01:08:33.826Z",
+      "updatedAt": "2026-02-12T01:08:33.826Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e76",
+      "type": "REFUND_CREDIT",
+      "amount": 2945.13,
+      "currency": "INR",
+      "transactionDate": "2025-12-26T21:10:51.893Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2025-12-26T21:10:51.893Z",
+      "updatedAt": "2025-12-26T21:10:51.893Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e76",
+      "type": "REFUND_CREDIT",
+      "amount": 1240.02,
+      "currency": "INR",
+      "transactionDate": "2025-12-29T04:11:01.924Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2025-12-29T04:11:01.924Z",
+      "updatedAt": "2025-12-29T04:11:01.924Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e76",
+      "type": "CREDIT_LOAD",
+      "amount": 2820.64,
+      "currency": "INR",
+      "transactionDate": "2025-12-30T05:20:32.312Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2025-12-30T05:20:32.312Z",
+      "updatedAt": "2025-12-30T05:20:32.312Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e76",
+      "type": "CREDIT_LOAD",
+      "amount": 311.13,
+      "currency": "INR",
+      "transactionDate": "2025-12-31T06:47:32.516Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2025-12-31T06:47:32.516Z",
+      "updatedAt": "2025-12-31T06:47:32.516Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e76",
+      "type": "DEBIT_SPEND",
+      "amount": -4596.62,
+      "currency": "INR",
+      "transactionDate": "2026-01-04T22:36:54.746Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-04T22:36:54.746Z",
+      "updatedAt": "2026-01-04T22:36:54.746Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e76",
+      "type": "CREDIT_LOAD",
+      "amount": 625.2,
+      "currency": "INR",
+      "transactionDate": "2026-01-06T19:47:52.063Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-06T19:47:52.063Z",
+      "updatedAt": "2026-01-06T19:47:52.063Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e76",
+      "type": "CREDIT_LOAD",
+      "amount": 3005.76,
+      "currency": "INR",
+      "transactionDate": "2026-01-10T13:26:43.276Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-10T13:26:43.276Z",
+      "updatedAt": "2026-01-10T13:26:43.276Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e76",
+      "type": "CREDIT_LOAD",
+      "amount": 2014.67,
+      "currency": "INR",
+      "transactionDate": "2026-01-15T17:12:35.517Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-15T17:12:35.517Z",
+      "updatedAt": "2026-01-15T17:12:35.517Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e76",
+      "type": "CREDIT_LOAD",
+      "amount": 2418.91,
+      "currency": "INR",
+      "transactionDate": "2026-01-20T16:50:58.126Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-20T16:50:58.126Z",
+      "updatedAt": "2026-01-20T16:50:58.126Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e76",
+      "type": "ADJUSTMENT",
+      "amount": 257.78,
+      "currency": "INR",
+      "transactionDate": "2026-01-22T05:19:23.413Z",
+      "notes": "System generated adjustment for seeding",
+      "createdAt": "2026-01-22T05:19:23.413Z",
+      "updatedAt": "2026-01-22T05:19:23.413Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e76",
+      "type": "CREDIT_LOAD",
+      "amount": 120.82,
+      "currency": "INR",
+      "transactionDate": "2026-01-26T00:57:58.126Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-26T00:57:58.126Z",
+      "updatedAt": "2026-01-26T00:57:58.126Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e76",
+      "type": "DEBIT_SPEND",
+      "amount": -7471.8,
+      "currency": "INR",
+      "transactionDate": "2026-01-31T05:30:57.265Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-31T05:30:57.265Z",
+      "updatedAt": "2026-01-31T05:30:57.265Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e76",
+      "type": "REFUND_CREDIT",
+      "amount": 4759.57,
+      "currency": "INR",
+      "transactionDate": "2026-02-04T06:01:43.338Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-02-04T06:01:43.338Z",
+      "updatedAt": "2026-02-04T06:01:43.338Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e76",
+      "type": "DEBIT_SPEND",
+      "amount": -5899.49,
+      "currency": "INR",
+      "transactionDate": "2026-02-06T03:31:49.791Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-02-06T03:31:49.791Z",
+      "updatedAt": "2026-02-06T03:31:49.791Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e76",
+      "type": "CREDIT_LOAD",
+      "amount": 989.27,
+      "currency": "INR",
+      "transactionDate": "2026-02-11T19:24:52.671Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-11T19:24:52.671Z",
+      "updatedAt": "2026-02-11T19:24:52.671Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e76",
+      "type": "CREDIT_LOAD",
+      "amount": 3522.84,
+      "currency": "INR",
+      "transactionDate": "2026-02-13T14:38:12.061Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-13T14:38:12.061Z",
+      "updatedAt": "2026-02-13T14:38:12.061Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e76",
+      "type": "CREDIT_LOAD",
+      "amount": 1884.89,
+      "currency": "INR",
+      "transactionDate": "2026-02-15T17:17:40.969Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-15T17:17:40.969Z",
+      "updatedAt": "2026-02-15T17:17:40.969Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e76",
+      "type": "REFUND_CREDIT",
+      "amount": 209.16,
+      "currency": "INR",
+      "transactionDate": "2026-02-16T20:33:52.300Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-02-16T20:33:52.300Z",
+      "updatedAt": "2026-02-16T20:33:52.300Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e77",
+      "type": "CREDIT_LOAD",
+      "amount": 2469.29,
+      "currency": "INR",
+      "transactionDate": "2025-12-27T23:34:05.485Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2025-12-27T23:34:05.485Z",
+      "updatedAt": "2025-12-27T23:34:05.485Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e77",
+      "type": "CREDIT_LOAD",
+      "amount": 1496.75,
+      "currency": "INR",
+      "transactionDate": "2025-12-29T06:47:23.961Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2025-12-29T06:47:23.961Z",
+      "updatedAt": "2025-12-29T06:47:23.961Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e77",
+      "type": "DEBIT_SPEND",
+      "amount": -1449.47,
+      "currency": "INR",
+      "transactionDate": "2025-12-30T08:54:23.758Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2025-12-30T08:54:23.758Z",
+      "updatedAt": "2025-12-30T08:54:23.758Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e77",
+      "type": "DEBIT_SPEND",
+      "amount": -1720.82,
+      "currency": "INR",
+      "transactionDate": "2026-01-01T09:14:31.750Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-01T09:14:31.750Z",
+      "updatedAt": "2026-01-01T09:14:31.750Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e77",
+      "type": "CREDIT_LOAD",
+      "amount": 1079.73,
+      "currency": "INR",
+      "transactionDate": "2026-01-05T15:30:24.138Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-05T15:30:24.138Z",
+      "updatedAt": "2026-01-05T15:30:24.138Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e77",
+      "type": "CREDIT_LOAD",
+      "amount": 3511.15,
+      "currency": "INR",
+      "transactionDate": "2026-01-08T02:36:33.152Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-08T02:36:33.152Z",
+      "updatedAt": "2026-01-08T02:36:33.152Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e77",
+      "type": "CREDIT_LOAD",
+      "amount": 3620.48,
+      "currency": "INR",
+      "transactionDate": "2026-01-09T11:12:02.152Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-09T11:12:02.152Z",
+      "updatedAt": "2026-01-09T11:12:02.152Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e77",
+      "type": "CREDIT_LOAD",
+      "amount": 3714.61,
+      "currency": "INR",
+      "transactionDate": "2026-01-11T23:26:00.874Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-11T23:26:00.874Z",
+      "updatedAt": "2026-01-11T23:26:00.874Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e77",
+      "type": "ADJUSTMENT",
+      "amount": -61.59,
+      "currency": "INR",
+      "transactionDate": "2026-01-13T11:59:51.713Z",
+      "notes": "System generated adjustment for seeding",
+      "createdAt": "2026-01-13T11:59:51.713Z",
+      "updatedAt": "2026-01-13T11:59:51.713Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e77",
+      "type": "CREDIT_LOAD",
+      "amount": 365.23,
+      "currency": "INR",
+      "transactionDate": "2026-01-15T12:14:08.771Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-15T12:14:08.771Z",
+      "updatedAt": "2026-01-15T12:14:08.771Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e77",
+      "type": "DEBIT_SPEND",
+      "amount": -7131.16,
+      "currency": "INR",
+      "transactionDate": "2026-01-18T22:10:20.178Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-18T22:10:20.178Z",
+      "updatedAt": "2026-01-18T22:10:20.178Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e77",
+      "type": "CREDIT_LOAD",
+      "amount": 1059.19,
+      "currency": "INR",
+      "transactionDate": "2026-01-23T03:37:36.316Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-23T03:37:36.316Z",
+      "updatedAt": "2026-01-23T03:37:36.316Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e77",
+      "type": "CREDIT_LOAD",
+      "amount": 330.71,
+      "currency": "INR",
+      "transactionDate": "2026-01-26T06:53:04.001Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-01-26T06:53:04.001Z",
+      "updatedAt": "2026-01-26T06:53:04.001Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e77",
+      "type": "DEBIT_SPEND",
+      "amount": -5209.33,
+      "currency": "INR",
+      "transactionDate": "2026-01-27T10:52:24.759Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-01-27T10:52:24.759Z",
+      "updatedAt": "2026-01-27T10:52:24.759Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e77",
+      "type": "CREDIT_LOAD",
+      "amount": 4921.43,
+      "currency": "INR",
+      "transactionDate": "2026-02-02T05:56:04.272Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-02T05:56:04.272Z",
+      "updatedAt": "2026-02-02T05:56:04.272Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e77",
+      "type": "DEBIT_SPEND",
+      "amount": -3776.25,
+      "currency": "INR",
+      "transactionDate": "2026-02-08T02:22:29.123Z",
+      "notes": "System generated debit_spend for seeding",
+      "createdAt": "2026-02-08T02:22:29.123Z",
+      "updatedAt": "2026-02-08T02:22:29.123Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e77",
+      "type": "CREDIT_LOAD",
+      "amount": 2600.74,
+      "currency": "INR",
+      "transactionDate": "2026-02-10T04:06:29.134Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-10T04:06:29.134Z",
+      "updatedAt": "2026-02-10T04:06:29.134Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e77",
+      "type": "CREDIT_LOAD",
+      "amount": 639.92,
+      "currency": "INR",
+      "transactionDate": "2026-02-12T21:29:40.536Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-12T21:29:40.536Z",
+      "updatedAt": "2026-02-12T21:29:40.536Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e77",
+      "type": "CREDIT_LOAD",
+      "amount": 690.14,
+      "currency": "INR",
+      "transactionDate": "2026-02-13T22:32:40.589Z",
+      "notes": "System generated credit_load for seeding",
+      "createdAt": "2026-02-13T22:32:40.589Z",
+      "updatedAt": "2026-02-13T22:32:40.589Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e77",
+      "type": "REFUND_CREDIT",
+      "amount": 564.36,
+      "currency": "INR",
+      "transactionDate": "2026-02-18T19:34:31.110Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-02-18T19:34:31.110Z",
+      "updatedAt": "2026-02-18T19:34:31.110Z"
+    },
+    {
+      "account": "6a38d8c919a714b27dfd6e77",
+      "type": "REFUND_CREDIT",
+      "amount": 1504.89,
+      "currency": "INR",
+      "transactionDate": "2026-02-21T06:09:26.438Z",
+      "notes": "System generated refund_credit for seeding",
+      "createdAt": "2026-02-21T06:09:26.438Z",
+      "updatedAt": "2026-02-21T06:09:26.438Z"
+    }
+  ]
+}

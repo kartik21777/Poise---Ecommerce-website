@@ -5,6 +5,7 @@ import { SEO } from '../components/SEO.js';
 import { ProductGrid } from '../components/ProductGrid.js';
 import { Pagination } from '../components/Pagination.js';
 import { getProducts } from '../services/productService.js';
+import { getCategories } from '../services/categoryService.js';
 import { ErrorState } from '../components/FeedbackStates.js';
 import { Filter } from 'lucide-react';
 
@@ -23,6 +24,9 @@ export const ProductList: React.FC = () => {
     queryFn: () => getProducts({ page, limit: 12, sort, q, category }),
     placeholderData: keepPreviousData,
   });
+
+  const { data: categoriesRaw = [] } = useQuery({ queryKey: ['categories'], queryFn: getCategories });
+  const categoriesList = Array.isArray(categoriesRaw) ? categoriesRaw : [];
 
   const handlePageChange = (newPage: number) => {
     setSearchParams(prev => {
@@ -96,15 +100,17 @@ export const ProductList: React.FC = () => {
                         />
                         <label htmlFor="cat-all" className="ml-3 text-sm text-gray-600 dark:text-gray-400">All Categories</label>
                       </div>
-                      <div className="flex items-center">
-                        <input id="cat-placeholder" type="radio" name="category" className="h-4 w-4 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 focus:ring-gray-900 dark:focus:ring-white transition-colors" 
-                          checked={category === 'placeholder'}
-                          onChange={() => {
-                            // Phase 5: Fetch categories and render
-                          }}
-                        />
-                        <label htmlFor="cat-placeholder" className="ml-3 text-sm text-gray-600 dark:text-gray-400">Apparel (coming soon)</label>
-                      </div>
+                      {categoriesList.map((cat) => (
+                        <div key={cat.id} className="flex items-center">
+                          <input id={`cat-${cat.slug}`} type="radio" name="category" className="h-4 w-4 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 focus:ring-gray-900 dark:focus:ring-white transition-colors" 
+                            checked={category === cat.slug}
+                            onChange={() => {
+                              setSearchParams(prev => { prev.set('category', cat.slug); prev.set('page', '1'); return prev; });
+                            }}
+                          />
+                          <label htmlFor={`cat-${cat.slug}`} className="ml-3 text-sm text-gray-600 dark:text-gray-400">{cat.name}</label>
+                        </div>
+                      ))}
                     </div>
                   </fieldset>
                 </div>

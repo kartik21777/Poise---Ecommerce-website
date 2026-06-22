@@ -51,18 +51,43 @@ export const Home: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         
         {/* Categories */}
-        <section aria-labelledby="collections-heading" className="mb-24">
-          <h2 id="collections-heading" className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white mb-8">
-            Shop by Category
-          </h2>
+        <section aria-labelledby="collections-heading" className="mb-24 relative">
+          <div className="flex items-center justify-between mb-8">
+            <h2 id="collections-heading" className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+              Shop by Category
+            </h2>
+            <div className="flex gap-2">
+              <button
+                onClick={() => {
+                  const container = document.getElementById('categories-scroll-container');
+                  if (container) container.scrollBy({ left: -300, behavior: 'smooth' });
+                }}
+                className="p-2 rounded-full border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+                aria-label="Scroll left"
+              >
+                <svg className="w-5 h-5 text-gray-900 dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7"></path></svg>
+              </button>
+              <button
+                onClick={() => {
+                  const container = document.getElementById('categories-scroll-container');
+                  if (container) container.scrollBy({ left: 300, behavior: 'smooth' });
+                }}
+                className="p-2 rounded-full border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+                aria-label="Scroll right"
+              >
+                <svg className="w-5 h-5 text-gray-900 dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path></svg>
+              </button>
+            </div>
+          </div>
           {loadingCategories ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[1,2,3].map(i => <div key={i} className="animate-pulse bg-gray-200 dark:bg-gray-800 aspect-[3/2] rounded-lg" />)}
+            <div className="flex overflow-x-hidden gap-6 pb-4">
+              {[1,2,3,4].map(i => <div key={i} className="animate-pulse bg-gray-200 dark:bg-gray-800 w-[300px] sm:w-[350px] flex-shrink-0 aspect-[3/2] rounded-lg" />)}
             </div>
           ) : (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {categories.slice(0, 3).map((category) => (
-                <Link key={category.id} to={`/categories/${category.slug}`} className="group relative rounded-lg overflow-hidden aspect-[3/2]">
+            <div id="categories-scroll-container" className="flex overflow-x-auto gap-6 pb-4 scroll-smooth" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+              <style>{`#categories-scroll-container::-webkit-scrollbar { display: none; }`}</style>
+              {categories.map((category) => (
+                <Link key={category.id} to={`/categories/${category.slug}`} className="group relative rounded-lg overflow-hidden flex-shrink-0 w-[280px] sm:w-[320px] aspect-[3/2]">
                   <img
                     src={category.image || 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80'}
                     alt={category.name}

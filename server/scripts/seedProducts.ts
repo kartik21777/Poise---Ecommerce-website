@@ -18,7 +18,7 @@ interface IRawProductSpec {
   shortDescription: string;
   description: string;
   tags: string[];
-  imageUrl: string;
+  imageUrls: string[];
   variantType: 'phones' | 'clothing' | 'general-colors' | 'laptops' | 'footwear' | 'books';
   pricingTier: 'budget' | 'mid-range' | 'premium';
 }
@@ -35,7 +35,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Control your home appliances wire-free from anywhere.',
     description: 'A compact smart plug that connects to your home Google Assistant or Alexa and allows remote voice/app scheduling.',
     tags: ['smart-home', 'home-automation', 'electronics'],
-    imageUrl: 'https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1550009158-9ebf6d250400?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'budget'
   },
@@ -49,7 +49,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Stream your favourite movies in stunning 4K ultra-high definition.',
     description: 'Experience lightning-fast streaming speeds and beautiful picture clarity. Includes voice remote and pre-loaded premium apps.',
     tags: ['streaming', 'television', 'electronics'],
-    imageUrl: 'https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1550009158-9ebf6d250400?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'budget'
   },
@@ -63,7 +63,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Smart path planning robotic vacuum with automated mop.',
     description: 'Equipped with state-of-the-art LiDAR navigation, automated carpet detection sensors, and a smart scheduling app integration.',
     tags: ['smart-home', 'cleaning', 'electronics'],
-    imageUrl: 'https://images.unsplash.com/photo-1518135839073-4e7153a3eab6?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1518135839073-4e7153a3eab6?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1550009158-9ebf6d250400?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'premium'
   },
@@ -77,7 +77,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Optimize your home heating and cooling with AI energy tracking.',
     description: 'Learn your preferred temperature schedule and adjust environmental settings dynamically to save utility costs.',
     tags: ['smart-home', 'energy-saving', 'electronics'],
-    imageUrl: 'https://images.unsplash.com/photo-1563206767-5b18f218e8de?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1563206767-5b18f218e8de?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1550009158-9ebf6d250400?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'mid-range'
   },
@@ -91,7 +91,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Capture high-speed professional-grade 4K videos and rich portraits.',
     description: 'Features a 24.2 MP full-frame sensor, ultra-sensitive autofocus tracking, weather-sealed construction, and in-body image stabilization.',
     tags: ['camera', 'photography', 'electronics'],
-    imageUrl: 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1550009158-9ebf6d250400?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'premium'
   },
@@ -105,7 +105,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Weather-resistant 1080p indoor/outdoor smart security bundle.',
     description: 'Keep your property safe with high-definition live streams, smart night vision infrared technology, and instant motion warnings.',
     tags: ['security', 'smart-home', 'electronics'],
-    imageUrl: 'https://images.unsplash.com/photo-1557862921-37829c790f19?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1557862921-37829c790f19?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1550009158-9ebf6d250400?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'mid-range'
   },
@@ -119,7 +119,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Dimmable smart lamp with customizable ambient RGB colors.',
     description: 'Bring rich, pleasant lightning to your work desk. Fully controllable through physical touches, smart assistants, or custom mobile apps.',
     tags: ['lighting', 'smart-home', 'electronics'],
-    imageUrl: 'https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1550009158-9ebf6d250400?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'budget'
   },
@@ -135,7 +135,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Flagship speed, ultra-vibrant display, and groundbreaking camera zooms.',
     description: 'A revolutionary processor powers an dynamic AMOLED display, massive multi-day battery cell, and cinematic triple-lens setup.',
     tags: ['flagship', '5g', 'phones'],
-    imageUrl: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1601784551446-20c9e07cd8d3?auto=format&fit=crop&w=600&q=80'],
     variantType: 'phones',
     pricingTier: 'premium'
   },
@@ -149,7 +149,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Everyday budget phone with solid performance and modern screen.',
     description: 'Enjoy high screen-to-body ratios, dependable quad-core processor speeds, and versatile daily cameras without breaking the bank.',
     tags: ['budget', 'affordable', 'phones'],
-    imageUrl: 'https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1601784551446-20c9e07cd8d3?auto=format&fit=crop&w=600&q=80'],
     variantType: 'phones',
     pricingTier: 'budget'
   },
@@ -163,7 +163,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'The compact folding smartphone designed for premium portability.',
     description: 'Folds flat to fit seamlessly in small pockets. Unfolds to present a massive organic LED screen of pristine color fidelity.',
     tags: ['folding', 'innovative', 'phones'],
-    imageUrl: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1601784551446-20c9e07cd8d3?auto=format&fit=crop&w=600&q=80'],
     variantType: 'phones',
     pricingTier: 'premium'
   },
@@ -177,7 +177,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Premium performance, stunning night-mode lens, and durable frame.',
     description: 'Engineered with titanium reinforced sidebars, massive RAM allocations, and AI-assisted noise reduction for video captures.',
     tags: ['premium', 'flagship', 'phones'],
-    imageUrl: 'https://images.unsplash.com/photo-1580910051074-3eb694886505?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1580910051074-3eb694886505?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1601784551446-20c9e07cd8d3?auto=format&fit=crop&w=600&q=80'],
     variantType: 'phones',
     pricingTier: 'mid-range'
   },
@@ -191,7 +191,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Reliable dual-sim mobile phone featuring long-duration power.',
     description: 'Features a massive 6000mAh battery that guarantees constant connectivity even during off-grid travel. Durable plastic frame.',
     tags: ['battery', 'rugged', 'phones'],
-    imageUrl: 'https://images.unsplash.com/photo-1565630916779-e303be97b6f5?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1565630916779-e303be97b6f5?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1601784551446-20c9e07cd8d3?auto=format&fit=crop&w=600&q=80'],
     variantType: 'phones',
     pricingTier: 'budget'
   },
@@ -205,7 +205,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Heavy-duty rugged design waterproof, dustproof, shockproof.',
     description: 'Built specifically for construction workers and extreme outdoor enthusiasts. Thick rubber siding and scratch-resistant display glass.',
     tags: ['rugged', 'waterproof', 'phones'],
-    imageUrl: 'https://images.unsplash.com/photo-1574757527248-1084df1c2725?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1574757527248-1084df1c2725?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1601784551446-20c9e07cd8d3?auto=format&fit=crop&w=600&q=80'],
     variantType: 'phones',
     pricingTier: 'mid-range'
   },
@@ -219,7 +219,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'The ultimate luxury productivity workstation folding phone.',
     description: 'Fuses double wide screens for simultaneous multithreading, advanced stylus writing support, and executive design patterns.',
     tags: ['phablet', 'premium', 'phones'],
-    imageUrl: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1601784551446-20c9e07cd8d3?auto=format&fit=crop&w=600&q=80'],
     variantType: 'phones',
     pricingTier: 'premium'
   },
@@ -235,7 +235,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Chic featherlight laptop ideal for executives and remote workers.',
     description: 'Features a sleek aluminum unibody, long battery capacity, and a sharp pixel-dense screen for supreme visual processing.',
     tags: ['ultrabook', 'laptop', 'thin'],
-    imageUrl: 'https://images.unsplash.com/photo-1496181130204-755241524eab?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1496181130204-755241524eab?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1496181130204-755241524eab?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80'],
     variantType: 'laptops',
     pricingTier: 'premium'
   },
@@ -249,7 +249,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Peak gaming power with high-end graphic cards and dual fans.',
     description: 'Unleash elite graphic renders with an advanced graphics card, rapid processing speeds, mechanical keyboard keypads, and vibrant lights.',
     tags: ['gaming', 'graphics', 'laptops'],
-    imageUrl: 'https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1496181130204-755241524eab?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80'],
     variantType: 'laptops',
     pricingTier: 'premium'
   },
@@ -263,7 +263,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Affordable, compact laptop centered on digital learning classes.',
     description: 'Perfect companion for essay writing and lecture stream watching. Lightweight plastic shell and anti-glare comfortable screens.',
     tags: ['student', 'budget', 'laptops'],
-    imageUrl: 'https://images.unsplash.com/photo-1541807084-5c52b6b3adef?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1541807084-5c52b6b3adef?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1496181130204-755241524eab?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80'],
     variantType: 'laptops',
     pricingTier: 'budget'
   },
@@ -277,7 +277,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Industry-standard enterprise keyboard laptop with safety measures.',
     description: 'Equipped with fingerprint encryption keys, physical webcam block gates, multi-monitor display outputs, and dynamic speed boosts.',
     tags: ['business', 'security', 'laptops'],
-    imageUrl: 'https://images.unsplash.com/photo-1496181130204-755241524eab?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1496181130204-755241524eab?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1496181130204-755241524eab?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80'],
     variantType: 'laptops',
     pricingTier: 'mid-range'
   },
@@ -291,7 +291,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Whisper-quiet fanless business ultrabook with bright screen.',
     description: 'A completely silent design leveraging advanced chip technology, high density battery packs, and high visual contrast screens.',
     tags: ['silent', 'minimalist', 'laptops'],
-    imageUrl: 'https://images.unsplash.com/photo-1496181130204-755241524eab?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1496181130204-755241524eab?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1496181130204-755241524eab?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80'],
     variantType: 'laptops',
     pricingTier: 'mid-range'
   },
@@ -305,7 +305,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Color-calibrated screen notebook for music, design and 3D.',
     description: 'Precision colors mapped to absolute rendering accuracy. Huge flash storages allow instant load of digital asset libraries.',
     tags: ['designer', 'rendering', 'laptops'],
-    imageUrl: 'https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1496181130204-755241524eab?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80'],
     variantType: 'laptops',
     pricingTier: 'premium'
   },
@@ -319,7 +319,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Reliable entry programmer laptop with dual SSD expansion ports.',
     description: 'Optimized for local Docker containers and IDE performance. Durable plastic structure and comfortable typing keyboard layout.',
     tags: ['coding', 'linux-friendly', 'laptops'],
-    imageUrl: 'https://images.unsplash.com/photo-1496181130204-755241524eab?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1496181130204-755241524eab?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1496181130204-755241524eab?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80'],
     variantType: 'laptops',
     pricingTier: 'budget'
   },
@@ -335,7 +335,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Reference-level active noise canceling headphone with long life.',
     description: 'Isolate ambient noise on planes and offices completely. Warm vocal curves and responsive clear treble output.',
     tags: ['anc', 'headphones', 'audio'],
-    imageUrl: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'premium'
   },
@@ -349,7 +349,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'True wireless sweatproof buds. Perfect for gym training.',
     description: 'Compact wireless case with fast charging. Snug internal fit guarantees buds stay secure during intense cardio runs.',
     tags: ['earbuds', 'workout', 'audio'],
-    imageUrl: 'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'budget'
   },
@@ -363,7 +363,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Cinematic theater audio console with separate active bass.',
     description: 'Fills the living room with acoustic immersion. Connects wirelessly to smart TVs and home media hubs.',
     tags: ['soundbar', 'home-theater', 'audio'],
-    imageUrl: 'https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'mid-range'
   },
@@ -377,7 +377,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Waterproof miniature rugged speaker with convenient clip loop.',
     description: 'Small size delivers high punchy volume. Take audio to pool parties and forest camping site trips with confidence.',
     tags: ['speaker', 'portable', 'outdoor'],
-    imageUrl: 'https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'budget'
   },
@@ -391,7 +391,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Complete studio microphone bundle with desk boom and pop filter.',
     description: 'Crystal-clear audio captures for podcasts, commentary, gaming chats, or amateur bedroom vocal recordings.',
     tags: ['mic', 'recording', 'podcasting'],
-    imageUrl: 'https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'mid-range'
   },
@@ -405,7 +405,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Flat-response studio monitors for home music mixing and mastering.',
     description: 'No boosted bass, just pristine high-fidelity audio accuracy. Features customizable acoustic room resonance balancing chips.',
     tags: ['monitors', 'flat-response', 'mixing'],
-    imageUrl: 'https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'mid-range'
   },
@@ -419,7 +419,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Audiophile-grade multi-driver floor-standing cabinet speakers.',
     description: 'Handcrafted wooden design structures delivering pristine theater staging, realistic concert dynamics, and ultra-low bass frequencies.',
     tags: ['audiophile', 'speakers', 'audio'],
-    imageUrl: 'https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'premium'
   },
@@ -435,7 +435,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Premium wool blend tailored jacket for formal events.',
     description: 'Crafted with premium soft breathability, comfortable satin internal lining, structured shoulders, and slim flattering lines.',
     tags: ['formal', 'blazer', 'wool'],
-    imageUrl: 'https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1516257984-b1b4d707412e?auto=format&fit=crop&w=600&q=80'],
     variantType: 'clothing',
     pricingTier: 'premium'
   },
@@ -449,7 +449,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Subtle high-comfort cotton daily short sleeve t-shirt.',
     description: 'Sourced from organic fields, using non-toxic inks. Double stitched hems assure structural integrity after countless laundry washes.',
     tags: ['tees', 'basics', 'eco-friendly'],
-    imageUrl: 'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1516257984-b1b4d707412e?auto=format&fit=crop&w=600&q=80'],
     variantType: 'clothing',
     pricingTier: 'budget'
   },
@@ -463,7 +463,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Flexible work-to-weekend trousers with hidden tech pockets.',
     description: 'Blends classic formal appearances with active comfort. Secure micro-zipper slots keep small items like keys safe.',
     tags: ['chinos', 'pants', 'business-casual'],
-    imageUrl: 'https://images.unsplash.com/photo-1479064555552-3ef4979f8908?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1479064555552-3ef4979f8908?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1516257984-b1b4d707412e?auto=format&fit=crop&w=600&q=80'],
     variantType: 'clothing',
     pricingTier: 'mid-range'
   },
@@ -477,7 +477,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Classic indigo heavy wash trucker jacket with metal buttons.',
     description: 'Made from high-ounce rigid denim fabrics that break in beautifully over years of wear. Deep internal warm pockets.',
     tags: ['denim', 'jacket', 'vintage'],
-    imageUrl: 'https://images.unsplash.com/photo-1516257984-b1b4d707412e?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1516257984-b1b4d707412e?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1516257984-b1b4d707412e?auto=format&fit=crop&w=600&q=80'],
     variantType: 'clothing',
     pricingTier: 'mid-range'
   },
@@ -491,7 +491,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Moisture-wicking mesh hoodie suitable for cold track training.',
     description: 'Advanced knit structures insulate body heat while expelling moisture from the skin to assure post-workout comfort.',
     tags: ['athletics', 'sportswear', 'hoodie'],
-    imageUrl: 'https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1516257984-b1b4d707412e?auto=format&fit=crop&w=600&q=80'],
     variantType: 'clothing',
     pricingTier: 'budget'
   },
@@ -505,7 +505,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Breathable, wrinkle-resistant classic button-down shirt.',
     description: 'Timeless collar looks sharp with tie combinations or casual open-necks. Double-ply combed cotton threads.',
     tags: ['formal', 'shirts', 'essentials'],
-    imageUrl: 'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1516257984-b1b4d707412e?auto=format&fit=crop&w=600&q=80'],
     variantType: 'clothing',
     pricingTier: 'budget'
   },
@@ -519,7 +519,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Fleece insulated stormproof utility jacket with adjustable hood.',
     description: 'Engineered for bitter elements. Waterproof ratings withstand stormy rains while high loft internal down locks in body heat.',
     tags: ['parka', 'outerwear', 'winter-coat'],
-    imageUrl: 'https://images.unsplash.com/photo-1544923246-77307dd654cb?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1544923246-77307dd654cb?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1516257984-b1b4d707412e?auto=format&fit=crop&w=600&q=80'],
     variantType: 'clothing',
     pricingTier: 'premium'
   },
@@ -535,7 +535,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: '100% natural Mulberry silk evening flow dress.',
     description: 'Lustrous, lightweight, and incredibly smooth on skin. Drapes beautifully with flattering waist drawstrings.',
     tags: ['silk', 'dresses', 'evening-wear'],
-    imageUrl: 'https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=600&q=80'],
     variantType: 'clothing',
     pricingTier: 'premium'
   },
@@ -549,7 +549,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Squat-proof wide high-waisted seamless training leggings.',
     description: 'Made from zero-glide nylon spans. Features convenient slip-in panels for carrying modern phones or locker keys.',
     tags: ['activewear', 'leggings', 'yoga'],
-    imageUrl: 'https://images.unsplash.com/photo-1506152983158-b4a74a01c721?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1506152983158-b4a74a01c721?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=600&q=80'],
     variantType: 'clothing',
     pricingTier: 'budget'
   },
@@ -563,7 +563,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Cozy cashmere ribbed-collar knit sweater in ivory white.',
     description: 'Supremely warm, non-itchy deluxe cashmere knit fibers. Timeless drop-shoulder slouchy cozy fit patterns.',
     tags: ['sweater', 'cashmere', 'knitwear'],
-    imageUrl: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=600&q=80'],
     variantType: 'clothing',
     pricingTier: 'premium'
   },
@@ -577,7 +577,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Double-breasted sleek rainproof trench coat for autumn weather.',
     description: 'Classic tortoiseshell buttons, functional deep belt loops, storm flaps, and a structured collar layout.',
     tags: ['coat', 'trench', 'classic'],
-    imageUrl: 'https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=600&q=80'],
     variantType: 'clothing',
     pricingTier: 'mid-range'
   },
@@ -591,7 +591,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Breathable pre-washed pure European flax linen daily slip.',
     description: 'Keep cool on sunny beach resort strolls. Loose fit silhouette with adjustable shoulder ribbon laces.',
     tags: ['linen', 'summer-dress', 'slip'],
-    imageUrl: 'https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=600&q=80'],
     variantType: 'clothing',
     pricingTier: 'budget'
   },
@@ -605,7 +605,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'High-waisted tailored crepe pants with deep utility slit pockets.',
     description: 'Perfect for modern business presentations. Easy-care stretch fabrics drape beautifully with executive loafers.',
     tags: ['trousers', 'workwear', 'pants'],
-    imageUrl: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=600&q=80'],
     variantType: 'clothing',
     pricingTier: 'mid-range'
   },
@@ -619,7 +619,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Elastane-infused thick ribbed daily casual knitted minidress.',
     description: 'A versatile layer that transitions effortlessly from morning errands to nighttime dining when paired with clean jackets.',
     tags: ['minidress', 'bodycon', 'casual'],
-    imageUrl: 'https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=600&q=80'],
     variantType: 'clothing',
     pricingTier: 'budget'
   },
@@ -635,7 +635,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Engineered responsive mesh daily training road running shoes.',
     description: 'High-density foam grids absorb strong concrete impactos while high traction outsoles prevent sliding on wet streets.',
     tags: ['running', 'trainers', 'footwear'],
-    imageUrl: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80'],
     variantType: 'footwear',
     pricingTier: 'mid-range'
   },
@@ -649,7 +649,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Goodyear welted absolute grain calfskin heritage boots.',
     description: 'Built for lifetimes of reliable service. Fully support resole over time, aging into high visual luster character.',
     tags: ['boots', 'leather', 'premium-craft'],
-    imageUrl: 'https://images.unsplash.com/photo-1520639888713-7851133b1ed0?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1520639888713-7851133b1ed0?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80'],
     variantType: 'footwear',
     pricingTier: 'premium'
   },
@@ -663,7 +663,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Soft slip-on everyday loafers with orthopedic foam inserts.',
     description: 'Zero pressure points, flexible stretch fabric shells, and machine-washable architectures for simple domestic maintenance.',
     tags: ['loafers', 'casual', 'slip-on'],
-    imageUrl: 'https://images.unsplash.com/photo-1533867617858-e7b97e060509?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1533867617858-e7b97e060509?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80'],
     variantType: 'footwear',
     pricingTier: 'budget'
   },
@@ -677,7 +677,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Waterproof insulated hiking boots with high ankle guards.',
     description: 'Brave jagged mountains safely. Anti-torsion plates stabilize the foot across uneven rocks and muddy slopes.',
     tags: ['hiking-boots', 'waterproof', 'outdoor'],
-    imageUrl: 'https://images.unsplash.com/photo-1520639888713-7851133b1ed0?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1520639888713-7851133b1ed0?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80'],
     variantType: 'footwear',
     pricingTier: 'mid-range'
   },
@@ -691,7 +691,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: '80s classic basketball style casual skate board shoes.',
     description: 'Thick vintage rubber gums, breathable canvas lining, and premium synthetic leather panels for skater wear durability.',
     tags: ['high-tops', 'retro-sneakers', 'skate'],
-    imageUrl: 'https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80'],
     variantType: 'footwear',
     pricingTier: 'mid-range'
   },
@@ -705,7 +705,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Sleek closed-lace Italian leather tuxedo business shoes.',
     description: 'Hand painted details project pristine visual depth. Perfect for weddings, corporate executives, or formal dinners.',
     tags: ['oxfords', 'formal-shoes', 'calfskin'],
-    imageUrl: 'https://images.unsplash.com/photo-1533867617858-e7b97e060509?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1533867617858-e7b97e060509?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80'],
     variantType: 'footwear',
     pricingTier: 'premium'
   },
@@ -719,7 +719,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Feather-light orthopedic running style walkers with laces.',
     description: 'Constructed around foot shape curves to relieve pressure during long standing retail shifts or warehouse tasks.',
     tags: ['walkers', 'comfortable', 'daily-shoes'],
-    imageUrl: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80'],
     variantType: 'footwear',
     pricingTier: 'budget'
   },
@@ -735,7 +735,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Minimalist metallic smart floor bar projecting dynamic colors.',
     description: 'Transform room vibes instantly. Set relaxing orange sun colors or rich cool ocean hues using smart schedules.',
     tags: ['lighting', 'modern-decor', 'lamp'],
-    imageUrl: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1484101403633-562f891dc89a?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'mid-range'
   },
@@ -749,7 +749,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: '3-Piece matching abstract indigo blue gold framed prints.',
     description: 'Perfect accent piece to elevate empty office or bedroom walls. Textured canvas wraps look expensive and chic.',
     tags: ['wall-art', 'decor', 'framer'],
-    imageUrl: 'https://images.unsplash.com/photo-1513511902900-a4d920928704?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1513511902900-a4d920928704?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1484101403633-562f891dc89a?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'budget'
   },
@@ -763,7 +763,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Soft geometric high-pile natural un-dyed wool rug.',
     description: 'Handcrafted by expert weavers in flat weaving patterns. Extremely thick and insulating for cold timber floors.',
     tags: ['carpets', 'merino-wool', 'decor'],
-    imageUrl: 'https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1484101403633-562f891dc89a?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'premium'
   },
@@ -777,7 +777,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'BPA-free dark stone aromatic mist generator with soft light.',
     description: 'Emits gentle cleansing steam infusing lavender smells throughout your bedroom. Quiet dynamic motor preserves sleep quality.',
     tags: ['wellness', 'aromatherapy', 'diffuser'],
-    imageUrl: 'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1484101403633-562f891dc89a?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'budget'
   },
@@ -791,7 +791,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: '600-Thread-count breathable cooling silk-touch bedsheet sheets.',
     description: 'Sleep in luxurious comfort. Deep mattress pocket fitting and double stitched premium seams secure sheets firmly.',
     tags: ['bedding', 'cotton', 'sheets'],
-    imageUrl: 'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1484101403633-562f891dc89a?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'budget'
   },
@@ -805,7 +805,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Double-layered noise dampening complete blackout window curtains.',
     description: 'Blocks hot solar rays and prevents outside street traffic noises. Keeps energy bills low by insulating window panes.',
     tags: ['curtains', 'insulation', 'privacy'],
-    imageUrl: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1484101403633-562f891dc89a?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'budget'
   },
@@ -819,7 +819,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Unique collectible heavy swirl patterned decorative glass vase.',
     description: 'A beautiful dining centerpiece that captures morning windows rays cleanly. Individually handcrafted by master artists.',
     tags: ['vase', 'luxury-art', 'handcrafted'],
-    imageUrl: 'https://images.unsplash.com/photo-1578500494198-246f612d3b3d?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1578500494198-246f612d3b3d?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1484101403633-562f891dc89a?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'mid-range'
   },
@@ -835,7 +835,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: '67-Layer Damascus steel core chef knife with ergonomic handle.',
     description: 'Incredible razor-sharp edge retention. Well-balanced handle provides fatigue-free chopping of dense root veggies or meat slabs.',
     tags: ['knives', 'chef-grade', 'cookware'],
-    imageUrl: 'https://images.unsplash.com/photo-1593113630400-ea4288922497?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1593113630400-ea4288922497?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'premium'
   },
@@ -849,7 +849,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: '0.1g high accuracy kitchen spill-proof scales with timer.',
     description: 'Indispensable tool for measuring pour over coffee drips. Sleek matte black water-resistant panel cleans easily.',
     tags: ['scales', 'coffee', 'kitchen-gadget'],
-    imageUrl: 'https://images.unsplash.com/photo-1517256064527-09c53b2d0ec6?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1517256064527-09c53b2d0ec6?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'budget'
   },
@@ -863,7 +863,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Super durable scratch-resistant ceramic copper frying pan set.',
     description: 'Cook zero-oil light eggs smoothly. Thick alloy core conducts heat with absolute uniformity on gas, induction, or electric ranges.',
     tags: ['cookware', 'pans', 'essential-kitchen'],
-    imageUrl: 'https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'mid-range'
   },
@@ -877,7 +877,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Fast 900W bullet blender suitable for morning fruit smoothies.',
     description: 'Blends ice chunks and frozen fruits in under 15 seconds. Includes leakproof carry cups with lids for busy commuters.',
     tags: ['blender', 'smoothies', 'appliances'],
-    imageUrl: 'https://images.unsplash.com/photo-1578643463396-0997cb5328c1?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1578643463396-0997cb5328c1?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'budget'
   },
@@ -891,7 +891,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Matte black electric steel kettle with precise degree controls.',
     description: 'Pour controlled streams with an elegant gooseneck spot. Hold constant brewing heat for hours via local memory chips.',
     tags: ['kettle', 'pour-over', 'gadgets'],
-    imageUrl: 'https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'mid-range'
   },
@@ -905,7 +905,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Cook two separate foods at different temperatures simultaneously.',
     description: 'Giant capacity accommodates whole roasted chicken effortlessly. Air circulation technology achieves crispy fry bites using 85% less oils.',
     tags: ['air-fryer', 'appliances', 'cooking-tech'],
-    imageUrl: 'https://images.unsplash.com/photo-1621972750749-0fbb1abb7736?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1621972750749-0fbb1abb7736?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'mid-range'
   },
@@ -919,7 +919,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: '16-piece earthy matte raw edge dining sets for elegant tables.',
     description: 'Individually glazed stoneware plates that are dishwasher-safe and microwave friendly. Classic organic artisan textures.',
     tags: ['dinnerware', 'stoneware', 'luxury-dining'],
-    imageUrl: 'https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'premium'
   },
@@ -935,7 +935,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Fully adjustable ergonomic desk chair protecting lumbar spines.',
     description: 'Features high tensile custom mesh backing, adaptive lumbar curve supporting sliders, 3D armrests, and premium fluid gas cylinders.',
     tags: ['office', 'chair', 'ergonomic'],
-    imageUrl: 'https://images.unsplash.com/photo-1505797149-43b0069ec26b?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1505797149-43b0069ec26b?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'mid-range'
   },
@@ -949,7 +949,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Handcrafted raw edge solid oak coffee table with steel legs.',
     description: 'Exhibits robust grain lines protected by waterproofing organic sealants. Black iron legs provide modern industrial accent contrasts.',
     tags: ['table', 'coffee-table', 'hardwood'],
-    imageUrl: 'https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'premium'
   },
@@ -963,7 +963,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Thick cushion modular sofa set that configures to any size.',
     description: 'Wrapped in spillproof pet-friendly dense suede. Heavy cloud padding foam retains shape elastic bounce over years.',
     tags: ['sofa', 'modular', 'living-room'],
-    imageUrl: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'premium'
   },
@@ -977,7 +977,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Double tier durable raw pine floating wall shelves.',
     description: 'Organize plants, books, or bathroom cups cleanly. Heavy duty drywall anchor brackets make installations simple and secure.',
     tags: ['shelves', 'storage', 'home-office'],
-    imageUrl: 'https://images.unsplash.com/photo-1505797149-43b0069ec26b?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1505797149-43b0069ec26b?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'budget'
   },
@@ -991,7 +991,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Minimalist platform timber bed frame needing no box springs.',
     description: 'Crafted from sustainable slow-grown scandinavian pine wood. Sleek tapered leg posts and dynamic woodgrain textures look stylish.',
     tags: ['bed', 'bedroom', 'scandinavian'],
-    imageUrl: 'https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'premium'
   },
@@ -1005,7 +1005,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Dual storage nightstand with wireless cable charging docks.',
     description: 'Clean mid-century modern aesthetic featuring deep sliding drawer tracks and durable scratch-proof laminate finishes.',
     tags: ['nightstand', 'bedroom', 'furniture'],
-    imageUrl: 'https://images.unsplash.com/photo-1540518614846-7eded433c457?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1540518614846-7eded433c457?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'mid-range'
   },
@@ -1019,7 +1019,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Soft velvet decorative bench containing hidden storage space.',
     description: 'Lift the plush foam lid to tuck blankets and winter jackets away. Brass trim ring accents add vintage classy feels.',
     tags: ['ottoman', 'bench', 'storage'],
-    imageUrl: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'budget'
   },
@@ -1035,7 +1035,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: '25lbs adjustable fast twisting gym dumbbell single unit.',
     description: 'Replaces 5 heavy weight dumbbells instantly. Easily rotate the handle block dial to shift weight from 5lbs to 25lbs smoothly.',
     tags: ['dumbbells', 'home-workout', 'weightlifting'],
-    imageUrl: 'https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'premium'
   },
@@ -1049,7 +1049,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: '6mm dual layered anti-slip eco-friendly alignment yoga mat.',
     description: 'Perfect floor cushion thickness protects knee joints during complex holds. Reversible texture grip lines block sweat slides.',
     tags: ['yoga', 'mat', 'stretching'],
-    imageUrl: 'https://images.unsplash.com/photo-1592432678016-e910b452f9a2?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1592432678016-e910b452f9a2?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'budget'
   },
@@ -1063,7 +1063,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: '5 stretch tubes with foam grips and heavy iron carabiners.',
     description: 'Perform full range resistance sweeps on muscles anywhere. Includes ankle attachments and travel packing bag.',
     tags: ['bands', 'resistance', 'portable-gym'],
-    imageUrl: 'https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'budget'
   },
@@ -1077,7 +1077,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Slim waterproof lifestyle tracker watch monitoring daily calories.',
     description: 'Record steps, active sleep parameters, and workout levels. Connect to your smartphone directly via secure local links.',
     tags: ['wearables', 'tracker', 'smartwatch'],
-    imageUrl: 'https://images.unsplash.com/photo-1575311358312-6d15a0cd1f55?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1575311358312-6d15a0cd1f55?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'budget'
   },
@@ -1091,7 +1091,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Quiet motor running desk treadmill with smart phone stands.',
     description: 'Fold flat smoothly to slide under beds when storing. Shock absorbs track layers reduce knee strike impacts by 30%.',
     tags: ['treadmill', 'cardio', 'home-workout'],
-    imageUrl: 'https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'premium'
   },
@@ -1105,7 +1105,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Extra steady wide tread ab roller with comfortable knee pad.',
     description: 'Target compound core muscles safely. Heavy duty internal steel rod supports up to 350 lbs of raw weight pressure.',
     tags: ['ab-roller', 'core', 'workout'],
-    imageUrl: 'https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'budget'
   },
@@ -1121,7 +1121,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Compact tenkeyless fast red switch gaming gaming keyboard.',
     description: 'Silent fast linear keys provide immediate millisecond responses during intense matches. Vivid addressable base lights.',
     tags: ['keyboard', 'rgb', 'mechanical'],
-    imageUrl: 'https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1552820728-8b83bb6b773f?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'mid-range'
   },
@@ -1135,7 +1135,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Ultra feather-light honeycomb wireless gaming mouse.',
     description: 'Weighs only 58g for blistering cross-hair flicks. High fidelity optical tracking sensor prevents tracking drops.',
     tags: ['mouse', 'fps', 'gaming'],
-    imageUrl: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1552820728-8b83bb6b773f?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'budget'
   },
@@ -1149,7 +1149,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Reclining high back lumbar bolster desk gaming chair.',
     description: 'Wrapped in durable leather trim with memory foam support cushions. Lay flat back tilt provides cozy breaks between games.',
     tags: ['chair', 'gaming-furniture', 'comfort'],
-    imageUrl: 'https://images.unsplash.com/photo-1598550476439-6847785fce6e?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1598550476439-6847785fce6e?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1552820728-8b83bb6b773f?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'premium'
   },
@@ -1163,7 +1163,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Wide cinematic curved ultra QHD screen running at fast 144Hz.',
     description: 'Complete immersion into battle scenes. High rate screens eradicate screen tearing for beautifully fluid gameplay tracks.',
     tags: ['monitor', 'curved', 'ultrawide'],
-    imageUrl: 'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1552820728-8b83bb6b773f?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'premium'
   },
@@ -1177,7 +1177,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Low latency spatial surround sound audio gaming microphone headset.',
     description: 'Detachable clear microphone isolation guarantees your tactical commands are received clearly by guild members.',
     tags: ['headset', 'audio', 'wireless-gaming'],
-    imageUrl: 'https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1552820728-8b83bb6b773f?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'mid-range'
   },
@@ -1191,7 +1191,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Responsive textured grip console controller with back paddles.',
     description: 'Remap trigger buttons to professional layout triggers. High battery cell allows 30 hours of wireless gaming.',
     tags: ['controller', 'gamepad', 'accessories'],
-    imageUrl: 'https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1552820728-8b83bb6b773f?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'mid-range'
   },
@@ -1207,7 +1207,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'An immersive science fiction paperback epic covering centuries.',
     description: 'A thrilling mystery unfolds in a distant space solar system where a brilliant programmer must decode cyber ancient ruins.',
     tags: ['sci-fi', 'fiction', 'paperback'],
-    imageUrl: 'https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=600&q=80'],
     variantType: 'books',
     pricingTier: 'budget'
   },
@@ -1221,7 +1221,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'A modern breakdown of standard software development over years.',
     description: 'Explores how small open source repositories scaled into crucial components of international cloud communications platforms.',
     tags: ['technology', 'non-fiction', 'educational'],
-    imageUrl: 'https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=600&q=80'],
     variantType: 'books',
     pricingTier: 'budget'
   },
@@ -1235,7 +1235,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Deep conceptual essays exploring ethics in automated AI ages.',
     description: 'An elegant hardback digest reviewing human values, digital presence, and social consciousness systems.',
     tags: ['philosophy', 'essays', 'hardcover'],
-    imageUrl: 'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=600&q=80'],
     variantType: 'books',
     pricingTier: 'budget'
   },
@@ -1249,7 +1249,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'A complete university-grade manual of high scale distributed designs.',
     description: 'Covers database replication topologies, distributed consensus engines, event driven patterns, and security layers completely.',
     tags: ['computer-science', 'tech-manual', 'textbook'],
-    imageUrl: 'https://images.unsplash.com/photo-1543002588-bfa74002ed7e?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1543002588-bfa74002ed7e?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=600&q=80'],
     variantType: 'books',
     pricingTier: 'mid-range'
   },
@@ -1263,7 +1263,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'A wonderfully illustrated companion to ancient tales and folklore.',
     description: 'Brimming with raw detailed vector drawings and historical references mapped to ancient world geography records.',
     tags: ['history', 'illustrated', 'mythology'],
-    imageUrl: 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=600&q=80'],
     variantType: 'books',
     pricingTier: 'budget'
   },
@@ -1277,7 +1277,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Practical cognitive habits designed to prevent work fatigue.',
     description: 'Contains structured progress tracking prompts, weekly focus schedules, and science-backed anxiety relief loops.',
     tags: ['self-help', 'productivity', 'workbook'],
-    imageUrl: 'https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=600&q=80'],
     variantType: 'books',
     pricingTier: 'budget'
   },
@@ -1293,7 +1293,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Incredibly soothing organic serum to reduce facial skin discoloration.',
     description: 'Infused with botanical rosehip oil and antioxidant vitamins. Locks in cellular moisture to establish vibrant elasticity.',
     tags: ['skincare', 'organic', 'serum'],
-    imageUrl: 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1596462502278-27bf85033e5a?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'budget'
   },
@@ -1307,7 +1307,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'pH-Balanced sulfate free gentle cleansing foam facial wash.',
     description: 'Combines purifying natural tea tree leaf extracts with soothing aloe vera paths. Excellent for clearing acne pores.',
     tags: ['cleanser', 'acme-control', 'vegan'],
-    imageUrl: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1596462502278-27bf85033e5a?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'budget'
   },
@@ -1321,7 +1321,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Weightless high hydration daily skin moisture barrier lock.',
     description: 'An advanced micro-droplet formula that absorbs instantly without leaving sticky oil layers. Keeps makeup fresh all day.',
     tags: ['moisturizer', 'daily-cream', 'skin-science'],
-    imageUrl: 'https://images.unsplash.com/photo-1601049676099-e7ed07d825b0?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1601049676099-e7ed07d825b0?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1596462502278-27bf85033e5a?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'budget'
   },
@@ -1335,7 +1335,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Reference level Moroccan argan oil styling treatment.',
     description: 'Eradicates fuzzy dry ends instantly. Restores radiant high-gloss strength to hairs damaged by extreme heat dryers.',
     tags: ['haircare', 'argan-oil', 'natural-beauty'],
-    imageUrl: 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1596462502278-27bf85033e5a?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'budget'
   },
@@ -1349,7 +1349,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Medium coverage breathable foundation with mineral SPF15.',
     description: 'Blends seamlessly matching real undertones. Lightweight mineral pigments protect skin from environmental dust elements.',
     tags: ['cosmetics', 'makeup', 'foundation'],
-    imageUrl: 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1596462502278-27bf85033e5a?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'budget'
   },
@@ -1363,7 +1363,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Rich evening repair moisturizer loaded with 2.5% pure retinol.',
     description: 'Reduces fine line creases and rebuilds collagen densities while you sleep. Infused with skin soothing botanical ceramides.',
     tags: ['retinol', 'collagen', 'premium-care'],
-    imageUrl: 'https://images.unsplash.com/photo-1608248597481-496100c80836?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1608248597481-496100c80836?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1596462502278-27bf85033e5a?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'premium'
   },
@@ -1379,7 +1379,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Genuine top grain leather card holder with card slide triggers.',
     description: 'Safeguard credit card chips against scanning theft tags. Push indicators fan out 6 cards in beautiful stairs layout.',
     tags: ['wallet', 'rfid-block', 'edc'],
-    imageUrl: 'https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'budget'
   },
@@ -1393,7 +1393,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Anti eyestrain computer glasses with lightweight metal frame.',
     description: 'Block 95% of high frequency screen blue wavelengths. Mitigate headache fatigue during long coding cycles.',
     tags: ['glasses', 'eyestrain', 'workplace'],
-    imageUrl: 'https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'budget'
   },
@@ -1407,7 +1407,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Japanese quartz movement wrist watch with leather straps.',
     description: 'Sophisticated multi-dial layout containing stopwatch functions, date windows, and premium surgical grade steel casings.',
     tags: ['watches', 'chronograph', 'leather-strap'],
-    imageUrl: 'https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'mid-range'
   },
@@ -1421,7 +1421,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'High density waterproof travel backpack with USB charging locks.',
     description: 'Keeps tablets and books bone dry under cloud bursts. Multi internal mesh divider structures prevent cargo jostles.',
     tags: ['backpack', 'commuter', 'waterproof-bag'],
-    imageUrl: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'mid-range'
   },
@@ -1435,7 +1435,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Premium warm silk and cashmere blend neck wrap scarf.',
     description: 'Features a contemporary geometric pattern structure, elegant fringe accents, and a luxury soft touch texture feeling.',
     tags: ['scarf', 'winter-wear', 'fashion-tech'],
-    imageUrl: 'https://images.unsplash.com/photo-1520903928273-0f4432a288b0?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1520903928273-0f4432a288b0?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'budget'
   },
@@ -1449,7 +1449,7 @@ const rawProducts: IRawProductSpec[] = [
     shortDescription: 'Impact-resistant military grade aviation pilot solar glasses.',
     description: 'Eliminate glare reflection on damp road surfaces or sea waters. Solid metal spring temples ensure snug non-slip head fits.',
     tags: ['sunglasses', 'polarized', 'aviator'],
-    imageUrl: 'https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=600&q=80',
+    imageUrls: ['https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=600&q=80', 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=600&q=80'],
     variantType: 'general-colors',
     pricingTier: 'budget'
   }
@@ -1725,11 +1725,11 @@ export const seedProducts = async (shouldExit = true) => {
 
       // Generate customized variants based on type requirements
       const variants = [];
-      const imageObj = {
-        public_id: `product_${spec.slugSuffix}`,
-        secure_url: spec.imageUrl,
-        altText: spec.name
-      };
+      const images = spec.imageUrls.map((url, i) => ({
+        public_id: `product_${spec.slugSuffix}_${i}`,
+        secure_url: url,
+        altText: `${spec.name} - View ${i + 1}`
+      }));
 
       if (spec.variantType === 'phones') {
         const storages = ['128GB', '256GB', '512GB'];
@@ -1756,7 +1756,7 @@ export const seedProducts = async (shouldExit = true) => {
               colorHex: col.hex,
               stock,
               priceOverride: storage === '512GB' ? spec.price + 150 : storage === '256GB' ? spec.price + 70 : undefined,
-              images: [imageObj],
+              images: images,
               attributes: [
                 { name: 'Storage', value: storage },
                 { name: 'Color', value: col.name }
@@ -1788,7 +1788,7 @@ export const seedProducts = async (shouldExit = true) => {
               color: col.name,
               colorHex: col.hex,
               stock,
-              images: [imageObj],
+              images: images,
               attributes: [
                 { name: 'Size', value: size },
                 { name: 'Color', value: col.name }
@@ -1813,7 +1813,7 @@ export const seedProducts = async (shouldExit = true) => {
             size: specOpt,
             stock,
             priceOverride: priceFactor > 0 ? spec.price + priceFactor : undefined,
-            images: [imageObj],
+            images: images,
             attributes: [{ name: 'Specification', value: specOpt }]
           });
         }
@@ -1838,7 +1838,7 @@ export const seedProducts = async (shouldExit = true) => {
             color: col.name,
             colorHex: col.hex,
             stock,
-            images: [imageObj],
+            images: images,
             attributes: [{ name: 'Color', value: col.name }]
           });
         }
@@ -1851,7 +1851,7 @@ export const seedProducts = async (shouldExit = true) => {
         shortDescription: spec.shortDescription,
         category: categoryId,
         brand: spec.brand,
-        images: [imageObj],
+        images: images,
         variants: variants,
         price: spec.price,
         compareAtPrice: spec.compareAtPrice,
