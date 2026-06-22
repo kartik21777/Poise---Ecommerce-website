@@ -135,6 +135,7 @@ export const Register: React.FC = () => {
                 type="password"
                 autoComplete="new-password"
                 required
+                minLength={8}
                 value={formData.password}
                 onChange={handleChange}
                 className="appearance-none block w-full px-3 py-2 border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-gray-900 dark:text-white rounded-md shadow-sm placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-gray-900 dark:focus:ring-white focus:border-gray-900 dark:focus:border-white sm:text-sm transition-colors"
