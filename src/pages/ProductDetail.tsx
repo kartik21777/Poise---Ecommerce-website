@@ -11,6 +11,7 @@ import { useCart } from '../hooks/useCart.js';
 import { useWishlist } from '../hooks/useWishlist.js';
 import { addRecentlyViewed } from '../services/recentlyViewedService.js';
 import { useAuth } from '../providers/AuthProvider.js';
+import { useToast } from '../components/Toast.js';
 
 export const ProductDetail: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -30,6 +31,7 @@ export const ProductDetail: React.FC = () => {
   const { addItem: addToCart } = useCart();
   const { toggleItem: toggleWishlist, isInWishlist } = useWishlist();
   const { isAuthenticated } = useAuth();
+  const { success, warning } = useToast();
 
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
@@ -43,12 +45,15 @@ export const ProductDetail: React.FC = () => {
     if (!product) return;
     const variantSku = product.variants?.[0]?.sku || product.id; // Using first variant or default
     await addToCart({ productId: product.id, variantSku, quantity: 1 });
-    alert('Added to cart!');
+    success('Added to cart!', `${product.name} has been added to your bag.`);
   };
 
   const handleWishlist = async () => {
     if (!product) return;
-    if (!isAuthenticated) return alert('Please login to add items to wishlist.');
+    if (!isAuthenticated) {
+      warning('Login required', 'Please log in to save items to your wishlist.');
+      return;
+    }
     await toggleWishlist({ productId: product.id, isAdding: !isInWishlist(product.id) });
   };
 
