@@ -31,7 +31,7 @@ export const ProductDetail: React.FC = () => {
   const { addItem: addToCart } = useCart();
   const { toggleItem: toggleWishlist, isInWishlist } = useWishlist();
   const { isAuthenticated } = useAuth();
-  const { success, warning } = useToast();
+  const { success, warning, error: toastError } = useToast();
 
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
@@ -43,9 +43,13 @@ export const ProductDetail: React.FC = () => {
 
   const handleAddToCart = async () => {
     if (!product) return;
-    const variantSku = product.variants?.[0]?.sku || product.id; // Using first variant or default
-    await addToCart({ productId: product.id, variantSku, quantity: 1 });
-    success('Added to cart!', `${product.name} has been added to your bag.`);
+    try {
+      const variantSku = product.variants?.[0]?.sku || product.id;
+      await addToCart({ productId: product.id, variantSku, quantity: 1 });
+      success('Added to cart!', `${product.name} has been added to your bag.`);
+    } catch (err: any) {
+      toastError('Could not add to cart', err?.response?.data?.message || 'Please try again.');
+    }
   };
 
   const handleWishlist = async () => {
@@ -54,7 +58,11 @@ export const ProductDetail: React.FC = () => {
       warning('Login required', 'Please log in to save items to your wishlist.');
       return;
     }
-    await toggleWishlist({ productId: product.id, isAdding: !isInWishlist(product.id) });
+    try {
+      await toggleWishlist({ productId: product.id, isAdding: !isInWishlist(product.id) });
+    } catch (err: any) {
+      toastError('Could not update wishlist', err?.response?.data?.message || 'Please try again.');
+    }
   };
 
   if (isLoading) {

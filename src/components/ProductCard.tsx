@@ -8,7 +8,9 @@ interface ProductCardProps {
 
 export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   const primaryImage = product.images?.[0]?.url || 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=80&w=800';
-  const secondaryImage = product.images?.[1]?.url;
+  const rawSecondary = product.images?.[1]?.url;
+  // Only use secondary image for hover if it's actually a different URL
+  const secondaryImage = rawSecondary && rawSecondary !== primaryImage ? rawSecondary : undefined;
 
   const hasDiscount = product.compareAtPrice && product.compareAtPrice > product.price;
 
