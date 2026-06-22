@@ -7,28 +7,32 @@ import { AuthenticatedRequest } from '../middleware/authMiddleware.js';
 
 const setTokensInCookies = (res: Response, accessToken: string, refreshToken: string) => {
   const isProduction = env.nodeEnv === 'production';
+  const sameSite = isProduction ? 'none' : 'lax';
   const accessExp = parseExpiration(env.jwtAccessExpiresIn || '15m');
   const refreshExp = parseExpiration(env.jwtRefreshExpiresIn || '7d');
 
   res.cookie('accessToken', accessToken, {
     httpOnly: true,
     secure: isProduction,
-    sameSite: 'strict',
+    sameSite,
     maxAge: accessExp,
   });
 
   res.cookie('refreshToken', refreshToken, {
     httpOnly: true,
     secure: isProduction,
-    sameSite: 'strict',
+    sameSite,
     maxAge: refreshExp,
   });
 };
 
 const clearCookies = (res: Response) => {
   const isProduction = env.nodeEnv === 'production';
-  res.cookie('accessToken', '', { httpOnly: true, expires: new Date(0), secure: isProduction, sameSite: 'strict' });
-  res.cookie('refreshToken', '', { httpOnly: true, expires: new Date(0), secure: isProduction, sameSite: 'strict' });
+  const sameSite = isProduction ? 'none' : 'lax';
+  const cookieOptions = { httpOnly: true, expires: new Date(0), secure: isProduction, sameSite } as const;
+
+  res.cookie('accessToken', '', cookieOptions);
+  res.cookie('refreshToken', '', cookieOptions);
 };
 
 export const registerController = asyncHandler(async (req: Request, res: Response) => {

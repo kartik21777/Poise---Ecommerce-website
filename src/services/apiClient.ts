@@ -11,14 +11,28 @@ export const apiClient = axios.create({
   },
 });
 
-// Response interceptor
+let refreshRequest: Promise<void> | null = null;
+
 apiClient.interceptors.response.use(
   (response) => response,
   async (error) => {
-    // Handle auth errors etc.
-    if (error.response?.status === 401) {
-      // Potentially emit an event or trigger a logout side-effect if needed
+    const originalRequest = error.config;
+    const isAuthRequest = originalRequest?.url?.startsWith('/auth/');
+
+    if (error.response?.status === 401 && originalRequest && !originalRequest._retry && !isAuthRequest) {
+      originalRequest._retry = true;
+
+      try {
+        refreshRequest ??= apiClient.post('/auth/refresh').then(() => undefined);
+        await refreshRequest;
+        return apiClient(originalRequest);
+      } catch {
+        // The original 401 is more useful to callers than a refresh failure.
+      } finally {
+        refreshRequest = null;
+      }
     }
+
     return Promise.reject(error);
   }
 );
