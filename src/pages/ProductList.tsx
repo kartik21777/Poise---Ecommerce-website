@@ -19,14 +19,18 @@ export const ProductList: React.FC = () => {
   const q = searchParams.get('q') || '';
   const category = searchParams.get('category') || '';
 
-  const { data, isLoading, isError, refetch } = useQuery({
-    queryKey: ['products', { page, sort, q, category }],
-    queryFn: () => getProducts({ page, limit: 12, sort, q, category }),
-    placeholderData: keepPreviousData,
-  });
-
   const { data: categoriesRaw = [] } = useQuery({ queryKey: ['categories'], queryFn: getCategories });
   const categoriesList = Array.isArray(categoriesRaw) ? categoriesRaw : [];
+
+  const selectedCategory = categoriesList.find(c => c.slug === category);
+  const categoryIdParam = selectedCategory ? selectedCategory.id : (category ? 'invalid-id' : undefined);
+
+  const { data, isLoading, isError, refetch } = useQuery({
+    queryKey: ['products', { page, sort, q, category: categoryIdParam }],
+    queryFn: () => getProducts({ page, limit: 12, sort, q, category: categoryIdParam }),
+    placeholderData: keepPreviousData,
+    enabled: category ? !!selectedCategory : true,
+  });
 
   const handlePageChange = (newPage: number) => {
     setSearchParams(prev => {
