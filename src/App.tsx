@@ -16,6 +16,7 @@ import { AdminLayout } from './layouts/AdminLayout';
 import { ProtectedRoute, GuestRoute, AdminRoute, VendorRoute } from './routes/RouteGuards';
 import { VendorLayout } from './components/layouts/VendorLayout';
 import { ToastProvider } from './components/Toast';
+import { ScrollToTop } from './components/ScrollToTop';
 
 const AdminDashboard = lazy(() => import('./pages/admin/AdminDashboard').then(m => ({ default: m.AdminDashboard })));
 const AdminProducts = lazy(() => import('./pages/admin/Products').then(m => ({ default: m.Products })));
@@ -71,6 +72,7 @@ export default function App() {
             <ToastProvider>
             <AuthProvider>
               <BrowserRouter>
+                <ScrollToTop />
                 <Suspense fallback={<Loader />}>
                 <Routes>
                   {/* Auth Routes (Guest Only) */}

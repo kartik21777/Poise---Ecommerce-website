@@ -84,14 +84,14 @@ export const NewArrivals: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-50 dark:bg-gray-950 border-b border-gray-100 dark:border-gray-800 transition-colors transition-colors">
+    <div className="min-h-screen bg-white dark:bg-gray-950 transition-colors">
       <SEO
         title="New Arrivals"
         description="Discover the latest additions to our curated collection — fresh styles, new essentials, and trending pieces just landed."
       />
 
       {/* Hero Banner */}
-      <div className="relative overflow-hidden bg-gray-950">
+      <div className="relative overflow-hidden bg-indigo-50/30 dark:bg-gray-950 border-b border-gray-100 dark:border-gray-800 transition-colors">
         {/* Animated gradient orbs */}
         <div className="absolute -top-32 -left-32 w-[500px] h-[500px] rounded-full bg-indigo-500/15 dark:bg-indigo-600/20 blur-[120px] pointer-events-none" />
         <div className="absolute -bottom-20 right-0 w-[400px] h-[400px] rounded-full bg-violet-400/15 dark:bg-violet-500/15 blur-[100px] pointer-events-none" />
