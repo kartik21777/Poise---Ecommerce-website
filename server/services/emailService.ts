@@ -8,6 +8,9 @@ const transporter = nodemailer.createTransport({
     user: env.smtp.user,
     pass: env.smtp.pass,
   },
+  connectionTimeout: 5000,
+  greetingTimeout: 5000,
+  socketTimeout: 5000,
 });
 
 export const sendVerificationEmail = async (to: string, token: string) => {
@@ -23,6 +26,10 @@ export const sendVerificationEmail = async (to: string, token: string) => {
     `,
   };
   try {
+    if (!env.smtp.host || env.smtp.host === 'your_smtp_host' || !env.smtp.user) {
+      console.warn('SMTP not fully configured. Skipping email send. Verification Link:', verifyLink);
+      return;
+    }
     await transporter.sendMail(mailOptions);
   } catch (error) {
     console.error('Failed to send verification email. Ensure SMTP is configured. Verification Link:', verifyLink);
@@ -42,6 +49,10 @@ export const sendPasswordResetEmail = async (to: string, token: string) => {
     `,
   };
   try {
+    if (!env.smtp.host || env.smtp.host === 'your_smtp_host' || !env.smtp.user) {
+      console.warn('SMTP not fully configured. Skipping email send. Reset Link:', resetLink);
+      return;
+    }
     await transporter.sendMail(mailOptions);
   } catch (error) {
     console.error('Failed to send password reset email. Ensure SMTP is configured. Reset Link:', resetLink);
