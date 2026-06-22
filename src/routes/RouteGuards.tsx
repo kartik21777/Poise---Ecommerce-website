@@ -58,13 +58,16 @@ export const VendorRoute: React.FC = () => {
 };
 export const GuestRoute: React.FC = () => {
   const { isAuthenticated, isLoading } = useAuth();
+  const location = useLocation();
 
   if (isLoading) {
     return <div className="min-h-screen flex items-center justify-center">Loading...</div>;
   }
 
   if (isAuthenticated) {
-    return <Navigate to="/" replace />;
+    const from = (location.state as { from?: { pathname?: string; search?: string; hash?: string } })?.from;
+    const destination = from ? `${from.pathname || '/'}${from.search || ''}${from.hash || ''}` : '/';
+    return <Navigate to={destination} replace />;
   }
 
   return <Outlet />;

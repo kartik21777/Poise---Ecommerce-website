@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useQueryClient } from '@tanstack/react-query';
 import { useAuth } from '../providers/AuthProvider.js';
 import * as authService from '../services/authService.js';
@@ -10,6 +10,7 @@ import { SEO } from '../components/SEO.js';
 export const Login: React.FC = () => {
   const { login } = useAuth();
   const navigate = useNavigate();
+  const location = useLocation();
   const queryClient = useQueryClient();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -23,24 +24,31 @@ export const Login: React.FC = () => {
     
     try {
       const res = await authService.login({ email, password });
-      
+
+      // Establish the authenticated UI state before making protected follow-up requests.
+      login(res.user);
+
       const guestItems = guestCartService.getGuestCart();
       if (guestItems.length > 0) {
-        await cartService.syncCart(guestItems);
-        guestCartService.clearGuestCart();
-        window.dispatchEvent(new Event('local-storage'));
-        await queryClient.invalidateQueries({ queryKey: ['cart'] });
+        try {
+          await cartService.syncCart(guestItems);
+          guestCartService.clearGuestCart();
+          window.dispatchEvent(new Event('local-storage'));
+          await queryClient.invalidateQueries({ queryKey: ['cart'] });
+        } catch (syncError) {
+          // Preserve the guest cart for a later retry without treating login as failed.
+          console.error('Could not merge guest cart after login:', syncError);
+        }
       }
-      
-      login(res.user);
-      
+
       const adminRoles = ['admin', 'super_admin'];
       if (adminRoles.includes(res.user.role)) {
         navigate('/admin');
       } else if (res.user.role === 'vendor') {
         navigate('/vendor');
       } else {
-        navigate('/');
+        const from = (location.state as { from?: { pathname?: string; search?: string; hash?: string } })?.from;
+        navigate(from ? `${from.pathname || '/'}${from.search || ''}${from.hash || ''}` : '/', { replace: true });
       }
     } catch (err: any) {
       setError(err.response?.data?.message || 'Failed to login.');

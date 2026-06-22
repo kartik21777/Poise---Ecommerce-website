@@ -55,7 +55,8 @@ export const loginController = asyncHandler(async (req: Request, res: Response) 
     setTokensInCookies(res, result.accessToken, result.refreshToken);
     res.status(200).json({
       message: result.message,
-      user: result.user
+      user: result.user,
+      accessToken: result.accessToken,
     });
   } catch (error: unknown) {
     if (error instanceof AuthError) {
@@ -73,7 +74,7 @@ export const refreshTokenController = asyncHandler(async (req: Request, res: Res
   try {
     const result = await authService.refreshToken(cookieToken);
     setTokensInCookies(res, result.accessToken, result.refreshToken);
-    res.status(200).json({ message: result.message });
+    res.status(200).json({ message: result.message, accessToken: result.accessToken });
   } catch (error: unknown) {
     if (error instanceof AuthError) {
       res.status(error.statusCode);

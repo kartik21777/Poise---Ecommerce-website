@@ -1,4 +1,4 @@
-import { apiClient } from './apiClient.js';
+import { apiClient, setAccessToken } from './apiClient.js';
 import { AuthResponse, User } from '../types/index.js';
 
 export const register = async (payload: any): Promise<AuthResponse> => {
@@ -8,12 +8,17 @@ export const register = async (payload: any): Promise<AuthResponse> => {
 
 export const login = async (payload: any): Promise<AuthResponse> => {
   const { data } = await apiClient.post<AuthResponse>('/auth/login', payload);
+  setAccessToken(data.accessToken);
   return data;
 };
 
 export const logout = async (): Promise<{ message: string }> => {
-  const { data } = await apiClient.post<{ message: string }>('/auth/logout');
-  return data;
+  try {
+    const { data } = await apiClient.post<{ message: string }>('/auth/logout');
+    return data;
+  } finally {
+    setAccessToken(null);
+  }
 };
 
 export const getMe = async (): Promise<AuthResponse> => {

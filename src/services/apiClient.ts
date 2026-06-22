@@ -2,6 +2,17 @@ import axios from 'axios';
 
 // Get base URL from env or use /api relative path
 const baseURL = import.meta.env.VITE_API_URL || '/api';
+const ACCESS_TOKEN_KEY = 'poise_access_token';
+
+export const setAccessToken = (token?: string | null) => {
+  if (token) {
+    sessionStorage.setItem(ACCESS_TOKEN_KEY, token);
+  } else {
+    sessionStorage.removeItem(ACCESS_TOKEN_KEY);
+  }
+};
+
+const getAccessToken = () => sessionStorage.getItem(ACCESS_TOKEN_KEY);
 
 export const apiClient = axios.create({
   baseURL,
@@ -9,6 +20,14 @@ export const apiClient = axios.create({
   headers: {
     'Content-Type': 'application/json',
   },
+});
+
+apiClient.interceptors.request.use((config) => {
+  const token = getAccessToken();
+  if (token) {
+    config.headers.Authorization = `Bearer ${token}`;
+  }
+  return config;
 });
 
 let refreshRequest: Promise<void> | null = null;
@@ -23,7 +42,9 @@ apiClient.interceptors.response.use(
       originalRequest._retry = true;
 
       try {
-        refreshRequest ??= apiClient.post('/auth/refresh').then(() => undefined);
+        refreshRequest ??= apiClient.post<{ accessToken: string }>('/auth/refresh').then(({ data }) => {
+          setAccessToken(data.accessToken);
+        });
         await refreshRequest;
         return apiClient(originalRequest);
       } catch {
