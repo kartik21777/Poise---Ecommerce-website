@@ -64,7 +64,13 @@ export const Cart: React.FC = () => {
                         <div className="flex items-center border border-gray-300 dark:border-gray-700 rounded-md w-max">
                           <button
                             type="button"
-                            onClick={() => updateItem({ variantSku: item.variantSku, quantity: Math.max(1, item.quantity - 1) })}
+                            onClick={() => {
+                              if (item.quantity === 1) {
+                                removeItem(item.variantSku);
+                              } else {
+                                updateItem({ variantSku: item.variantSku, quantity: item.quantity - 1 });
+                              }
+                            }}
                             className="p-2 text-gray-400 hover:text-gray-500 dark:text-gray-500 dark:hover:text-gray-400"
                           >
                             <Minus className="h-4 w-4" />

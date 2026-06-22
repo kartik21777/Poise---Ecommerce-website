@@ -42,7 +42,28 @@ export const useCart = () => {
         return null;
       }
     },
-    onSuccess: () => {
+    onMutate: async ({ variantSku, quantity }) => {
+      if (user) {
+        await queryClient.cancelQueries({ queryKey: ['cart'] });
+        const previousCart = queryClient.getQueryData(['cart']);
+        queryClient.setQueryData(['cart'], (old: any) => {
+          if (!old) return old;
+          return {
+            ...old,
+            items: old.items.map((item: any) =>
+              item.variantSku === variantSku ? { ...item, quantity } : item
+            ),
+          };
+        });
+        return { previousCart };
+      }
+    },
+    onError: (err, variables, context: any) => {
+      if (user && context?.previousCart) {
+        queryClient.setQueryData(['cart'], context.previousCart);
+      }
+    },
+    onSettled: () => {
       if (user) queryClient.invalidateQueries({ queryKey: ['cart'] });
     },
   });
@@ -57,7 +78,26 @@ export const useCart = () => {
         return null;
       }
     },
-    onSuccess: () => {
+    onMutate: async (variantSku) => {
+      if (user) {
+        await queryClient.cancelQueries({ queryKey: ['cart'] });
+        const previousCart = queryClient.getQueryData(['cart']);
+        queryClient.setQueryData(['cart'], (old: any) => {
+          if (!old) return old;
+          return {
+            ...old,
+            items: old.items.filter((item: any) => item.variantSku !== variantSku),
+          };
+        });
+        return { previousCart };
+      }
+    },
+    onError: (err, variables, context: any) => {
+      if (user && context?.previousCart) {
+        queryClient.setQueryData(['cart'], context.previousCart);
+      }
+    },
+    onSettled: () => {
       if (user) queryClient.invalidateQueries({ queryKey: ['cart'] });
     },
   });
