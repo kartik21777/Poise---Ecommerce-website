@@ -61,17 +61,17 @@ export const Featured: React.FC = () => {
       />
 
       {/* Hero Banner */}
-      <div className="relative overflow-hidden" style={{ background: 'linear-gradient(135deg, #0a0a0a 0%, #1a0a2e 40%, #0d1a3a 70%, #0a0a0a 100%)' }}>
+      <div className="relative overflow-hidden bg-gradient-to-br from-amber-50 via-rose-50 to-purple-50 dark:from-gray-950 dark:via-[#1a0a2e] dark:to-gray-950 border-b border-gray-100 dark:border-gray-800 transition-colors">
         {/* Animated gradient orbs */}
-        <div className="absolute top-0 right-0 w-[600px] h-[400px] rounded-full bg-amber-500/10 blur-[120px] pointer-events-none" />
-        <div className="absolute bottom-0 left-0 w-[400px] h-[300px] rounded-full bg-rose-500/10 blur-[100px] pointer-events-none" />
-        <div className="absolute top-1/2 left-1/3 -translate-y-1/2 w-[300px] h-[300px] rounded-full bg-purple-600/10 blur-[80px] pointer-events-none" />
+        <div className="absolute top-0 right-0 w-[600px] h-[400px] rounded-full bg-amber-400/20 dark:bg-amber-500/10 blur-[120px] pointer-events-none" />
+        <div className="absolute bottom-0 left-0 w-[400px] h-[300px] rounded-full bg-rose-400/20 dark:bg-rose-500/10 blur-[100px] pointer-events-none" />
+        <div className="absolute top-1/2 left-1/3 -translate-y-1/2 w-[300px] h-[300px] rounded-full bg-purple-400/20 dark:bg-purple-600/10 blur-[80px] pointer-events-none" />
 
         {/* Star particles (decorative) */}
         {[...Array(6)].map((_, i) => (
           <div
             key={i}
-            className="absolute w-1 h-1 rounded-full bg-white/30 animate-pulse"
+            className="absolute w-1 h-1 rounded-full bg-amber-500/30 dark:bg-white/30 animate-pulse"
             style={{
               top: `${15 + i * 12}%`,
               left: `${5 + i * 15}%`,
@@ -87,9 +87,9 @@ export const Featured: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-amber-400/20 bg-amber-400/5 text-amber-300/80 text-xs font-semibold tracking-widest uppercase mb-6 backdrop-blur"
+              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-amber-200 dark:border-amber-400/20 bg-amber-100/50 dark:bg-amber-400/5 text-amber-700 dark:text-amber-300/80 text-xs font-semibold tracking-widest uppercase mb-6 backdrop-blur shadow-sm dark:shadow-none"
             >
-              <Crown className="w-3.5 h-3.5 text-amber-400" />
+              <Crown className="w-3.5 h-3.5 text-amber-500 dark:text-amber-400" />
               Editor's Selection
             </motion.div>
 
@@ -97,16 +97,16 @@ export const Featured: React.FC = () => {
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.65, delay: 0.1 }}
-              className="text-5xl sm:text-6xl lg:text-7xl font-extrabold font-serif tracking-tight text-white leading-none"
+              className="text-5xl sm:text-6xl lg:text-7xl font-extrabold font-serif tracking-tight text-gray-900 dark:text-white leading-none"
             >
-              Featured <span className="bg-gradient-to-r from-amber-300 via-rose-300 to-purple-400 bg-clip-text text-transparent">Collection</span>
+              Featured <span className="bg-gradient-to-r from-amber-500 via-rose-500 to-purple-600 dark:from-amber-300 dark:via-rose-300 dark:to-purple-400 bg-clip-text text-transparent">Collection</span>
             </motion.h1>
 
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="mt-5 max-w-xl text-lg text-gray-400"
+              className="mt-5 max-w-xl text-lg text-gray-600 dark:text-gray-400"
             >
               Premium picks, curated with care. Each piece in our featured collection is chosen to inspire your best self.
             </motion.p>
@@ -121,13 +121,12 @@ export const Featured: React.FC = () => {
               {HIGHLIGHTS.map(({ icon: Icon, label, desc }) => (
                 <div
                   key={label}
-                  className="flex flex-col items-center gap-1.5 px-4 py-4 rounded-xl border border-white/5 bg-white/3 backdrop-blur"
-                  style={{ background: 'rgba(255,255,255,0.03)' }}
+                  className="flex flex-col items-center gap-1.5 px-4 py-4 rounded-xl border border-white/40 dark:border-white/5 bg-white/40 dark:bg-white/5 backdrop-blur-md shadow-sm dark:shadow-none"
                 >
-                  <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center">
-                    <Icon className="w-4 h-4 text-amber-300" />
+                  <div className="w-8 h-8 rounded-full bg-white/60 dark:bg-white/5 flex items-center justify-center shadow-sm dark:shadow-none">
+                    <Icon className="w-4 h-4 text-amber-500 dark:text-amber-300" />
                   </div>
-                  <span className="text-sm font-semibold text-white">{label}</span>
+                  <span className="text-sm font-semibold text-gray-900 dark:text-white">{label}</span>
                   <span className="text-xs text-gray-500 text-center">{desc}</span>
                 </div>
               ))}
@@ -136,7 +135,7 @@ export const Featured: React.FC = () => {
         </div>
 
         {/* Bottom fade */}
-        <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white dark:from-gray-950 to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white dark:from-gray-950 to-transparent pointer-events-none" />
       </div>
 
       {/* Main Content */}

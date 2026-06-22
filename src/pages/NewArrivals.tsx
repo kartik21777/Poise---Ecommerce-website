@@ -84,7 +84,7 @@ export const NewArrivals: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-950 transition-colors">
+    <div className="min-h-screen bg-white dark:bg-gray-50 dark:bg-gray-950 border-b border-gray-100 dark:border-gray-800 transition-colors transition-colors">
       <SEO
         title="New Arrivals"
         description="Discover the latest additions to our curated collection — fresh styles, new essentials, and trending pieces just landed."
@@ -93,18 +93,18 @@ export const NewArrivals: React.FC = () => {
       {/* Hero Banner */}
       <div className="relative overflow-hidden bg-gray-950">
         {/* Animated gradient orbs */}
-        <div className="absolute -top-32 -left-32 w-[500px] h-[500px] rounded-full bg-indigo-600/20 blur-[120px] pointer-events-none" />
-        <div className="absolute -bottom-20 right-0 w-[400px] h-[400px] rounded-full bg-violet-500/15 blur-[100px] pointer-events-none" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] rounded-full bg-sky-600/10 blur-[80px] pointer-events-none" />
+        <div className="absolute -top-32 -left-32 w-[500px] h-[500px] rounded-full bg-indigo-500/15 dark:bg-indigo-600/20 blur-[120px] pointer-events-none" />
+        <div className="absolute -bottom-20 right-0 w-[400px] h-[400px] rounded-full bg-violet-400/15 dark:bg-violet-500/15 blur-[100px] pointer-events-none" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] rounded-full bg-sky-400/15 dark:bg-sky-600/10 blur-[80px] pointer-events-none" />
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28 flex flex-col items-center text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 text-white/70 text-xs font-semibold tracking-widest uppercase mb-6 backdrop-blur"
+            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-indigo-100 dark:border-white/10 bg-indigo-50/80 dark:bg-white/5 text-indigo-700 dark:text-white/70 shadow-sm dark:shadow-none text-xs font-semibold tracking-widest uppercase mb-6 backdrop-blur"
           >
-            <Sparkles className="w-3.5 h-3.5 text-indigo-400" />
+            <Sparkles className="w-3.5 h-3.5 text-indigo-500 dark:text-indigo-400" />
             Just Dropped
           </motion.div>
 
@@ -112,16 +112,16 @@ export const NewArrivals: React.FC = () => {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.65, delay: 0.1 }}
-            className="text-5xl sm:text-6xl lg:text-7xl font-extrabold font-serif tracking-tight text-white leading-none"
+            className="text-5xl sm:text-6xl lg:text-7xl font-extrabold font-serif tracking-tight text-gray-900 dark:text-white leading-none"
           >
-            New <span className="bg-gradient-to-r from-indigo-400 via-violet-400 to-sky-400 bg-clip-text text-transparent">Arrivals</span>
+            New <span className="bg-gradient-to-r from-indigo-600 via-violet-600 to-sky-600 dark:from-indigo-400 dark:via-violet-400 dark:to-sky-400 bg-clip-text text-transparent">Arrivals</span>
           </motion.h1>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="mt-5 max-w-xl text-lg text-gray-400"
+            className="mt-5 max-w-xl text-lg text-gray-600 dark:text-gray-400"
           >
             Fresh drops, curated weekly. Be the first to explore the latest additions to our ever-evolving collection.
           </motion.p>
@@ -142,8 +142,8 @@ export const NewArrivals: React.FC = () => {
                 }}
                 className={`px-5 py-2 rounded-full text-sm font-semibold backdrop-blur transition-all duration-200 ${
                   timePeriod === value
-                    ? 'bg-white text-gray-900 border border-white shadow-lg shadow-white/10 scale-105'
-                    : 'bg-white/5 border border-white/10 text-white/60 hover:bg-white/10 hover:text-white/80 hover:border-white/20'
+                    ? 'bg-indigo-600 text-white shadow-lg shadow-indigo-600/20 dark:bg-white dark:text-gray-900 dark:border dark:border-white dark:shadow-white/10 scale-105'
+                    : 'bg-white/60 dark:bg-white/5 border border-gray-200 dark:border-white/10 text-gray-600 dark:text-white/60 hover:bg-white dark:hover:bg-white/10 hover:text-gray-900 dark:hover:text-white/80 hover:border-gray-300 dark:hover:border-white/20'
                 }`}
               >
                 {label}

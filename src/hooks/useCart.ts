@@ -48,11 +48,13 @@ export const useCart = () => {
         const previousCart = queryClient.getQueryData(['cart']);
         queryClient.setQueryData(['cart'], (old: any) => {
           if (!old) return old;
+          const newItems = old.items.map((item: any) =>
+            item.variantSku === variantSku ? { ...item, quantity } : item
+          );
           return {
             ...old,
-            items: old.items.map((item: any) =>
-              item.variantSku === variantSku ? { ...item, quantity } : item
-            ),
+            items: newItems,
+            totalPrice: newItems.reduce((acc: number, item: any) => acc + ((item.unitPrice || 0) * item.quantity), 0),
           };
         });
         return { previousCart };
@@ -84,9 +86,11 @@ export const useCart = () => {
         const previousCart = queryClient.getQueryData(['cart']);
         queryClient.setQueryData(['cart'], (old: any) => {
           if (!old) return old;
+          const newItems = old.items.filter((item: any) => item.variantSku !== variantSku);
           return {
             ...old,
-            items: old.items.filter((item: any) => item.variantSku !== variantSku),
+            items: newItems,
+            totalPrice: newItems.reduce((acc: number, item: any) => acc + ((item.unitPrice || 0) * item.quantity), 0),
           };
         });
         return { previousCart };
