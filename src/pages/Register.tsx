@@ -45,7 +45,12 @@ export const Register: React.FC = () => {
       login(loginRes.user);
       navigate('/');
     } catch (err: any) {
-      setError(err.response?.data?.message || 'Failed to register.');
+      const data = err.response?.data;
+      if (data?.errors && data.errors.length > 0) {
+        setError(data.errors[0].message);
+      } else {
+        setError(data?.message || 'Failed to register.');
+      }
     } finally {
       setIsLoading(false);
     }
