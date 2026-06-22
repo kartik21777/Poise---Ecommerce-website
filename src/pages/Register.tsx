@@ -21,8 +21,19 @@ export const Register: React.FC = () => {
     setIsLoading(true);
     
     try {
-      const res = await authService.register(formData);
+      const payload = {
+        name: `${formData.firstName} ${formData.lastName}`.trim(),
+        email: formData.email,
+        password: formData.password
+      };
+      const res = await authService.register(payload);
       
+      // Automatically login the user after successful registration
+      const loginRes = await authService.login({
+        email: payload.email,
+        password: payload.password
+      });
+
       const guestItems = guestCartService.getGuestCart();
       if (guestItems.length > 0) {
         await cartService.syncCart(guestItems);
@@ -31,7 +42,7 @@ export const Register: React.FC = () => {
         await queryClient.invalidateQueries({ queryKey: ['cart'] });
       }
       
-      login(res.user);
+      login(loginRes.user);
       navigate('/');
     } catch (err: any) {
       setError(err.response?.data?.message || 'Failed to register.');
