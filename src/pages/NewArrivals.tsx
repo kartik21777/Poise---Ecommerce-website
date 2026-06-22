@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { useQuery, keepPreviousData } from '@tanstack/react-query';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
@@ -9,6 +9,7 @@ import { LoadingSkeleton } from '../components/FeedbackStates.js';
 import { Pagination } from '../components/Pagination.js';
 import { getProducts } from '../services/productService.js';
 import { getCategories } from '../services/categoryService.js';
+import { Product } from '../types/index.js';
 
 const SORT_OPTIONS = [
   { value: 'newest', label: 'Newest First' },
@@ -16,11 +17,47 @@ const SORT_OPTIONS = [
   { value: 'price-desc', label: 'Price: High to Low' },
 ];
 
+type TimePeriod = 'all' | 'this-week' | 'last-week' | 'this-month';
+
+const TIME_PERIODS: { value: TimePeriod; label: string }[] = [
+  { value: 'this-week', label: 'This Week' },
+  { value: 'last-week', label: 'Last Week' },
+  { value: 'this-month', label: 'This Month' },
+];
+
+function getDateRange(period: TimePeriod): { from: Date; to: Date } | null {
+  if (period === 'all') return null;
+  const now = new Date();
+  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  const dayOfWeek = today.getDay(); // 0=Sun
+  const mondayOffset = dayOfWeek === 0 ? -6 : 1 - dayOfWeek;
+
+  if (period === 'this-week') {
+    const from = new Date(today);
+    from.setDate(today.getDate() + mondayOffset);
+    return { from, to: now };
+  }
+  if (period === 'last-week') {
+    const thisMonday = new Date(today);
+    thisMonday.setDate(today.getDate() + mondayOffset);
+    const lastMonday = new Date(thisMonday);
+    lastMonday.setDate(thisMonday.getDate() - 7);
+    const lastSunday = new Date(thisMonday);
+    lastSunday.setDate(thisMonday.getDate() - 1);
+    lastSunday.setHours(23, 59, 59, 999);
+    return { from: lastMonday, to: lastSunday };
+  }
+  // this-month
+  const from = new Date(now.getFullYear(), now.getMonth(), 1);
+  return { from, to: now };
+}
+
 export const NewArrivals: React.FC = () => {
   const [page, setPage] = useState(1);
   const [sort, setSort] = useState('newest');
   const [selectedCategory, setSelectedCategory] = useState('');
   const [isFilterOpen, setIsFilterOpen] = useState(false);
+  const [timePeriod, setTimePeriod] = useState<TimePeriod>('all');
 
   const { data: categoriesRaw = [] } = useQuery({ queryKey: ['categories'], queryFn: getCategories });
   const categoriesList = Array.isArray(categoriesRaw) ? categoriesRaw : [];
@@ -34,8 +71,17 @@ export const NewArrivals: React.FC = () => {
     placeholderData: keepPreviousData,
   });
 
-  const products = data?.data || [];
+  const allProducts = data?.data || [];
   const totalPages = data?.totalPages || 1;
+
+  const products = useMemo(() => {
+    const range = getDateRange(timePeriod);
+    if (!range) return allProducts;
+    return allProducts.filter((p: Product) => {
+      const created = new Date(p.createdAt);
+      return created >= range.from && created <= range.to;
+    });
+  }, [allProducts, timePeriod]);
 
   const handlePageChange = (newPage: number) => {
     setPage(newPage);
@@ -91,13 +137,22 @@ export const NewArrivals: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="mt-8 flex flex-wrap gap-3 justify-center"
           >
-            {['This Week', 'Last Week', 'This Month'].map((label) => (
-              <span
-                key={label}
-                className="px-4 py-1.5 rounded-full text-sm font-medium bg-white/5 border border-white/10 text-white/60 backdrop-blur cursor-default select-none"
+            {TIME_PERIODS.map(({ value, label }) => (
+              <button
+                key={value}
+                onClick={() => {
+                  setTimePeriod(timePeriod === value ? 'all' : value);
+                  setPage(1);
+                  setTimeout(() => document.getElementById('new-arrivals-grid')?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
+                }}
+                className={`px-5 py-2 rounded-full text-sm font-semibold backdrop-blur transition-all duration-200 ${
+                  timePeriod === value
+                    ? 'bg-white text-gray-900 border border-white shadow-lg shadow-white/10 scale-105'
+                    : 'bg-white/5 border border-white/10 text-white/60 hover:bg-white/10 hover:text-white/80 hover:border-white/20'
+                }`}
               >
                 {label}
-              </span>
+              </button>
             ))}
           </motion.div>
         </div>
@@ -110,9 +165,9 @@ export const NewArrivals: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Toolbar */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-10 pb-6 border-b border-gray-100 dark:border-gray-800">
-          <div>
+          <div id="new-arrivals-grid" className="scroll-mt-24">
             <p className="text-sm text-gray-500 dark:text-gray-400">
-              {isLoading ? 'Loading...' : `${data?.totalItems ?? 0} products`}
+              {isLoading ? 'Loading...' : `${products.length} product${products.length !== 1 ? 's' : ''}${timePeriod !== 'all' ? ` · ${TIME_PERIODS.find(t => t.value === timePeriod)?.label}` : ''}`}
             </p>
           </div>
 
@@ -142,19 +197,33 @@ export const NewArrivals: React.FC = () => {
           </div>
         </div>
 
-        {/* Active filter chip */}
-        {selectedCategory && (
+        {/* Active filter chips */}
+        {(selectedCategory || timePeriod !== 'all') && (
           <div className="flex flex-wrap gap-2 mb-6">
-            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-indigo-50 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300 text-sm font-medium border border-indigo-200 dark:border-indigo-700">
-              {categoriesList.find(c => c.slug === selectedCategory)?.name || selectedCategory}
-              <button
-                onClick={() => { setSelectedCategory(''); setPage(1); }}
-                className="ml-0.5 hover:text-indigo-900 dark:hover:text-indigo-100 transition-colors"
-                aria-label="Remove category filter"
-              >
-                <X className="w-3.5 h-3.5" />
-              </button>
-            </span>
+            {timePeriod !== 'all' && (
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-indigo-50 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300 text-sm font-medium border border-indigo-200 dark:border-indigo-700">
+                {TIME_PERIODS.find(t => t.value === timePeriod)?.label}
+                <button
+                  onClick={() => { setTimePeriod('all'); setPage(1); }}
+                  className="ml-0.5 hover:text-indigo-900 dark:hover:text-indigo-100 transition-colors"
+                  aria-label="Remove time filter"
+                >
+                  <X className="w-3.5 h-3.5" />
+                </button>
+              </span>
+            )}
+            {selectedCategory && (
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-indigo-50 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300 text-sm font-medium border border-indigo-200 dark:border-indigo-700">
+                {categoriesList.find(c => c.slug === selectedCategory)?.name || selectedCategory}
+                <button
+                  onClick={() => { setSelectedCategory(''); setPage(1); }}
+                  className="ml-0.5 hover:text-indigo-900 dark:hover:text-indigo-100 transition-colors"
+                  aria-label="Remove category filter"
+                >
+                  <X className="w-3.5 h-3.5" />
+                </button>
+              </span>
+            )}
           </div>
         )}
 
@@ -288,6 +357,7 @@ export const NewArrivals: React.FC = () => {
                 <button
                   onClick={() => {
                     setSelectedCategory('');
+                    setTimePeriod('all');
                     setPage(1);
                     setIsFilterOpen(false);
                   }}
