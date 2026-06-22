@@ -36,16 +36,16 @@ export const CategoryPage: React.FC = () => {
   }
 
   return (
-    <div className="bg-white">
+    <div className="bg-white dark:bg-gray-950 transition-colors">
       <SEO title={`${category.name} | Poise`} description={category.description} />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="border-b border-gray-200 pb-8 mb-8">
-          <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 font-serif mb-4">
+        <div className="border-b border-gray-200 dark:border-gray-800 pb-8 mb-8">
+          <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white font-serif mb-4">
             {category.name}
           </h1>
           {category.description && (
-            <p className="max-w-2xl text-lg text-gray-500">{category.description}</p>
+            <p className="max-w-2xl text-lg text-gray-500 dark:text-gray-400">{category.description}</p>
           )}
         </div>
 
