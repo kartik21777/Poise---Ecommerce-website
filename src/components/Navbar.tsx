@@ -83,7 +83,8 @@ export const Navbar: React.FC = () => {
             {/* Desktop Navigation */}
             <div className="hidden lg:ml-10 lg:flex lg:space-x-8 lg:items-center">
               <Link to="/products" className="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">Shop</Link>
-              <Link to="/categories/new" className="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">New</Link>
+              <Link to="/new-arrivals" className="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">New Arrivals</Link>
+              <Link to="/featured" className="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">Featured</Link>
               <Link to="/categories/sale" className="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">Sale</Link>
             </div>
           </div>
@@ -216,7 +217,7 @@ export const Navbar: React.FC = () => {
               initial={{ x: '100%' }}
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
-              transition={{ duration: 0.35, ease: [0.25, 0.1, 0.25, 1.0] }} // smooth ease-out
+              transition={{ duration: 0.35, ease: [0.25, 0.1, 0.25, 1.0] }}
               className="fixed top-0 right-0 w-[85%] max-w-sm h-full bg-white dark:bg-gray-950 z-[65] shadow-2xl flex flex-col overflow-y-auto"
             >
               <div className="flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-800">
@@ -245,7 +246,8 @@ export const Navbar: React.FC = () => {
                 
                 <div className="space-y-1 mt-6">
                   <Link onClick={() => setIsMobileMenuOpen(false)} to="/products" className="block py-3 text-lg font-medium text-gray-900 dark:text-white border-b border-gray-100 dark:border-gray-800">Shop All</Link>
-                  <Link onClick={() => setIsMobileMenuOpen(false)} to="/categories/new" className="block py-3 text-lg font-medium text-gray-900 dark:text-white border-b border-gray-100 dark:border-gray-800">New Arrivals</Link>
+                  <Link onClick={() => setIsMobileMenuOpen(false)} to="/new-arrivals" className="block py-3 text-lg font-medium text-gray-900 dark:text-white border-b border-gray-100 dark:border-gray-800">New Arrivals</Link>
+                  <Link onClick={() => setIsMobileMenuOpen(false)} to="/featured" className="block py-3 text-lg font-medium text-gray-900 dark:text-white border-b border-gray-100 dark:border-gray-800">Featured</Link>
                   <Link onClick={() => setIsMobileMenuOpen(false)} to="/categories/sale" className="block py-3 text-lg font-medium text-gray-900 dark:text-white border-b border-gray-100 dark:border-gray-800">Sale</Link>
                 </div>
               </div>

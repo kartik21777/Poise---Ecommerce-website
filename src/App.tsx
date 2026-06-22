@@ -25,6 +25,8 @@ const Home = lazy(() => import('./pages/Home').then(m => ({ default: m.Home })))
 const ProductList = lazy(() => import('./pages/ProductList').then(m => ({ default: m.ProductList })));
 const ProductDetail = lazy(() => import('./pages/ProductDetail').then(m => ({ default: m.ProductDetail })));
 const CategoryPage = lazy(() => import('./pages/CategoryPage').then(m => ({ default: m.CategoryPage })));
+const NewArrivals = lazy(() => import('./pages/NewArrivals').then(m => ({ default: m.NewArrivals })));
+const Featured = lazy(() => import('./pages/Featured').then(m => ({ default: m.Featured })));
 const Cart = lazy(() => import('./pages/Cart').then(m => ({ default: m.Cart })));
 const WishlistPage = lazy(() => import('./pages/Wishlist').then(m => ({ default: m.WishlistPage })));
 const Checkout = lazy(() => import('./pages/Checkout').then(m => ({ default: m.Checkout })));
@@ -117,6 +119,8 @@ export default function App() {
                     <Route path="/products" element={<ProductList />} />
                     <Route path="/products/:slug" element={<ProductDetail />} />
                     <Route path="/categories/:slug" element={<CategoryPage />} />
+                    <Route path="/new-arrivals" element={<NewArrivals />} />
+                    <Route path="/featured" element={<Featured />} />
                     <Route path="/cart" element={<Cart />} />
                     
                     {/* Protected routes below */}

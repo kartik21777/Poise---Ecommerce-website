@@ -107,7 +107,7 @@ export const Home: React.FC = () => {
         <section className="mb-24">
           <div className="flex items-center justify-between mb-8">
             <h2 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Featured</h2>
-            <Link to="/products?sort=featured" className="text-sm font-semibold text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-300">
+            <Link to="/featured" className="text-sm font-semibold text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-300">
               View all <span aria-hidden="true">&rarr;</span>
             </Link>
           </div>
@@ -118,7 +118,7 @@ export const Home: React.FC = () => {
         <section className="mb-24">
           <div className="flex items-center justify-between mb-8">
             <h2 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">New Arrivals</h2>
-            <Link to="/products?sort=newest" className="text-sm font-semibold text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-300">
+            <Link to="/new-arrivals" className="text-sm font-semibold text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-300">
               View all <span aria-hidden="true">&rarr;</span>
             </Link>
           </div>
