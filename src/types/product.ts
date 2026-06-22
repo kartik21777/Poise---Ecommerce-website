@@ -48,4 +48,6 @@ export interface ProductSearchQuery {
   tag?: string;
   minPrice?: number;
   maxPrice?: number;
+  createdAfter?: string;
+  createdBefore?: string;
 }

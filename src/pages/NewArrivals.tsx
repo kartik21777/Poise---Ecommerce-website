@@ -65,23 +65,18 @@ export const NewArrivals: React.FC = () => {
   const selectedCatObj = categoriesList.find(c => c.slug === selectedCategory);
   const categoryIdParam = selectedCatObj ? selectedCatObj.id : undefined;
 
+  const dateRange = useMemo(() => getDateRange(timePeriod), [timePeriod]);
+  const createdAfter = dateRange?.from.toISOString();
+  const createdBefore = dateRange?.to.toISOString();
+
   const { data, isLoading } = useQuery({
-    queryKey: ['products', 'new-arrivals-page', { page, sort, categoryIdParam }],
-    queryFn: () => getProducts({ page, limit: 12, sort, category: categoryIdParam }),
+    queryKey: ['products', 'new-arrivals-page', { page, sort, categoryIdParam, createdAfter, createdBefore }],
+    queryFn: () => getProducts({ page, limit: 12, sort, category: categoryIdParam, createdAfter, createdBefore }),
     placeholderData: keepPreviousData,
   });
 
-  const allProducts = data?.data || [];
+  const products = data?.data || [];
   const totalPages = data?.totalPages || 1;
-
-  const products = useMemo(() => {
-    const range = getDateRange(timePeriod);
-    if (!range) return allProducts;
-    return allProducts.filter((p: Product) => {
-      const created = new Date(p.createdAt);
-      return created >= range.from && created <= range.to;
-    });
-  }, [allProducts, timePeriod]);
 
   const handlePageChange = (newPage: number) => {
     setPage(newPage);

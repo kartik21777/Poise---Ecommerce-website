@@ -68,6 +68,8 @@ export const productSearchSchema = z.object({
     tag: z.string().optional(),
     minPrice: z.string().regex(/^\d+(\.\d{1,2})?$/).transform(Number).optional(),
     maxPrice: z.string().regex(/^\d+(\.\d{1,2})?$/).transform(Number).optional(),
+    createdAfter: z.string().datetime({ offset: true }).optional(),
+    createdBefore: z.string().datetime({ offset: true }).optional(),
   }),
 });
 

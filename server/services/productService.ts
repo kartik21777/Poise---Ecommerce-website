@@ -167,6 +167,11 @@ export const productService = {
       if (query.minPrice !== undefined) filter.price.$gte = query.minPrice;
       if (query.maxPrice !== undefined) filter.price.$lte = query.maxPrice;
     }
+    if (query.createdAfter || query.createdBefore) {
+      filter.createdAt = {};
+      if (query.createdAfter) filter.createdAt.$gte = new Date(query.createdAfter);
+      if (query.createdBefore) filter.createdAt.$lte = new Date(query.createdBefore);
+    }
 
     let sortOption: any = { createdAt: -1 };
     if (query.sort === 'price-asc') sortOption = { price: 1 };
