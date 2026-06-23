@@ -51,15 +51,17 @@ export const seedCurrency = async () => {
   }
 
   // ── 3. Publish a USD→INR exchange rate version ────────────────────────────
-  // Rate: 1 USD = 84 INR (approximate market rate, June 2025)
+  // Rate: 1 INR = 0.011905 USD (i.e. 1 USD = 84 INR)
   const latestVersion = await ExchangeRateVersion.findOne().sort({ versionNumber: -1 });
   const nextVersion = (latestVersion?.versionNumber ?? 0) + 1;
 
   await ExchangeRateVersion.create({
     versionNumber: nextVersion,
-    rates: [{ targetCurrency: 'USD', rate: 0.011905 }], // INR→USD (1/84)
-    creatorUserId: 'SYSTEM_SEED',
-    isActive: true,
+    baseCurrency: 'INR',
+    rates: [{ targetCurrency: 'USD', rate: 0.011905 }], // 1 INR = 0.011905 USD
+    source: 'MANUAL',
+    effectiveFrom: new Date(),
+    notes: 'Auto-seeded: INR base, 1 USD = ₹84',
   });
 
   console.log('[seedCurrency] USD ↔ INR exchange rate published (1 USD = ₹84).');
