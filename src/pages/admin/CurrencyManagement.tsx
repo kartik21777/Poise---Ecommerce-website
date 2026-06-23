@@ -93,15 +93,16 @@ export function CurrencyManagement() {
       ]);
 
       // Normalise isEnabled → isActive for Currency
+      const currs = Array.isArray(currRes.data) ? currRes.data : [];
       setCurrencies(
-        currRes.data.map((c: any) => ({ ...c, isActive: c.isActive ?? c.isEnabled }))
+        currs.map((c: any) => ({ ...c, isActive: c.isActive ?? c.isEnabled }))
       );
 
-      setRateHistory(ratesRes.data);
+      setRateHistory(Array.isArray(ratesRes.data) ? ratesRes.data : []);
 
-      // API populates 'product' field (not 'productId')
+      const overrides = Array.isArray(overridesRes.data) ? overridesRes.data : [];
       setRegionalOverrides(
-        overridesRes.data.map((o: any) => ({
+        overrides.map((o: any) => ({
           ...o,
           product: o.product ?? null,
           price: o.price ?? 0,
@@ -109,7 +110,8 @@ export function CurrencyManagement() {
         }))
       );
 
-      setProducts(prodsRes.data?.products || prodsRes.data || []);
+      const prodsData = prodsRes.data?.data || prodsRes.data?.products || (Array.isArray(prodsRes.data) ? prodsRes.data : []);
+      setProducts(Array.isArray(prodsData) ? prodsData : []);
     } catch (err: any) {
       console.error('[CurrencyManagement] fetch error:', err);
       setError(err.response?.data?.message || 'Failed to load commerce settings.');
@@ -342,7 +344,7 @@ export function CurrencyManagement() {
                         <span className="bg-slate-100 text-slate-600 text-xs font-mono px-2 py-0.5 rounded">
                           Base: {v.baseCurrency || 'USD'}
                         </span>
-                        {v.rates.map((r) => (
+                        {(v.rates || []).map((r) => (
                           <span key={r.targetCurrency} className="bg-indigo-50 text-indigo-700 text-xs font-mono px-2 py-0.5 rounded">
                             {r.targetCurrency}: {r.rate}
                           </span>

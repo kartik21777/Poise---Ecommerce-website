@@ -20,10 +20,7 @@ export const authService = {
   async register({ name, email, password }: RegisterInput) {
     const existingUser = await User.findOne({ email });
     if (existingUser) {
-      // Prevent enumeration: silently return a generic success message
-      return {
-        message: 'Registration successful. If the email is valid, a verification email has been sent.',
-      };
+      throw new AuthError('An account with this email already exists.', 400);
     }
 
     const passwordHash = await bcrypt.hash(password, 10); // 10 rounds: OWASP-compliant & ~4x faster than 12
