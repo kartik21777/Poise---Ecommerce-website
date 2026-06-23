@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Product } from '../types/index.js';
+import { formatPrice } from '../utils/currency.js';
 
 interface ProductCardProps {
   product: Product;
@@ -46,9 +47,9 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         <h3 className="text-sm font-medium text-gray-900 dark:text-white truncate">{product.name}</h3>
         <p className="mt-1 text-sm text-gray-500 dark:text-gray-400 truncate">{product.shortDescription || product.brand}</p>
         <div className="mt-2 flex items-center space-x-2">
-          <span className="text-sm font-semibold text-gray-900 dark:text-white">${product.price.toFixed(2)}</span>
+          <span className="text-sm font-semibold text-gray-900 dark:text-white">{formatPrice(product.price)}</span>
           {hasDiscount && (
-            <span className="text-sm text-gray-500 dark:text-gray-400 line-through">${product.compareAtPrice?.toFixed(2)}</span>
+            <span className="text-sm text-gray-500 dark:text-gray-400 line-through">{formatPrice(product.compareAtPrice!)}</span>
           )}
         </div>
       </div>

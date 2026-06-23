@@ -3,6 +3,7 @@ import { useQuery } from '@tanstack/react-query';
 import { Link } from 'react-router-dom';
 import { Plus, Search, MoreVertical, Edit, Trash2 } from 'lucide-react';
 import { apiClient } from '../../services/apiClient.js';
+import { formatPrice } from '../../utils/currency.js';
 import { PaginatedResponse, Product } from '../../types/index.js';
 import { useDebounce } from '../../hooks/useDebounce.js';
 
@@ -109,7 +110,7 @@ export const Products: React.FC = () => {
                       {product.variants.reduce((acc, v) => acc + v.stock, 0)} total
                     </td>
                     <td className="px-6 py-4 text-gray-900 font-medium">
-                      ${product.price.toFixed(2)}
+                      {formatPrice(product.price)}
                     </td>
                     <td className="px-6 py-4 text-right">
                       <div className="flex items-center justify-end gap-2 text-gray-400">

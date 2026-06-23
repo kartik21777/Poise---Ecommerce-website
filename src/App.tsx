@@ -38,6 +38,7 @@ const AdminPayments = lazy(() => import('./pages/admin/Payments').then(m => ({ d
 const AdminCommerce = lazy(() => import('./pages/admin/CurrencyManagement').then(m => ({ default: m.CurrencyManagement })));
 const AdminGiftCards = lazy(() => import('./pages/admin/GiftCardManagement').then(m => ({ default: m.GiftCardManagement })));
 const AdminMarketingAnalytics = lazy(() => import('./pages/admin/MarketingAnalytics').then(m => ({ default: m.MarketingAnalytics })));
+const AdminUsers = lazy(() => import('./pages/admin/Users').then(m => ({ default: m.AdminUsers })));
 const WalletDashboard = lazy(() => import('./pages/WalletDashboard').then(m => ({ default: m.WalletDashboard })));
 
 const VendorDashboard = lazy(() => import('./pages/vendor/VendorDashboard'));
@@ -97,6 +98,7 @@ export default function App() {
                       <Route path="/admin/commerce" element={<AdminCommerce />} />
                       <Route path="/admin/giftcards" element={<AdminGiftCards />} />
                       <Route path="/admin/analytics" element={<AdminMarketingAnalytics />} />
+                      <Route path="/admin/users" element={<AdminUsers />} />
                     </Route>
                   </Route>
 

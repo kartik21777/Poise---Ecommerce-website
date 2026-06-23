@@ -26,6 +26,7 @@ import addressRoutes from './routes/addressRoutes.js';
 import orderRoutes from './routes/orderRoutes.js';
 import paymentRoutes from './routes/paymentRoutes.js';
 import adminGiftCardRoutes from './routes/adminGiftCardRoutes.js';
+import adminUserRoutes from './routes/adminUserRoutes.js';
 import customerWalletRoutes from './routes/customerWalletRoutes.js';
 import loyaltyRoutes from './routes/loyaltyRoutes.js';
 import vendorRoutes from './routes/vendorRoutes.js';
@@ -131,6 +132,7 @@ async function startApp() {
     app.use('/api/admin/products', adminProductRoutes);
     app.use('/api/admin/commerce', adminCurrencyRoutes);
     app.use('/api/admin/giftcards', adminGiftCardRoutes);
+    app.use('/api/admin/users', adminUserRoutes);
     app.use('/api/vendor', vendorRoutes);
     app.use('/api/wallet', customerWalletRoutes);
     app.use('/api/loyalty', loyaltyRoutes);
@@ -151,6 +153,7 @@ async function startApp() {
     v1Router.use('/admin/products', adminProductRoutes);
     v1Router.use('/admin/commerce', adminCurrencyRoutes);
     v1Router.use('/admin/giftcards', adminGiftCardRoutes);
+    v1Router.use('/admin/users', adminUserRoutes);
     v1Router.use('/vendor', vendorRoutes);
     v1Router.use('/wallet', customerWalletRoutes);
     v1Router.use('/loyalty', loyaltyRoutes);

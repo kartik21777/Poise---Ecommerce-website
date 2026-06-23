@@ -26,14 +26,14 @@ export const authService = {
       };
     }
 
-    const passwordHash = await bcrypt.hash(password, 12);
+    const passwordHash = await bcrypt.hash(password, 10); // 10 rounds: OWASP-compliant & ~4x faster than 12
     const verificationToken = generateRandomToken();
     const emailVerificationTokenHash = hashToken(verificationToken);
-    
+
     // Use env.emailVerificationExpiresIn, defaults to '1d'
     const expiresAt = new Date(Date.now() + parseExpiration(env.emailVerificationExpiresIn || '1d'));
 
-    await User.create({
+    const newUser = await User.create({
       name,
       email,
       passwordHash,
@@ -41,10 +41,35 @@ export const authService = {
       emailVerificationExpiresAt: expiresAt,
     });
 
-    await sendVerificationEmail(email, verificationToken);
+    // Send verification email (non-blocking — failure does not abort registration)
+    sendVerificationEmail(email, verificationToken).catch((err) =>
+      console.error('[emailService] Failed to send verification email:', err)
+    );
+
+    // Auto-login: generate tokens so the client skips a second POST /login
+    const payload: TokenPayload = { userId: newUser._id.toString(), role: newUser.role };
+    const accessToken = generateAccessToken(payload);
+    const refreshToken = generateRefreshToken(payload);
+
+    const refreshExpiresAt = new Date(Date.now() + parseExpiration(env.jwtRefreshExpiresIn || '7d'));
+    const tokenHash = hashToken(refreshToken);
+
+    await RefreshToken.create({
+      user: newUser._id,
+      tokenHash,
+      expiresAt: refreshExpiresAt,
+    });
 
     return {
       message: 'Registration successful. If the email is valid, a verification email has been sent.',
+      accessToken,
+      refreshToken,
+      user: {
+        id: newUser._id,
+        name: newUser.name,
+        email: newUser.email,
+        role: newUser.role,
+      },
     };
   },
 
@@ -173,7 +198,12 @@ export const authService = {
     user.passwordResetExpiresAt = expiresAt;
     await user.save();
 
-    await sendPasswordResetEmail(user.email, resetToken);
+    try {
+      await sendPasswordResetEmail(user.email, resetToken);
+    } catch (emailErr) {
+      // Log but do NOT re-throw — the API response must remain vague to prevent enumeration
+      console.error('[authService] forgotPassword: email delivery failed for', user.email, emailErr);
+    }
   },
 
   async resetPassword(token: string, password: string) {

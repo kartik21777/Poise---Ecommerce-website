@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 import { Heart } from 'lucide-react';
 import { SEO } from '../components/SEO.js';
+import { formatPrice } from '../utils/currency.js';
 import { getProductBySlug, getRelatedProducts } from '../services/productService.js';
 import { ErrorState, LoadingSkeleton } from '../components/FeedbackStates.js';
 import { ProductGrid } from '../components/ProductGrid.js';
@@ -132,9 +133,9 @@ export const ProductDetail: React.FC = () => {
             <h1 className="text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white font-serif">{product.name}</h1>
             
             <div className="mt-3 flex items-center">
-              <p className="text-3xl text-gray-900 dark:text-white font-medium">${product.price.toFixed(2)}</p>
-              {hasDiscount && (
-                <p className="ml-4 text-xl text-gray-500 dark:text-gray-400 line-through">${product.compareAtPrice?.toFixed(2)}</p>
+              <p className="text-3xl text-gray-900 dark:text-white font-medium">{formatPrice(product.price)}</p>
+              {product.compareAtPrice && product.compareAtPrice > product.price && (
+                <p className="ml-4 text-xl text-gray-500 dark:text-gray-400 line-through">{formatPrice(product.compareAtPrice)}</p>
               )}
             </div>
 

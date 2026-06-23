@@ -38,7 +38,15 @@ const clearCookies = (res: Response) => {
 export const registerController = asyncHandler(async (req: Request, res: Response) => {
   try {
     const result = await authService.register(req.body);
-    res.status(201).json(result);
+    // If registration returned tokens (auto-login), set cookies and return user
+    if (result.accessToken && result.refreshToken) {
+      setTokensInCookies(res, result.accessToken, result.refreshToken);
+    }
+    res.status(201).json({
+      message: result.message,
+      user: result.user,
+      accessToken: result.accessToken,
+    });
   } catch (error: unknown) {
     if (error instanceof AuthError) {
       res.status(error.statusCode);

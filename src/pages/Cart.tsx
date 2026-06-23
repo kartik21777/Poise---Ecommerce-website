@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { Trash2, Plus, Minus } from 'lucide-react';
 import { useCart } from '../hooks/useCart.js';
 import { SEO } from '../components/SEO.js';
+import { formatPrice } from '../utils/currency.js';
 import { Product } from '../types/index.js';
 
 export const Cart: React.FC = () => {
@@ -57,7 +58,7 @@ export const Cart: React.FC = () => {
                           </h3>
                         </div>
                         <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">SKU: {item.variantSku}</p>
-                        <p className="mt-1 text-sm font-medium text-gray-900 dark:text-white">${(item.unitPrice || 0).toFixed(2)}</p>
+                        <p className="mt-1 text-sm font-medium text-gray-900 dark:text-white">{formatPrice(item.unitPrice || 0)}</p>
                       </div>
                       
                       <div className="mt-4 sm:mt-0 sm:pr-9">
@@ -109,7 +110,7 @@ export const Cart: React.FC = () => {
           <dl className="mt-6 space-y-4">
             <div className="flex items-center justify-between border-t border-gray-200 dark:border-gray-800 pt-4">
               <dt className="text-base font-medium text-gray-900 dark:text-white">Order total</dt>
-              <dd className="text-base font-medium text-gray-900 dark:text-white">${(totalPrice || 0).toFixed(2)}</dd>
+              <dd className="text-base font-medium text-gray-900 dark:text-white">{formatPrice(totalPrice || 0)}</dd>
             </div>
           </dl>
           <div className="mt-6">

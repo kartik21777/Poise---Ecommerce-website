@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { Eye, EyeOff } from 'lucide-react';
 import { useQueryClient } from '@tanstack/react-query';
 import { useAuth } from '../providers/AuthProvider.js';
+import { setAccessToken } from '../services/apiClient.js';
 import * as authService from '../services/authService.js';
 import * as cartService from '../services/cartService.js';
 import * as guestCartService from '../services/guestCartService.js';
@@ -14,26 +16,29 @@ export const Register: React.FC = () => {
   const [formData, setFormData] = useState({ firstName: '', lastName: '', email: '', password: '' });
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError('');
     setIsLoading(true);
-    
+
     try {
       const payload = {
         name: `${formData.firstName} ${formData.lastName}`.trim(),
         email: formData.email,
-        password: formData.password
+        password: formData.password,
       };
-      const res = await authService.register(payload);
-      
-      // Automatically login the user after successful registration
-      const loginRes = await authService.login({
-        email: payload.email,
-        password: payload.password
-      });
 
+      // Register now returns tokens directly — no second /login call needed
+      const res = await authService.register(payload);
+
+      // Set the access token in the API client for subsequent requests
+      if (res.accessToken) {
+        setAccessToken(res.accessToken);
+      }
+
+      // Merge guest cart if any
       const guestItems = guestCartService.getGuestCart();
       if (guestItems.length > 0) {
         await cartService.syncCart(guestItems);
@@ -41,8 +46,12 @@ export const Register: React.FC = () => {
         window.dispatchEvent(new Event('local-storage'));
         await queryClient.invalidateQueries({ queryKey: ['cart'] });
       }
-      
-      login(loginRes.user);
+
+      // Establish authenticated UI state
+      if (res.user) {
+        login(res.user);
+      }
+
       navigate('/');
     } catch (err: any) {
       const data = err.response?.data;
@@ -128,18 +137,26 @@ export const Register: React.FC = () => {
 
           <div>
             <label htmlFor="password" className="block text-sm font-medium text-gray-700 dark:text-gray-300">Password</label>
-            <div className="mt-1">
+            <div className="mt-1 relative">
               <input
                 id="password"
                 name="password"
-                type="password"
+                type={showPassword ? 'text' : 'password'}
                 autoComplete="new-password"
                 required
                 minLength={8}
                 value={formData.password}
                 onChange={handleChange}
-                className="appearance-none block w-full px-3 py-2 border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-gray-900 dark:text-white rounded-md shadow-sm placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-gray-900 dark:focus:ring-white focus:border-gray-900 dark:focus:border-white sm:text-sm transition-colors"
+                className="appearance-none block w-full px-3 py-2 pr-10 border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-gray-900 dark:text-white rounded-md shadow-sm placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-gray-900 dark:focus:ring-white focus:border-gray-900 dark:focus:border-white sm:text-sm transition-colors"
               />
+              <button
+                type="button"
+                onClick={() => setShowPassword(v => !v)}
+                className="absolute inset-y-0 right-0 flex items-center pr-3 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
+                aria-label={showPassword ? 'Hide password' : 'Show password'}
+              >
+                {showPassword ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
+              </button>
             </div>
           </div>
 
