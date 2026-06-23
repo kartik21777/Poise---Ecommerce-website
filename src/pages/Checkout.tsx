@@ -5,6 +5,7 @@ import { useCart } from '../hooks/useCart.js';
 import { useAddresses } from '../hooks/useAddresses.js';
 import { useCheckoutPreview, useCreateOrder } from '../hooks/useOrders.js';
 import { MapPin, Plus, Check, Loader2, ArrowLeft, ShieldCheck, HelpCircle } from 'lucide-react';
+import { formatPrice } from '../utils/currency.js';
 
 export const Checkout: React.FC = () => {
   const navigate = useNavigate();
@@ -539,7 +540,7 @@ export const Checkout: React.FC = () => {
                         </p>
                       </div>
                       <div className="text-sm font-bold text-gray-900 dark:text-white">
-                        ${(item.unitPrice * item.quantity).toFixed(2)}
+                        {formatPrice(item.unitPrice * item.quantity)}
                       </div>
                     </div>
                   );
@@ -565,7 +566,7 @@ export const Checkout: React.FC = () => {
                 <div className="flex justify-between text-sm">
                   <span className="text-gray-500 dark:text-gray-400">Subtotal</span>
                   <span className="font-semibold text-gray-900 dark:text-white">
-                    {isCalcLoading ? <Loader2 className="h-3 w-3 animate-spin inline" /> : `$${(calc?.subtotal ?? cartData.totalPrice).toFixed(2)}`}
+                    {isCalcLoading ? <Loader2 className="h-3 w-3 animate-spin inline" /> : formatPrice(calc?.subtotal ?? cartData.totalPrice)}
                   </span>
                 </div>
                 {calc && (calc.promoDiscountAmount > 0 || calc.couponDiscountAmount > 0) && (
@@ -573,18 +574,18 @@ export const Checkout: React.FC = () => {
                     {calc.promoDiscountAmount > 0 && (
                       <div className="flex justify-between text-emerald-800 font-medium">
                         <span>Campaign Auto Promotion</span>
-                        <span>-${calc.promoDiscountAmount.toFixed(2)}</span>
+                        <span>-{formatPrice(calc.promoDiscountAmount)}</span>
                       </div>
                     )}
                     {calc.couponDiscountAmount > 0 && (
                       <div className="flex justify-between text-emerald-800 font-medium">
                         <span>Applied Coupon Reward ({calc.appliedCouponCode})</span>
-                        <span>-${calc.couponDiscountAmount.toFixed(2)}</span>
+                        <span>-{formatPrice(calc.couponDiscountAmount)}</span>
                       </div>
                     )}
                     <div className="border-t border-emerald-200 pt-1.5 flex justify-between font-bold text-emerald-950">
                       <span>Discounted Subtotal</span>
-                      <span>${calc.discountedSubtotal.toFixed(2)}</span>
+                      <span>{formatPrice(calc.discountedSubtotal)}</span>
                     </div>
                   </div>
                 )}
@@ -596,14 +597,14 @@ export const Checkout: React.FC = () => {
                     ) : calc?.shipping === 0 ? (
                       <span className="text-emerald-600">Free</span>
                     ) : (
-                      `$${(calc?.shipping ?? 10).toFixed(2)}`
+                      formatPrice(calc?.shipping ?? 10)
                     )}
                   </span>
                 </div>
                 <div className="flex justify-between text-sm">
                   <span className="text-gray-500 dark:text-gray-400">Tax (8%)</span>
                   <span className="font-semibold text-gray-900 dark:text-white">
-                    {isCalcLoading ? <Loader2 className="h-3 w-3 animate-spin inline" /> : `$${(calc?.tax ?? 0).toFixed(2)}`}
+                    {isCalcLoading ? <Loader2 className="h-3 w-3 animate-spin inline" /> : formatPrice(calc?.tax ?? 0)}
                   </span>
                 </div>
                 <div className="border-t border-gray-200 pt-3 flex justify-between text-base font-bold text-gray-900 dark:text-white">
@@ -612,7 +613,7 @@ export const Checkout: React.FC = () => {
                     {isCalcLoading ? (
                       <Loader2 className="h-4 w-4 animate-spin inline" />
                     ) : (
-                      `$${(calc?.total ?? (cartData.totalPrice + 10)).toFixed(2)}`
+                      formatPrice(calc?.total ?? (cartData.totalPrice + 10))
                     )}
                   </span>
                 </div>
@@ -623,19 +624,19 @@ export const Checkout: React.FC = () => {
                     {allocationPreview.allocatedGiftCard > 0 && (
                       <div className="flex justify-between text-purple-750 font-medium">
                         <span>Gift Card Allocation</span>
-                        <span>-${allocationPreview.allocatedGiftCard.toFixed(2)}</span>
+                        <span>-{formatPrice(allocationPreview.allocatedGiftCard)}</span>
                       </div>
                     )}
                     {allocationPreview.allocatedStoreCredit > 0 && (
                       <div className="flex justify-between text-indigo-700 font-medium">
                         <span>Store Credit Allocation</span>
-                        <span>-${allocationPreview.allocatedStoreCredit.toFixed(2)}</span>
+                        <span>-{formatPrice(allocationPreview.allocatedStoreCredit)}</span>
                       </div>
                     )}
                     <div className="border-t border-gray-100 dark:border-gray-800 pt-2 flex justify-between text-sm font-extrabold text-slate-900">
                       <span>Gateway Balance Due</span>
                       <span>
-                        ${allocationPreview.allocatedGateway.toFixed(2)}
+                        {formatPrice(allocationPreview.allocatedGateway)}
                       </span>
                     </div>
                   </div>
